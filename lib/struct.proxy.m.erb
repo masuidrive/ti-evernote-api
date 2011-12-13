@@ -1,0 +1,50 @@
+#import "<%= s.proxy_class_name %>.h"
+#import "TiUtils.h"
+#import "TiThriftUtils.h"
+
+<% structs.each do |struct| %>
+#import "<%= struct.proxy_class_name %>.h"
+<% end %>
+
+#import "<%= @module_name %>.h"
+@interface <%= @module_name %>(<%= s.class_name %>)
+-(id)create<%= s.name %>:(id)args;
+@end
+
+@implementation <%= @module_name %>(<%= s.class_name %>)
+-(id)create<%= s.name %>:(id)args
+{
+    return [[[<%= s.proxy_class_name %> alloc] initWithObject: [[[<%= s.class_name %> alloc] init] autorelease]] autorelease];
+}
+@end
+
+
+@implementation <%= s.proxy_class_name %>
+@synthesize object;
+
+<% s.fields.each do |field| %>
+-(id)<%= field.name.sub(/^[A-Z]/,&:downcase) %>
+{
+    return <%= field.type.titanium(@space, "object.#{field.name}") %>;
+}
+
+-(void)set<%= field.name.sub(/^[a-z]/,&:upcase) %>:(id)value
+{
+    object.<%= field.name %> = <%= field.type.objc(@space, 'value') %>;
+}
+<% end %>
+
+- (id)initWithObject:(<%= s.class_name %>*)object_
+{
+    if(self = [super init]){
+        self.object = object_;
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    self.object = nil;
+    [super release];
+}
+@end

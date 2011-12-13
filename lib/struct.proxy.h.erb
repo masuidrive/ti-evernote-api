@@ -1,0 +1,11 @@
+#import "TiProxy.h"
+#import "<%= @basename %>.h"
+
+@interface <%= s.proxy_class_name %> : TiProxy {
+@private
+    <%= s.class_name %>* object;
+}
+@property (nonatomic, retain) <%= s.class_name %>* object;
+
+- (id)initWithObject:(<%= s.class_name %>*)object_;
+@end

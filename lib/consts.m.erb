@@ -1,0 +1,10 @@
+#import "TiUtils.h"
+#import "TiThriftUtils.h"
+
+@implementation <%= struct.class_name %>(<%= s.class_name %>)
+-(id)create<%= s.name %>Client:(id)arg
+{
+    ENSURE_SINGLE_ARG(arg, NSString);
+    return [[[<%= s.class_name %>ClientProxy alloc] initWithUri:arg] autorelease];
+}
+@end

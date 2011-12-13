@@ -1,0 +1,12 @@
+#import "TiProxy.h"
+#import "<%= @basename %>.h"
+
+@interface <%= s.proxy_class_name %> : TiProxy {
+@private
+    <%= s.class_name %>Client* object;
+}
+@property (nonatomic, retain) <%= s.proxy_class_name %>* client;
+
+- (id)initWithUri: (NSString*)uri;
+
+@end

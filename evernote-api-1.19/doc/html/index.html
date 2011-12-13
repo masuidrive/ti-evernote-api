@@ -1,0 +1,240 @@
+<html><head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<title>All Thrift declarations</title></head><body>
+<h1>All Thrift declarations</h1>
+<table><tr><th>Module</th><th>Services</th><th>Data types</th><th>Constants</th></tr>
+<tr>
+<td>NoteStore</td><td><a href="NoteStore.html#Svc_NoteStore">NoteStore</a><br/>
+<ul>
+<li><a href="NoteStore.html#Fn_NoteStore_authenticateToSharedNote">authenticateToSharedNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_authenticateToSharedNotebook">authenticateToSharedNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_copyNote">copyNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_createLinkedNotebook">createLinkedNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_createNote">createNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_createNotebook">createNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_createSearch">createSearch</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_createSharedNotebook">createSharedNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_createTag">createTag</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_deleteNote">deleteNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_emailNote">emailNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeInactiveNotes">expungeInactiveNotes</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeLinkedNotebook">expungeLinkedNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeNote">expungeNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeNotebook">expungeNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeNotes">expungeNotes</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeSearch">expungeSearch</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeSharedNotebooks">expungeSharedNotebooks</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_expungeTag">expungeTag</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_findNoteCounts">findNoteCounts</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_findNoteOffset">findNoteOffset</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_findNotes">findNotes</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_findNotesMetadata">findNotesMetadata</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getAccountSize">getAccountSize</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getAds">getAds</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getDefaultNotebook">getDefaultNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getFilteredSyncChunk">getFilteredSyncChunk</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getLinkedNotebookSyncChunk">getLinkedNotebookSyncChunk</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getLinkedNotebookSyncState">getLinkedNotebookSyncState</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getNote">getNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getNoteContent">getNoteContent</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getNoteSearchText">getNoteSearchText</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getNoteTagNames">getNoteTagNames</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getNoteVersion">getNoteVersion</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getNotebook">getNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getPublicNotebook">getPublicNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getRandomAd">getRandomAd</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResource">getResource</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResourceAlternateData">getResourceAlternateData</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResourceAttributes">getResourceAttributes</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResourceByHash">getResourceByHash</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResourceData">getResourceData</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResourceRecognition">getResourceRecognition</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getResourceSearchText">getResourceSearchText</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getSearch">getSearch</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getSharedNotebookByAuth">getSharedNotebookByAuth</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getSyncChunk">getSyncChunk</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getSyncState">getSyncState</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_getTag">getTag</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listLinkedNotebooks">listLinkedNotebooks</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listNoteVersions">listNoteVersions</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listNotebooks">listNotebooks</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listSearches">listSearches</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listSharedNotebooks">listSharedNotebooks</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listTags">listTags</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_listTagsByNotebook">listTagsByNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_shareNote">shareNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_stopSharingNote">stopSharingNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_untagAll">untagAll</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_updateLinkedNotebook">updateLinkedNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_updateNote">updateNote</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_updateNotebook">updateNotebook</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_updateResource">updateResource</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_updateSearch">updateSearch</a></li>
+<li><a href="NoteStore.html#Fn_NoteStore_updateTag">updateTag</a></li>
+</ul>
+</td>
+<td><a href="NoteStore.html#Struct_AdImpressions">AdImpressions</a><br/>
+<a href="NoteStore.html#Struct_AdParameters">AdParameters</a><br/>
+<a href="NoteStore.html#Struct_NoteCollectionCounts">NoteCollectionCounts</a><br/>
+<a href="NoteStore.html#Struct_NoteEmailParameters">NoteEmailParameters</a><br/>
+<a href="NoteStore.html#Struct_NoteFilter">NoteFilter</a><br/>
+<a href="NoteStore.html#Struct_NoteList">NoteList</a><br/>
+<a href="NoteStore.html#Struct_NoteMetadata">NoteMetadata</a><br/>
+<a href="NoteStore.html#Struct_NoteVersionId">NoteVersionId</a><br/>
+<a href="NoteStore.html#Struct_NotesMetadataList">NotesMetadataList</a><br/>
+<a href="NoteStore.html#Struct_NotesMetadataResultSpec">NotesMetadataResultSpec</a><br/>
+<a href="NoteStore.html#Struct_SyncChunk">SyncChunk</a><br/>
+<a href="NoteStore.html#Struct_SyncChunkFilter">SyncChunkFilter</a><br/>
+<a href="NoteStore.html#Struct_SyncState">SyncState</a><br/>
+</td>
+<td><code></code></td>
+</tr><tr>
+<td>UserStore</td><td><a href="UserStore.html#Svc_UserStore">UserStore</a><br/>
+<ul>
+<li><a href="UserStore.html#Fn_UserStore_authenticate">authenticate</a></li>
+<li><a href="UserStore.html#Fn_UserStore_checkVersion">checkVersion</a></li>
+<li><a href="UserStore.html#Fn_UserStore_getPublicUserInfo">getPublicUserInfo</a></li>
+<li><a href="UserStore.html#Fn_UserStore_getUser">getUser</a></li>
+<li><a href="UserStore.html#Fn_UserStore_refreshAuthentication">refreshAuthentication</a></li>
+</ul>
+</td>
+<td><a href="UserStore.html#Struct_AuthenticationResult">AuthenticationResult</a><br/>
+<a href="UserStore.html#Struct_PublicUserInfo">PublicUserInfo</a><br/>
+</td>
+<td><code><a href="UserStore.html#Const_EDAM_VERSION_MAJOR">EDAM_VERSION_MAJOR</a><br/>
+<a href="UserStore.html#Const_EDAM_VERSION_MINOR">EDAM_VERSION_MINOR</a><br/>
+</code></td>
+</tr><tr>
+<td>Types</td><td></td>
+<td><a href="Types.html#Struct_Accounting">Accounting</a><br/>
+<a href="Types.html#Struct_Ad">Ad</a><br/>
+<a href="Types.html#Struct_Data">Data</a><br/>
+<a href="Types.html#Typedef_Guid">Guid</a><br/>
+<a href="Types.html#Struct_LinkedNotebook">LinkedNotebook</a><br/>
+<a href="Types.html#Struct_Note">Note</a><br/>
+<a href="Types.html#Struct_NoteAttributes">NoteAttributes</a><br/>
+<a href="Types.html#Enum_NoteSortOrder">NoteSortOrder</a><br/>
+<a href="Types.html#Struct_Notebook">Notebook</a><br/>
+<a href="Types.html#Enum_PremiumOrderStatus">PremiumOrderStatus</a><br/>
+<a href="Types.html#Enum_PrivilegeLevel">PrivilegeLevel</a><br/>
+<a href="Types.html#Struct_Publishing">Publishing</a><br/>
+<a href="Types.html#Enum_QueryFormat">QueryFormat</a><br/>
+<a href="Types.html#Struct_Resource">Resource</a><br/>
+<a href="Types.html#Struct_ResourceAttributes">ResourceAttributes</a><br/>
+<a href="Types.html#Struct_SavedSearch">SavedSearch</a><br/>
+<a href="Types.html#Struct_SharedNotebook">SharedNotebook</a><br/>
+<a href="Types.html#Struct_Tag">Tag</a><br/>
+<a href="Types.html#Typedef_Timestamp">Timestamp</a><br/>
+<a href="Types.html#Struct_User">User</a><br/>
+<a href="Types.html#Struct_UserAttributes">UserAttributes</a><br/>
+<a href="Types.html#Typedef_UserID">UserID</a><br/>
+</td>
+<td><code><a href="Types.html#Const_EDAM_NOTE_SOURCE_MAIL_CLIP">EDAM_NOTE_SOURCE_MAIL_CLIP</a><br/>
+<a href="Types.html#Const_EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY">EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY</a><br/>
+<a href="Types.html#Const_EDAM_NOTE_SOURCE_WEB_CLIP">EDAM_NOTE_SOURCE_WEB_CLIP</a><br/>
+</code></td>
+</tr><tr>
+<td>Limits</td><td></td>
+<td></td>
+<td><code><a href="Limits.html#Const_EDAM_ATTRIBUTE_LEN_MAX">EDAM_ATTRIBUTE_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_ATTRIBUTE_LEN_MIN">EDAM_ATTRIBUTE_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_ATTRIBUTE_LIST_MAX">EDAM_ATTRIBUTE_LIST_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_ATTRIBUTE_REGEX">EDAM_ATTRIBUTE_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_DEFAULT_CURRENCY_COUNTRY_CODE">EDAM_COMMERCE_DEFAULT_CURRENCY_COUNTRY_CODE</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_CYBERSOURCE">EDAM_COMMERCE_SERVICE_CYBERSOURCE</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_GIFT">EDAM_COMMERCE_SERVICE_GIFT</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_GOOGLE">EDAM_COMMERCE_SERVICE_GOOGLE</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_GROUP">EDAM_COMMERCE_SERVICE_GROUP</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_PAYPAL">EDAM_COMMERCE_SERVICE_PAYPAL</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_TRIAL">EDAM_COMMERCE_SERVICE_TRIAL</a><br/>
+<a href="Limits.html#Const_EDAM_COMMERCE_SERVICE_TRIALPAY">EDAM_COMMERCE_SERVICE_TRIALPAY</a><br/>
+<a href="Limits.html#Const_EDAM_EMAIL_DOMAIN_REGEX">EDAM_EMAIL_DOMAIN_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_EMAIL_LEN_MAX">EDAM_EMAIL_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_EMAIL_LEN_MIN">EDAM_EMAIL_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_EMAIL_LOCAL_REGEX">EDAM_EMAIL_LOCAL_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_EMAIL_REGEX">EDAM_EMAIL_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_GUID_LEN_MAX">EDAM_GUID_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_GUID_LEN_MIN">EDAM_GUID_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_GUID_REGEX">EDAM_GUID_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_HASH_LEN">EDAM_HASH_LEN</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_LEN_MAX">EDAM_MIME_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_LEN_MIN">EDAM_MIME_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_REGEX">EDAM_MIME_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPES">EDAM_MIME_TYPES</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_AMR">EDAM_MIME_TYPE_AMR</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_DEFAULT">EDAM_MIME_TYPE_DEFAULT</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_GIF">EDAM_MIME_TYPE_GIF</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_INK">EDAM_MIME_TYPE_INK</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_JPEG">EDAM_MIME_TYPE_JPEG</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_MP3">EDAM_MIME_TYPE_MP3</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_MP4_VIDEO">EDAM_MIME_TYPE_MP4_VIDEO</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_PDF">EDAM_MIME_TYPE_PDF</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_PNG">EDAM_MIME_TYPE_PNG</a><br/>
+<a href="Limits.html#Const_EDAM_MIME_TYPE_WAV">EDAM_MIME_TYPE_WAV</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_NAME_LEN_MAX">EDAM_NOTEBOOK_NAME_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_NAME_LEN_MIN">EDAM_NOTEBOOK_NAME_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_NAME_REGEX">EDAM_NOTEBOOK_NAME_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_SHARED_NOTEBOOK_MAX">EDAM_NOTEBOOK_SHARED_NOTEBOOK_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_STACK_LEN_MAX">EDAM_NOTEBOOK_STACK_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_STACK_LEN_MIN">EDAM_NOTEBOOK_STACK_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_NOTEBOOK_STACK_REGEX">EDAM_NOTEBOOK_STACK_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_CONTENT_LEN_MAX">EDAM_NOTE_CONTENT_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_CONTENT_LEN_MIN">EDAM_NOTE_CONTENT_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_RESOURCES_MAX">EDAM_NOTE_RESOURCES_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_SIZE_MAX_FREE">EDAM_NOTE_SIZE_MAX_FREE</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_SIZE_MAX_PREMIUM">EDAM_NOTE_SIZE_MAX_PREMIUM</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_TAGS_MAX">EDAM_NOTE_TAGS_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_TITLE_LEN_MAX">EDAM_NOTE_TITLE_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_TITLE_LEN_MIN">EDAM_NOTE_TITLE_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_NOTE_TITLE_REGEX">EDAM_NOTE_TITLE_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_DESCRIPTION_LEN_MAX">EDAM_PUBLISHING_DESCRIPTION_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_DESCRIPTION_LEN_MIN">EDAM_PUBLISHING_DESCRIPTION_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_DESCRIPTION_REGEX">EDAM_PUBLISHING_DESCRIPTION_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_URI_LEN_MAX">EDAM_PUBLISHING_URI_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_URI_LEN_MIN">EDAM_PUBLISHING_URI_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_URI_PROHIBITED">EDAM_PUBLISHING_URI_PROHIBITED</a><br/>
+<a href="Limits.html#Const_EDAM_PUBLISHING_URI_REGEX">EDAM_PUBLISHING_URI_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_RESOURCE_SIZE_MAX_FREE">EDAM_RESOURCE_SIZE_MAX_FREE</a><br/>
+<a href="Limits.html#Const_EDAM_RESOURCE_SIZE_MAX_PREMIUM">EDAM_RESOURCE_SIZE_MAX_PREMIUM</a><br/>
+<a href="Limits.html#Const_EDAM_SAVED_SEARCH_NAME_LEN_MAX">EDAM_SAVED_SEARCH_NAME_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_SAVED_SEARCH_NAME_LEN_MIN">EDAM_SAVED_SEARCH_NAME_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_SAVED_SEARCH_NAME_REGEX">EDAM_SAVED_SEARCH_NAME_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_SEARCH_QUERY_LEN_MAX">EDAM_SEARCH_QUERY_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_SEARCH_QUERY_LEN_MIN">EDAM_SEARCH_QUERY_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_SEARCH_QUERY_REGEX">EDAM_SEARCH_QUERY_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_TAG_NAME_LEN_MAX">EDAM_TAG_NAME_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_TAG_NAME_LEN_MIN">EDAM_TAG_NAME_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_TAG_NAME_REGEX">EDAM_TAG_NAME_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_TIMEZONE_LEN_MAX">EDAM_TIMEZONE_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_TIMEZONE_LEN_MIN">EDAM_TIMEZONE_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_TIMEZONE_REGEX">EDAM_TIMEZONE_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_LINKED_NOTEBOOK_MAX">EDAM_USER_LINKED_NOTEBOOK_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_MAIL_LIMIT_DAILY_FREE">EDAM_USER_MAIL_LIMIT_DAILY_FREE</a><br/>
+<a href="Limits.html#Const_EDAM_USER_MAIL_LIMIT_DAILY_PREMIUM">EDAM_USER_MAIL_LIMIT_DAILY_PREMIUM</a><br/>
+<a href="Limits.html#Const_EDAM_USER_NAME_LEN_MAX">EDAM_USER_NAME_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_NAME_LEN_MIN">EDAM_USER_NAME_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_USER_NAME_REGEX">EDAM_USER_NAME_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_NOTEBOOKS_MAX">EDAM_USER_NOTEBOOKS_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_NOTES_MAX">EDAM_USER_NOTES_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_PASSWORD_LEN_MAX">EDAM_USER_PASSWORD_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_PASSWORD_LEN_MIN">EDAM_USER_PASSWORD_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_USER_PASSWORD_REGEX">EDAM_USER_PASSWORD_REGEX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_RECENT_MAILED_ADDRESSES_MAX">EDAM_USER_RECENT_MAILED_ADDRESSES_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_SAVED_SEARCHES_MAX">EDAM_USER_SAVED_SEARCHES_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_TAGS_MAX">EDAM_USER_TAGS_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_UPLOAD_LIMIT_FREE">EDAM_USER_UPLOAD_LIMIT_FREE</a><br/>
+<a href="Limits.html#Const_EDAM_USER_UPLOAD_LIMIT_PREMIUM">EDAM_USER_UPLOAD_LIMIT_PREMIUM</a><br/>
+<a href="Limits.html#Const_EDAM_USER_USERNAME_LEN_MAX">EDAM_USER_USERNAME_LEN_MAX</a><br/>
+<a href="Limits.html#Const_EDAM_USER_USERNAME_LEN_MIN">EDAM_USER_USERNAME_LEN_MIN</a><br/>
+<a href="Limits.html#Const_EDAM_USER_USERNAME_REGEX">EDAM_USER_USERNAME_REGEX</a><br/>
+</code></td>
+</tr><tr>
+<td>Errors</td><td></td>
+<td><a href="Errors.html#Enum_EDAMErrorCode">EDAMErrorCode</a><br/>
+<a href="Errors.html#Struct_EDAMNotFoundException">EDAMNotFoundException</a><br/>
+<a href="Errors.html#Struct_EDAMSystemException">EDAMSystemException</a><br/>
+<a href="Errors.html#Struct_EDAMUserException">EDAMUserException</a><br/>
+</td>
+<td><code></code></td>
+</tr></table>
+</body></html>

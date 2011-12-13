@@ -1,0 +1,219 @@
+<html><head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<title>Thrift module: UserStore</title></head><body>
+<h1>Thrift module: UserStore</h1>
+<table><tr><th>Module</th><th>Services</th><th>Data types</th><th>Constants</th></tr>
+<tr>
+<td>UserStore</td><td><a href="UserStore.html#Svc_UserStore">UserStore</a><br/>
+<ul>
+<li><a href="UserStore.html#Fn_UserStore_authenticate">authenticate</a></li>
+<li><a href="UserStore.html#Fn_UserStore_checkVersion">checkVersion</a></li>
+<li><a href="UserStore.html#Fn_UserStore_getPublicUserInfo">getPublicUserInfo</a></li>
+<li><a href="UserStore.html#Fn_UserStore_getUser">getUser</a></li>
+<li><a href="UserStore.html#Fn_UserStore_refreshAuthentication">refreshAuthentication</a></li>
+</ul>
+</td>
+<td><a href="UserStore.html#Struct_AuthenticationResult">AuthenticationResult</a><br/>
+<a href="UserStore.html#Struct_PublicUserInfo">PublicUserInfo</a><br/>
+</td>
+<td><code><a href="UserStore.html#Const_EDAM_VERSION_MAJOR">EDAM_VERSION_MAJOR</a><br/>
+<a href="UserStore.html#Const_EDAM_VERSION_MINOR">EDAM_VERSION_MINOR</a><br/>
+</code></td>
+</tr></table>
+<hr/><h2 id="Constants">Constants</h2>
+<table><tr><th>Constant</th><th>Type</th><th>Value</th></tr>
+<tr id="Const_EDAM_VERSION_MAJOR"><td><code>EDAM_VERSION_MAJOR</code></td><td><code><code>i16</code></code></td><td><code>1</code></td></tr><tr><td colspan="3"><blockquote>The major version number for the current revision of the EDAM protocol.
+Clients pass this to the service using UserStore.checkVersion at the
+beginning of a session to confirm that they are not out of date.
+<br/></blockquote></td></tr><tr id="Const_EDAM_VERSION_MINOR"><td><code>EDAM_VERSION_MINOR</code></td><td><code><code>i16</code></code></td><td><code>19</code></td></tr><tr><td colspan="3"><blockquote>The minor version number for the current revision of the EDAM protocol.
+Clients pass this to the service using UserStore.checkVersion at the
+beginning of a session to confirm that they are not out of date.
+<br/></blockquote></td></tr></table><hr/><h2 id="Structs">Data structures</h2>
+<div class="definition"><h3 id="Struct_PublicUserInfo">Struct: PublicUserInfo</h3>
+<table><tr><th>Field</th><th>Type</th><th>Description</th><th>Requiredness</th><th>Default value</th></tr>
+<tr><td>userId</td><td><code><a href="Types.html#Typedef_UserID">Types.UserID</a></code></td><td></td><td>required</td><td></td></tr>
+<tr><td>shardId</td><td><code>string</code></td><td></td><td>required</td><td></td></tr>
+<tr><td>privilege</td><td><code><a href="Types.html#Enum_PrivilegeLevel">Types.PrivilegeLevel</a></code></td><td></td><td>optional</td><td></td></tr>
+<tr><td>username</td><td><code>string</code></td><td></td><td>optional</td><td></td></tr>
+</table><br/> This structure is used to provide publicly-available user information
+ about a particular account.
+<dl>
+ <dt>userId:</dt>
+   <dd>
+   The unique numeric user identifier for the user account.
+   </dd>
+ <dt>shardId:</dt>
+   <dd>
+   The name of the virtual server that manages the state of
+   this user. This value is used internally to determine which system should
+   service requests about this user's data.  It is also used to construct
+   the appropriate URL to make requests from the NoteStore.
+   </dd>
+ <dt>privilege:</dt>
+   <dd>
+   The privilege level of the account, to determine whether
+   this is a Premium or Free account.
+   </dd>
+ </dl>
+<br/></div><div class="definition"><h3 id="Struct_AuthenticationResult">Struct: AuthenticationResult</h3>
+<table><tr><th>Field</th><th>Type</th><th>Description</th><th>Requiredness</th><th>Default value</th></tr>
+<tr><td>currentTime</td><td><code><a href="Types.html#Typedef_Timestamp">Types.Timestamp</a></code></td><td></td><td>required</td><td></td></tr>
+<tr><td>authenticationToken</td><td><code>string</code></td><td></td><td>required</td><td></td></tr>
+<tr><td>expiration</td><td><code><a href="Types.html#Typedef_Timestamp">Types.Timestamp</a></code></td><td></td><td>required</td><td></td></tr>
+<tr><td>user</td><td><code><a href="Types.html#Struct_User">Types.User</a></code></td><td></td><td>optional</td><td></td></tr>
+<tr><td>publicUserInfo</td><td><code><a href="UserStore.html#Struct_PublicUserInfo">PublicUserInfo</a></code></td><td></td><td>optional</td><td></td></tr>
+</table><br/> When an authentication (or re-authentication) is performed, this structure
+ provides the result to the client.
+<dl>
+ <dt>currentTime:</dt>
+   <dd>
+   The server-side date and time when this result was
+   generated.
+   </dd>
+ <dt>authenticationToken:</dt>
+   <dd>
+   Holds an opaque, ASCII-encoded token that can be
+   used by the client to perform actions on a NoteStore.
+   </dd>
+ <dt>expiration:</dt>
+   <dd>
+   Holds the server-side date and time when the
+   authentication token will expire.
+   This time can be compared to "currentTime" to produce an expiration
+   time that can be reconciled with the client's local clock.
+   </dd>
+ <dt>user:</dt>
+   <dd>
+   Holds the information about the account which was
+   authenticated if this was a full authentication.  May be absent if this
+   particular authentication did not require user information.
+   </dd>
+ <dt>publicUserInfo:</dt>
+   <dd>
+   If this authentication result was achieved without full permissions to
+   access the full User structure, this field may be set to give back
+   a more limited public set of data.
+   </dd>
+ </dl>
+<br/></div><hr/><h2 id="Services">Services</h2>
+<h3 id="Svc_UserStore">Service: UserStore</h3>
+Service:  UserStore
+<p>
+The UserStore service is primarily used by EDAM clients to establish
+authentication via username and password over a trusted connection (e.g.
+SSL).  A client's first call to this interface should be checkVersion() to
+ensure that the client's software is up to date.
+</p>
+All calls which require an authenticationToken may throw an
+EDAMUserException for the following reasons:
+ <ul>
+  <li> AUTH_EXPIRED "authenticationToken" - token has expired
+  <li> BAD_DATA_FORMAT "authenticationToken" - token is malformed
+  <li> DATA_REQUIRED "authenticationToken" - token is empty
+  <li> INVALID_AUTH "authenticationToken" - token signature is invalid
+</ul>
+<br/><div class="definition"><h4 id="Fn_UserStore_checkVersion">Function: UserStore.checkVersion</h4>
+<pre><code>bool</code> checkVersion(<code>string</code> clientName,
+                  <code>i16</code> edamVersionMajor = 1,
+                  <code>i16</code> edamVersionMinor = 19)
+</pre>This should be the first call made by a client to the EDAM service.  It
+tells the service what protocol version is used by the client.  The
+service will then return true if the client is capable of talking to
+the service, and false if the client's protocol version is incompatible
+with the service, so the client must upgrade.  If a client receives a
+false value, it should report the incompatibility to the user and not
+continue with any more EDAM requests (UserStore or NoteStore).
+<p/>
+@param clientName
+  This string provides some information about the client for
+  tracking/logging on the service.  It should provide information about
+  the client's software and platform.  The structure should be:
+  application/version; platform/version; [ device/version ]
+  E.g.   "Evernote Windows/3.0.1; Windows/XP SP3" or
+  "Evernote Clipper/1.0.1; JME/2.0; Motorola RAZR/2.0;
+<p/>
+@param edamVersionMajor
+  This should be the major protocol version that was compiled by the
+  client.  This should be the current value of the EDAM_VERSION_MAJOR
+  constant for the client.
+<p/>
+@param edamVersionMinor
+  This should be the major protocol version that was compiled by the
+  client.  This should be the current value of the EDAM_VERSION_MINOR
+  constant for the client.
+<br/></div><div class="definition"><h4 id="Fn_UserStore_authenticate">Function: UserStore.authenticate</h4>
+<pre><code><a href="UserStore.html#Struct_AuthenticationResult">AuthenticationResult</a></code> authenticate(<code>string</code> username,
+                                  <code>string</code> password,
+                                  <code>string</code> consumerKey,
+                                  <code>string</code> consumerSecret)
+    throws <code><a href="Errors.html#Struct_EDAMUserException">Errors.EDAMUserException</a></code>, <code><a href="Errors.html#Struct_EDAMSystemException">Errors.EDAMSystemException</a></code>
+</pre>This is used to check a username and password in order to create an
+authentication session that could be used for further actions.
+<p/>
+@param username
+  The username (not numeric user ID) for the account to
+  authenticate against.  This function will also accept the user's
+  registered email address in this parameter.
+<p/>
+@param password
+  The plaintext password to check against the account.  Since
+  this is not protected by the EDAM protocol, this information must be
+  provided over a protected transport (e.g. SSL).
+<p/>
+@param consumerKey
+  A unique identifier for this client application, provided by Evernote
+  to developers who request an API key.  This must be provided to identify
+  the client.
+<p/>
+@param consumerSecret
+  If the client was given a "consumer secret" when the API key was issued,
+  it must be provided here to authenticate the application itself.
+<p/>
+@return
+  The result of the authentication.  If the authentication was successful,
+  the AuthenticationResult.user field will be set with the full information
+  about the User.
+<p/>
+@throws EDAMUserException <ul>
+  <li> DATA_REQUIRED "username" - username is empty
+  <li> DATA_REQUIRED "password" - password is empty
+  <li> DATA_REQUIRED "consumerKey" - consumerKey is empty
+  <li> INVALID_AUTH "username" - username not found
+  <li> INVALID_AUTH "password" - password did not match
+  <li> INVALID_AUTH "consumerKey" - consumerKey is not authorized
+  <li> INVALID_AUTH "consumerSecret" - consumerSecret is incorrect
+  <li> PERMISSION_DENIED "User.active" - user account is closed
+  <li> PERMISSION_DENIED "User.tooManyFailuresTryAgainLater" - user has failed authentication too often
+</ul>
+<br/></div><div class="definition"><h4 id="Fn_UserStore_refreshAuthentication">Function: UserStore.refreshAuthentication</h4>
+<pre><code><a href="UserStore.html#Struct_AuthenticationResult">AuthenticationResult</a></code> refreshAuthentication(<code>string</code> authenticationToken)
+    throws <code><a href="Errors.html#Struct_EDAMUserException">Errors.EDAMUserException</a></code>, <code><a href="Errors.html#Struct_EDAMSystemException">Errors.EDAMSystemException</a></code>
+</pre>This is used to take an existing authentication token (returned from
+'authenticate') and exchange it for a newer token which will not expire
+as soon.  This must be invoked before the previous token expires.
+<p/>
+@param authenticationToken
+  The previous authentication token from the authenticate() result.
+<p/>
+@return
+  The result of the authentication, with the new token in
+  the result's "authentication" field.  The User field will
+  not be set in the reply.
+<br/></div><div class="definition"><h4 id="Fn_UserStore_getUser">Function: UserStore.getUser</h4>
+<pre><code><a href="Types.html#Struct_User">Types.User</a></code> getUser(<code>string</code> authenticationToken)
+    throws <code><a href="Errors.html#Struct_EDAMUserException">Errors.EDAMUserException</a></code>, <code><a href="Errors.html#Struct_EDAMSystemException">Errors.EDAMSystemException</a></code>
+</pre>Returns the User corresponding to the provided authentication token,
+or throws an exception if this token is not valid.
+The level of detail provided in the returned User structure depends on
+the access level granted by the token, so a web service client may receive
+fewer fields than an integrated desktop client.
+<br/></div><div class="definition"><h4 id="Fn_UserStore_getPublicUserInfo">Function: UserStore.getPublicUserInfo</h4>
+<pre><code><a href="UserStore.html#Struct_PublicUserInfo">PublicUserInfo</a></code> getPublicUserInfo(<code>string</code> username)
+    throws <code><a href="Errors.html#Struct_EDAMNotFoundException">Errors.EDAMNotFoundException</a></code>, <code><a href="Errors.html#Struct_EDAMSystemException">Errors.EDAMSystemException</a></code>, <code><a href="Errors.html#Struct_EDAMUserException">Errors.EDAMUserException</a></code>
+</pre>Asks the UserStore about the publicly available location information for
+a particular username.
+<p/>
+@throws EDAMUserException <ul>
+  <li> DATA_REQUIRED "username" - username is empty
+</ul>
+<br/></div></body></html>
