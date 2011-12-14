@@ -2,13 +2,12 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMUserAttributesProxy.h"
-
 #import "EDAMAccountingProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMUser)
 -(id)createUser:(id)args;
 @end
@@ -35,6 +34,7 @@
     object.id = [value integerValue];
 }
 
+
 -(id)username
 {
     return object.username;
@@ -44,6 +44,7 @@
 {
     object.username = [TiUtils stringValue:value];
 }
+
 
 -(id)email
 {
@@ -55,6 +56,7 @@
     object.email = [TiUtils stringValue:value];
 }
 
+
 -(id)name
 {
     return object.name;
@@ -64,6 +66,7 @@
 {
     object.name = [TiUtils stringValue:value];
 }
+
 
 -(id)timezone
 {
@@ -75,6 +78,7 @@
     object.timezone = [TiUtils stringValue:value];
 }
 
+
 -(id)privilege
 {
     return NUMINT(object.privilege);
@@ -84,6 +88,7 @@
 {
     object.privilege = [value integerValue];
 }
+
 
 -(id)created
 {
@@ -95,6 +100,7 @@
     object.created = [value longValue];
 }
 
+
 -(id)updated
 {
     return NUMLONG(object.updated);
@@ -104,6 +110,7 @@
 {
     object.updated = [value longValue];
 }
+
 
 -(id)deleted
 {
@@ -115,6 +122,7 @@
     object.deleted = [value longValue];
 }
 
+
 -(id)active
 {
     return NUMBOOL(object.active);
@@ -124,6 +132,7 @@
 {
     object.active = [value boolValue];
 }
+
 
 -(id)shardId
 {
@@ -135,6 +144,7 @@
     object.shardId = [TiUtils stringValue:value];
 }
 
+
 -(id)attributes
 {
     return [[[EDAMUserAttributesProxy alloc] initWithObject: object.attributes] autorelease];
@@ -145,6 +155,7 @@
     object.attributes = ((EDAMUserAttributesProxy*)value).object;
 }
 
+
 -(id)accounting
 {
     return [[[EDAMAccountingProxy alloc] initWithObject: object.accounting] autorelease];
@@ -154,6 +165,7 @@
 {
     object.accounting = ((EDAMAccountingProxy*)value).object;
 }
+
 
 
 - (id)initWithObject:(EDAMUser*)object_

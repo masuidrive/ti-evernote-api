@@ -1,16 +1,17 @@
-#import "<%= s.class_name %>ClientProxy.h"
+#import "<%= s.proxy_class_name %>.h"
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 #import "THTTPClient.h"
 #import "TBinaryProtocol.h"
 
-<% structs.each do |struct| %>
+<%- structs.each do |struct| -%>
 #import "<%= struct.struct.proxy_class_name %>.h"
 <% end %>
 
 #import "<%= @module_name %>.h"
+
 @interface <%= @module_name %>(<%= s.class_name %>)
--(id)create<%= s.name %>:(id)args;
+-(id)create<%= s.name %>Client:(id)arg;
 @end
 
 @implementation <%= @module_name %>(<%= s.class_name %>)
@@ -34,7 +35,7 @@
     THTTPClient* httpClient = [[[THTTPClient alloc] initWithURL: nsurl] autorelease];
     TBinaryProtocol* protocol = [[[TBinaryProtocol alloc] initWithTransport:httpClient] autorelease];
     
-    self.client = [[[<%= s.class_name %>Client alloc] initWithProtocol:protocol] autorelease];
+    self.client = [[[<%= s.class_name %> alloc] initWithProtocol:protocol] autorelease];
     
     return self;
 }
@@ -50,13 +51,13 @@
 - (id)<%= function.name %>: (id)args
 {
     ENSURE_ARG_COUNT(args, <%= function.arguments.length %>);
-<%
+<%-
     idx = 0
     func_args = function.args.map do |arg|
         idx += 1
         " : " + arg.type.objc(@space, "[args objectAtIndex:#{idx-1}]")
     end
-%>
+-%>
     return <%= function.result=='void' ? '@""' : function.result.titanium(@space, "[client #{function.name}#{func_args.join('')}]") %>;
 }
 <% end %>

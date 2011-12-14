@@ -2,11 +2,11 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMPublishingProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNotebook)
 -(id)createNotebook:(id)args;
 @end
@@ -33,6 +33,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)name
 {
     return object.name;
@@ -42,6 +43,7 @@
 {
     object.name = [TiUtils stringValue:value];
 }
+
 
 -(id)updateSequenceNum
 {
@@ -53,6 +55,7 @@
     object.updateSequenceNum = [value integerValue];
 }
 
+
 -(id)defaultNotebook
 {
     return NUMBOOL(object.defaultNotebook);
@@ -62,6 +65,7 @@
 {
     object.defaultNotebook = [value boolValue];
 }
+
 
 -(id)serviceCreated
 {
@@ -73,6 +77,7 @@
     object.serviceCreated = [value longValue];
 }
 
+
 -(id)serviceUpdated
 {
     return NUMLONG(object.serviceUpdated);
@@ -82,6 +87,7 @@
 {
     object.serviceUpdated = [value longValue];
 }
+
 
 -(id)publishing
 {
@@ -93,6 +99,7 @@
     object.publishing = ((EDAMPublishingProxy*)value).object;
 }
 
+
 -(id)published
 {
     return NUMBOOL(object.published);
@@ -102,6 +109,7 @@
 {
     object.published = [value boolValue];
 }
+
 
 -(id)stack
 {
@@ -113,6 +121,7 @@
     object.stack = [TiUtils stringValue:value];
 }
 
+
 -(id)sharedNotebookIds
 {
     return arrayMap(object.sharedNotebookIds, ^(id item) { return item; });
@@ -122,6 +131,7 @@
 {
     object.sharedNotebookIds = arrayMap(value, ^(id item) { return item; });
 }
+
 
 
 - (id)initWithObject:(EDAMNotebook*)object_

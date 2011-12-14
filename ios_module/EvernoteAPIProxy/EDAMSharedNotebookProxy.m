@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMSharedNotebook)
 -(id)createSharedNotebook:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.id = [value longValue];
 }
 
+
 -(id)userId
 {
     return NUMINT(object.userId);
@@ -40,6 +42,7 @@
 {
     object.userId = [value integerValue];
 }
+
 
 -(id)notebookGuid
 {
@@ -51,6 +54,7 @@
     object.notebookGuid = [TiUtils stringValue:value];
 }
 
+
 -(id)email
 {
     return object.email;
@@ -60,6 +64,7 @@
 {
     object.email = [TiUtils stringValue:value];
 }
+
 
 -(id)notebookModifiable
 {
@@ -71,6 +76,7 @@
     object.notebookModifiable = [value boolValue];
 }
 
+
 -(id)requireLogin
 {
     return NUMBOOL(object.requireLogin);
@@ -80,6 +86,7 @@
 {
     object.requireLogin = [value boolValue];
 }
+
 
 -(id)serviceCreated
 {
@@ -91,6 +98,7 @@
     object.serviceCreated = [value longValue];
 }
 
+
 -(id)shareKey
 {
     return object.shareKey;
@@ -101,6 +109,7 @@
     object.shareKey = [TiUtils stringValue:value];
 }
 
+
 -(id)username
 {
     return object.username;
@@ -110,6 +119,7 @@
 {
     object.username = [TiUtils stringValue:value];
 }
+
 
 
 - (id)initWithObject:(EDAMSharedNotebook*)object_

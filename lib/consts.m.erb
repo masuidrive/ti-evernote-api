@@ -1,10 +1,13 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
+#import "<%= @module_name %>.h"
 
-@implementation <%= struct.class_name %>(<%= s.class_name %>)
--(id)create<%= s.name %>Client:(id)arg
+@implementation <%= @module_name %>(<%= @basename %>ConstValues)
+
+<% consts.each do |const| %>
+-(id)<%= const.name %>
 {
-    ENSURE_SINGLE_ARG(arg, NSString);
-    return [[[<%= s.class_name %>ClientProxy alloc] initWithUri:arg] autorelease];
+	return @"<%= const.name %>";
 }
+<% end %>
 @end

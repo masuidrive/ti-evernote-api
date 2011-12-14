@@ -63,7 +63,7 @@ def compile_js(manifest,config):
 	js_file = os.path.join(cwd,'assets','jp.masuidrive.ti.evernoteapi.js')
 	if not os.path.exists(js_file): return
 	
-	sdk = config['TITANIUM_SDK']
+	sdk = os.path.expanduser(config['TITANIUM_SDK'])
 	iphone_dir = os.path.join(sdk,'iphone')
 	sys.path.insert(0,iphone_dir)
 	from compiler import Compiler

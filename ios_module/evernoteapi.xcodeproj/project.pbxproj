@@ -26,6 +26,75 @@
 		24DD6CFA1134B3F500162E58 /* JpMasuidriveTiEvernoteapiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* JpMasuidriveTiEvernoteapiModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m */; };
+		59915A5A149851C9007722A5 /* EDAMAccountingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A1A149851C9007722A5 /* EDAMAccountingProxy.h */; };
+		59915A5B149851C9007722A5 /* EDAMAccountingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A1B149851C9007722A5 /* EDAMAccountingProxy.m */; };
+		59915A5C149851C9007722A5 /* EDAMAdImpressionsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A1C149851C9007722A5 /* EDAMAdImpressionsProxy.h */; };
+		59915A5D149851C9007722A5 /* EDAMAdImpressionsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A1D149851C9007722A5 /* EDAMAdImpressionsProxy.m */; };
+		59915A5E149851C9007722A5 /* EDAMAdParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A1E149851C9007722A5 /* EDAMAdParametersProxy.h */; };
+		59915A5F149851C9007722A5 /* EDAMAdParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A1F149851C9007722A5 /* EDAMAdParametersProxy.m */; };
+		59915A60149851C9007722A5 /* EDAMAdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A20149851C9007722A5 /* EDAMAdProxy.h */; };
+		59915A61149851C9007722A5 /* EDAMAdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A21149851C9007722A5 /* EDAMAdProxy.m */; };
+		59915A62149851C9007722A5 /* EDAMAuthenticationResultProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A22149851C9007722A5 /* EDAMAuthenticationResultProxy.h */; };
+		59915A63149851C9007722A5 /* EDAMAuthenticationResultProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A23149851C9007722A5 /* EDAMAuthenticationResultProxy.m */; };
+		59915A64149851C9007722A5 /* EDAMDataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A24149851C9007722A5 /* EDAMDataProxy.h */; };
+		59915A65149851C9007722A5 /* EDAMDataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A25149851C9007722A5 /* EDAMDataProxy.m */; };
+		59915A66149851C9007722A5 /* EDAMLinkedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A26149851C9007722A5 /* EDAMLinkedNotebookProxy.h */; };
+		59915A67149851C9007722A5 /* EDAMLinkedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A27149851C9007722A5 /* EDAMLinkedNotebookProxy.m */; };
+		59915A68149851C9007722A5 /* EDAMNoteAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A28149851C9007722A5 /* EDAMNoteAttributesProxy.h */; };
+		59915A69149851C9007722A5 /* EDAMNoteAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A29149851C9007722A5 /* EDAMNoteAttributesProxy.m */; };
+		59915A6A149851C9007722A5 /* EDAMNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A2A149851C9007722A5 /* EDAMNotebookProxy.h */; };
+		59915A6B149851C9007722A5 /* EDAMNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A2B149851C9007722A5 /* EDAMNotebookProxy.m */; };
+		59915A6C149851C9007722A5 /* EDAMNoteCollectionCountsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A2C149851C9007722A5 /* EDAMNoteCollectionCountsProxy.h */; };
+		59915A6D149851C9007722A5 /* EDAMNoteCollectionCountsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A2D149851C9007722A5 /* EDAMNoteCollectionCountsProxy.m */; };
+		59915A6E149851C9007722A5 /* EDAMNoteEmailParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A2E149851C9007722A5 /* EDAMNoteEmailParametersProxy.h */; };
+		59915A6F149851C9007722A5 /* EDAMNoteEmailParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A2F149851C9007722A5 /* EDAMNoteEmailParametersProxy.m */; };
+		59915A70149851C9007722A5 /* EDAMNoteFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A30149851C9007722A5 /* EDAMNoteFilterProxy.h */; };
+		59915A71149851C9007722A5 /* EDAMNoteFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A31149851C9007722A5 /* EDAMNoteFilterProxy.m */; };
+		59915A72149851C9007722A5 /* EDAMNoteListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A32149851C9007722A5 /* EDAMNoteListProxy.h */; };
+		59915A73149851C9007722A5 /* EDAMNoteListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A33149851C9007722A5 /* EDAMNoteListProxy.m */; };
+		59915A74149851C9007722A5 /* EDAMNoteMetadataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A34149851C9007722A5 /* EDAMNoteMetadataProxy.h */; };
+		59915A75149851C9007722A5 /* EDAMNoteMetadataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A35149851C9007722A5 /* EDAMNoteMetadataProxy.m */; };
+		59915A76149851C9007722A5 /* EDAMNoteProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A36149851C9007722A5 /* EDAMNoteProxy.h */; };
+		59915A77149851C9007722A5 /* EDAMNoteProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A37149851C9007722A5 /* EDAMNoteProxy.m */; };
+		59915A78149851C9007722A5 /* EDAMNotesMetadataListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A38149851C9007722A5 /* EDAMNotesMetadataListProxy.h */; };
+		59915A79149851C9007722A5 /* EDAMNotesMetadataListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A39149851C9007722A5 /* EDAMNotesMetadataListProxy.m */; };
+		59915A7A149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A3A149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.h */; };
+		59915A7B149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A3B149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.m */; };
+		59915A7C149851C9007722A5 /* EDAMNoteStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A3C149851C9007722A5 /* EDAMNoteStoreClientProxy.h */; };
+		59915A7D149851C9007722A5 /* EDAMNoteStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A3D149851C9007722A5 /* EDAMNoteStoreClientProxy.m */; };
+		59915A7E149851C9007722A5 /* EDAMNoteVersionIdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A3E149851C9007722A5 /* EDAMNoteVersionIdProxy.h */; };
+		59915A7F149851C9007722A5 /* EDAMNoteVersionIdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A3F149851C9007722A5 /* EDAMNoteVersionIdProxy.m */; };
+		59915A80149851C9007722A5 /* EDAMPublicUserInfoProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A40149851C9007722A5 /* EDAMPublicUserInfoProxy.h */; };
+		59915A81149851C9007722A5 /* EDAMPublicUserInfoProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A41149851C9007722A5 /* EDAMPublicUserInfoProxy.m */; };
+		59915A82149851C9007722A5 /* EDAMPublishingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A42149851C9007722A5 /* EDAMPublishingProxy.h */; };
+		59915A83149851C9007722A5 /* EDAMPublishingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A43149851C9007722A5 /* EDAMPublishingProxy.m */; };
+		59915A84149851C9007722A5 /* EDAMResourceAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A44149851C9007722A5 /* EDAMResourceAttributesProxy.h */; };
+		59915A85149851C9007722A5 /* EDAMResourceAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A45149851C9007722A5 /* EDAMResourceAttributesProxy.m */; };
+		59915A86149851C9007722A5 /* EDAMResourceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A46149851C9007722A5 /* EDAMResourceProxy.h */; };
+		59915A87149851C9007722A5 /* EDAMResourceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A47149851C9007722A5 /* EDAMResourceProxy.m */; };
+		59915A88149851C9007722A5 /* EDAMSavedSearchProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A48149851C9007722A5 /* EDAMSavedSearchProxy.h */; };
+		59915A89149851C9007722A5 /* EDAMSavedSearchProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A49149851C9007722A5 /* EDAMSavedSearchProxy.m */; };
+		59915A8A149851C9007722A5 /* EDAMSharedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A4A149851C9007722A5 /* EDAMSharedNotebookProxy.h */; };
+		59915A8B149851C9007722A5 /* EDAMSharedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A4B149851C9007722A5 /* EDAMSharedNotebookProxy.m */; };
+		59915A8C149851C9007722A5 /* EDAMSyncChunkFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A4C149851C9007722A5 /* EDAMSyncChunkFilterProxy.h */; };
+		59915A8D149851C9007722A5 /* EDAMSyncChunkFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A4D149851C9007722A5 /* EDAMSyncChunkFilterProxy.m */; };
+		59915A8E149851C9007722A5 /* EDAMSyncChunkProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A4E149851C9007722A5 /* EDAMSyncChunkProxy.h */; };
+		59915A8F149851C9007722A5 /* EDAMSyncChunkProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A4F149851C9007722A5 /* EDAMSyncChunkProxy.m */; };
+		59915A90149851C9007722A5 /* EDAMSyncStateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A50149851C9007722A5 /* EDAMSyncStateProxy.h */; };
+		59915A91149851C9007722A5 /* EDAMSyncStateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A51149851C9007722A5 /* EDAMSyncStateProxy.m */; };
+		59915A92149851C9007722A5 /* EDAMTagProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A52149851C9007722A5 /* EDAMTagProxy.h */; };
+		59915A93149851C9007722A5 /* EDAMTagProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A53149851C9007722A5 /* EDAMTagProxy.m */; };
+		59915A94149851C9007722A5 /* EDAMUserAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A54149851C9007722A5 /* EDAMUserAttributesProxy.h */; };
+		59915A95149851C9007722A5 /* EDAMUserAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A55149851C9007722A5 /* EDAMUserAttributesProxy.m */; };
+		59915A96149851C9007722A5 /* EDAMUserProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A56149851C9007722A5 /* EDAMUserProxy.h */; };
+		59915A97149851C9007722A5 /* EDAMUserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A57149851C9007722A5 /* EDAMUserProxy.m */; };
+		59915A98149851C9007722A5 /* EDAMUserStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59915A58149851C9007722A5 /* EDAMUserStoreClientProxy.h */; };
+		59915A99149851C9007722A5 /* EDAMUserStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915A59149851C9007722A5 /* EDAMUserStoreClientProxy.m */; };
+		59915AA714985907007722A5 /* ErrorsConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA214985907007722A5 /* ErrorsConsts.m */; };
+		59915AA814985907007722A5 /* LimitsConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA314985907007722A5 /* LimitsConsts.m */; };
+		59915AA914985907007722A5 /* NoteStoreConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA414985907007722A5 /* NoteStoreConsts.m */; };
+		59915AAA14985907007722A5 /* TypesConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA514985907007722A5 /* TypesConsts.m */; };
+		59915AAB14985907007722A5 /* UserStoreConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA614985907007722A5 /* UserStoreConsts.m */; };
 		59A813661498065A0022DD5D /* EDAMLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813411498065A0022DD5D /* EDAMLimits.h */; };
 		59A813671498065A0022DD5D /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813421498065A0022DD5D /* EDAMLimits.m */; };
 		59A813681498065A0022DD5D /* Errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813431498065A0022DD5D /* Errors.h */; };
@@ -59,70 +128,6 @@
 		59A813841498065A0022DD5D /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813631498065A0022DD5D /* TTransportException.m */; };
 		59A813851498065A0022DD5D /* TSharedProcessorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813641498065A0022DD5D /* TSharedProcessorFactory.h */; };
 		59A813861498065A0022DD5D /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813651498065A0022DD5D /* TSharedProcessorFactory.m */; };
-		59A813C81498072E0022DD5D /* EDAMAccountingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813881498072E0022DD5D /* EDAMAccountingProxy.h */; };
-		59A813C91498072E0022DD5D /* EDAMAccountingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813891498072E0022DD5D /* EDAMAccountingProxy.m */; };
-		59A813CA1498072E0022DD5D /* EDAMAdImpressionsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A8138A1498072E0022DD5D /* EDAMAdImpressionsProxy.h */; };
-		59A813CB1498072E0022DD5D /* EDAMAdImpressionsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A8138B1498072E0022DD5D /* EDAMAdImpressionsProxy.m */; };
-		59A813CC1498072E0022DD5D /* EDAMAdParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A8138C1498072E0022DD5D /* EDAMAdParametersProxy.h */; };
-		59A813CD1498072E0022DD5D /* EDAMAdParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A8138D1498072E0022DD5D /* EDAMAdParametersProxy.m */; };
-		59A813CE1498072E0022DD5D /* EDAMAdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A8138E1498072E0022DD5D /* EDAMAdProxy.h */; };
-		59A813CF1498072E0022DD5D /* EDAMAdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A8138F1498072E0022DD5D /* EDAMAdProxy.m */; };
-		59A813D01498072E0022DD5D /* EDAMAuthenticationResultProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813901498072E0022DD5D /* EDAMAuthenticationResultProxy.h */; };
-		59A813D11498072E0022DD5D /* EDAMAuthenticationResultProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813911498072E0022DD5D /* EDAMAuthenticationResultProxy.m */; };
-		59A813D21498072E0022DD5D /* EDAMDataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813921498072E0022DD5D /* EDAMDataProxy.h */; };
-		59A813D31498072E0022DD5D /* EDAMDataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813931498072E0022DD5D /* EDAMDataProxy.m */; };
-		59A813D41498072E0022DD5D /* EDAMLinkedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813941498072E0022DD5D /* EDAMLinkedNotebookProxy.h */; };
-		59A813D51498072E0022DD5D /* EDAMLinkedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813951498072E0022DD5D /* EDAMLinkedNotebookProxy.m */; };
-		59A813D61498072E0022DD5D /* EDAMNoteAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813961498072E0022DD5D /* EDAMNoteAttributesProxy.h */; };
-		59A813D71498072E0022DD5D /* EDAMNoteAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813971498072E0022DD5D /* EDAMNoteAttributesProxy.m */; };
-		59A813D81498072E0022DD5D /* EDAMNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813981498072E0022DD5D /* EDAMNotebookProxy.h */; };
-		59A813D91498072E0022DD5D /* EDAMNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813991498072E0022DD5D /* EDAMNotebookProxy.m */; };
-		59A813DA1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A8139A1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.h */; };
-		59A813DB1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A8139B1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.m */; };
-		59A813DC1498072E0022DD5D /* EDAMNoteEmailParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A8139C1498072E0022DD5D /* EDAMNoteEmailParametersProxy.h */; };
-		59A813DD1498072E0022DD5D /* EDAMNoteEmailParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A8139D1498072E0022DD5D /* EDAMNoteEmailParametersProxy.m */; };
-		59A813DE1498072E0022DD5D /* EDAMNoteFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A8139E1498072E0022DD5D /* EDAMNoteFilterProxy.h */; };
-		59A813DF1498072E0022DD5D /* EDAMNoteFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A8139F1498072E0022DD5D /* EDAMNoteFilterProxy.m */; };
-		59A813E01498072E0022DD5D /* EDAMNoteListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813A01498072E0022DD5D /* EDAMNoteListProxy.h */; };
-		59A813E11498072E0022DD5D /* EDAMNoteListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813A11498072E0022DD5D /* EDAMNoteListProxy.m */; };
-		59A813E21498072E0022DD5D /* EDAMNoteMetadataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813A21498072E0022DD5D /* EDAMNoteMetadataProxy.h */; };
-		59A813E31498072E0022DD5D /* EDAMNoteMetadataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813A31498072E0022DD5D /* EDAMNoteMetadataProxy.m */; };
-		59A813E41498072E0022DD5D /* EDAMNoteProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813A41498072E0022DD5D /* EDAMNoteProxy.h */; };
-		59A813E51498072E0022DD5D /* EDAMNoteProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813A51498072E0022DD5D /* EDAMNoteProxy.m */; };
-		59A813E61498072E0022DD5D /* EDAMNotesMetadataListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813A61498072E0022DD5D /* EDAMNotesMetadataListProxy.h */; };
-		59A813E71498072E0022DD5D /* EDAMNotesMetadataListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813A71498072E0022DD5D /* EDAMNotesMetadataListProxy.m */; };
-		59A813E81498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813A81498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.h */; };
-		59A813E91498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813A91498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.m */; };
-		59A813EA1498072E0022DD5D /* EDAMNoteStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813AA1498072E0022DD5D /* EDAMNoteStoreClientProxy.h */; };
-		59A813EB1498072E0022DD5D /* EDAMNoteStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813AB1498072E0022DD5D /* EDAMNoteStoreClientProxy.m */; };
-		59A813EC1498072E0022DD5D /* EDAMNoteVersionIdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813AC1498072E0022DD5D /* EDAMNoteVersionIdProxy.h */; };
-		59A813ED1498072E0022DD5D /* EDAMNoteVersionIdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813AD1498072E0022DD5D /* EDAMNoteVersionIdProxy.m */; };
-		59A813EE1498072E0022DD5D /* EDAMPublicUserInfoProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813AE1498072E0022DD5D /* EDAMPublicUserInfoProxy.h */; };
-		59A813EF1498072E0022DD5D /* EDAMPublicUserInfoProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813AF1498072E0022DD5D /* EDAMPublicUserInfoProxy.m */; };
-		59A813F01498072E0022DD5D /* EDAMPublishingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813B01498072E0022DD5D /* EDAMPublishingProxy.h */; };
-		59A813F11498072E0022DD5D /* EDAMPublishingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813B11498072E0022DD5D /* EDAMPublishingProxy.m */; };
-		59A813F21498072E0022DD5D /* EDAMResourceAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813B21498072E0022DD5D /* EDAMResourceAttributesProxy.h */; };
-		59A813F31498072E0022DD5D /* EDAMResourceAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813B31498072E0022DD5D /* EDAMResourceAttributesProxy.m */; };
-		59A813F41498072E0022DD5D /* EDAMResourceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813B41498072E0022DD5D /* EDAMResourceProxy.h */; };
-		59A813F51498072E0022DD5D /* EDAMResourceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813B51498072E0022DD5D /* EDAMResourceProxy.m */; };
-		59A813F61498072E0022DD5D /* EDAMSavedSearchProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813B61498072E0022DD5D /* EDAMSavedSearchProxy.h */; };
-		59A813F71498072E0022DD5D /* EDAMSavedSearchProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813B71498072E0022DD5D /* EDAMSavedSearchProxy.m */; };
-		59A813F81498072E0022DD5D /* EDAMSharedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813B81498072E0022DD5D /* EDAMSharedNotebookProxy.h */; };
-		59A813F91498072E0022DD5D /* EDAMSharedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813B91498072E0022DD5D /* EDAMSharedNotebookProxy.m */; };
-		59A813FA1498072E0022DD5D /* EDAMSyncChunkFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813BA1498072E0022DD5D /* EDAMSyncChunkFilterProxy.h */; };
-		59A813FB1498072E0022DD5D /* EDAMSyncChunkFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813BB1498072E0022DD5D /* EDAMSyncChunkFilterProxy.m */; };
-		59A813FC1498072E0022DD5D /* EDAMSyncChunkProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813BC1498072E0022DD5D /* EDAMSyncChunkProxy.h */; };
-		59A813FD1498072E0022DD5D /* EDAMSyncChunkProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813BD1498072E0022DD5D /* EDAMSyncChunkProxy.m */; };
-		59A813FE1498072E0022DD5D /* EDAMSyncStateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813BE1498072E0022DD5D /* EDAMSyncStateProxy.h */; };
-		59A813FF1498072E0022DD5D /* EDAMSyncStateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813BF1498072E0022DD5D /* EDAMSyncStateProxy.m */; };
-		59A814001498072E0022DD5D /* EDAMTagProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813C01498072E0022DD5D /* EDAMTagProxy.h */; };
-		59A814011498072E0022DD5D /* EDAMTagProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813C11498072E0022DD5D /* EDAMTagProxy.m */; };
-		59A814021498072E0022DD5D /* EDAMUserAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813C21498072E0022DD5D /* EDAMUserAttributesProxy.h */; };
-		59A814031498072E0022DD5D /* EDAMUserAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813C31498072E0022DD5D /* EDAMUserAttributesProxy.m */; };
-		59A814041498072E0022DD5D /* EDAMUserProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813C41498072E0022DD5D /* EDAMUserProxy.h */; };
-		59A814051498072E0022DD5D /* EDAMUserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813C51498072E0022DD5D /* EDAMUserProxy.m */; };
-		59A814061498072E0022DD5D /* EDAMUserStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813C61498072E0022DD5D /* EDAMUserStoreClientProxy.h */; };
-		59A814071498072E0022DD5D /* EDAMUserStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813C71498072E0022DD5D /* EDAMUserStoreClientProxy.m */; };
 		59A8140A1498073B0022DD5D /* TiThriftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A814081498073B0022DD5D /* TiThriftUtils.h */; };
 		59A8140B1498073B0022DD5D /* TiThriftUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A814091498073B0022DD5D /* TiThriftUtils.m */; };
 		AA747D9F0F9514B9006C5449 /* JpMasuidriveTiEvernoteapi_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JpMasuidriveTiEvernoteapi_Prefix.pch */; };
@@ -145,6 +150,75 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMasuidriveTiEvernoteapiModuleAssets.h; path = Classes/JpMasuidriveTiEvernoteapiModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMasuidriveTiEvernoteapiModuleAssets.m; path = Classes/JpMasuidriveTiEvernoteapiModuleAssets.m; sourceTree = "<group>"; };
+		59915A1A149851C9007722A5 /* EDAMAccountingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAccountingProxy.h; sourceTree = "<group>"; };
+		59915A1B149851C9007722A5 /* EDAMAccountingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAccountingProxy.m; sourceTree = "<group>"; };
+		59915A1C149851C9007722A5 /* EDAMAdImpressionsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAdImpressionsProxy.h; sourceTree = "<group>"; };
+		59915A1D149851C9007722A5 /* EDAMAdImpressionsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAdImpressionsProxy.m; sourceTree = "<group>"; };
+		59915A1E149851C9007722A5 /* EDAMAdParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAdParametersProxy.h; sourceTree = "<group>"; };
+		59915A1F149851C9007722A5 /* EDAMAdParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAdParametersProxy.m; sourceTree = "<group>"; };
+		59915A20149851C9007722A5 /* EDAMAdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAdProxy.h; sourceTree = "<group>"; };
+		59915A21149851C9007722A5 /* EDAMAdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAdProxy.m; sourceTree = "<group>"; };
+		59915A22149851C9007722A5 /* EDAMAuthenticationResultProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAuthenticationResultProxy.h; sourceTree = "<group>"; };
+		59915A23149851C9007722A5 /* EDAMAuthenticationResultProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAuthenticationResultProxy.m; sourceTree = "<group>"; };
+		59915A24149851C9007722A5 /* EDAMDataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMDataProxy.h; sourceTree = "<group>"; };
+		59915A25149851C9007722A5 /* EDAMDataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMDataProxy.m; sourceTree = "<group>"; };
+		59915A26149851C9007722A5 /* EDAMLinkedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLinkedNotebookProxy.h; sourceTree = "<group>"; };
+		59915A27149851C9007722A5 /* EDAMLinkedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLinkedNotebookProxy.m; sourceTree = "<group>"; };
+		59915A28149851C9007722A5 /* EDAMNoteAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteAttributesProxy.h; sourceTree = "<group>"; };
+		59915A29149851C9007722A5 /* EDAMNoteAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteAttributesProxy.m; sourceTree = "<group>"; };
+		59915A2A149851C9007722A5 /* EDAMNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNotebookProxy.h; sourceTree = "<group>"; };
+		59915A2B149851C9007722A5 /* EDAMNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNotebookProxy.m; sourceTree = "<group>"; };
+		59915A2C149851C9007722A5 /* EDAMNoteCollectionCountsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteCollectionCountsProxy.h; sourceTree = "<group>"; };
+		59915A2D149851C9007722A5 /* EDAMNoteCollectionCountsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteCollectionCountsProxy.m; sourceTree = "<group>"; };
+		59915A2E149851C9007722A5 /* EDAMNoteEmailParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteEmailParametersProxy.h; sourceTree = "<group>"; };
+		59915A2F149851C9007722A5 /* EDAMNoteEmailParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteEmailParametersProxy.m; sourceTree = "<group>"; };
+		59915A30149851C9007722A5 /* EDAMNoteFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteFilterProxy.h; sourceTree = "<group>"; };
+		59915A31149851C9007722A5 /* EDAMNoteFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteFilterProxy.m; sourceTree = "<group>"; };
+		59915A32149851C9007722A5 /* EDAMNoteListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteListProxy.h; sourceTree = "<group>"; };
+		59915A33149851C9007722A5 /* EDAMNoteListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteListProxy.m; sourceTree = "<group>"; };
+		59915A34149851C9007722A5 /* EDAMNoteMetadataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteMetadataProxy.h; sourceTree = "<group>"; };
+		59915A35149851C9007722A5 /* EDAMNoteMetadataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteMetadataProxy.m; sourceTree = "<group>"; };
+		59915A36149851C9007722A5 /* EDAMNoteProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteProxy.h; sourceTree = "<group>"; };
+		59915A37149851C9007722A5 /* EDAMNoteProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteProxy.m; sourceTree = "<group>"; };
+		59915A38149851C9007722A5 /* EDAMNotesMetadataListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNotesMetadataListProxy.h; sourceTree = "<group>"; };
+		59915A39149851C9007722A5 /* EDAMNotesMetadataListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNotesMetadataListProxy.m; sourceTree = "<group>"; };
+		59915A3A149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNotesMetadataResultSpecProxy.h; sourceTree = "<group>"; };
+		59915A3B149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNotesMetadataResultSpecProxy.m; sourceTree = "<group>"; };
+		59915A3C149851C9007722A5 /* EDAMNoteStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteStoreClientProxy.h; sourceTree = "<group>"; };
+		59915A3D149851C9007722A5 /* EDAMNoteStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteStoreClientProxy.m; sourceTree = "<group>"; };
+		59915A3E149851C9007722A5 /* EDAMNoteVersionIdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteVersionIdProxy.h; sourceTree = "<group>"; };
+		59915A3F149851C9007722A5 /* EDAMNoteVersionIdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteVersionIdProxy.m; sourceTree = "<group>"; };
+		59915A40149851C9007722A5 /* EDAMPublicUserInfoProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMPublicUserInfoProxy.h; sourceTree = "<group>"; };
+		59915A41149851C9007722A5 /* EDAMPublicUserInfoProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMPublicUserInfoProxy.m; sourceTree = "<group>"; };
+		59915A42149851C9007722A5 /* EDAMPublishingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMPublishingProxy.h; sourceTree = "<group>"; };
+		59915A43149851C9007722A5 /* EDAMPublishingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMPublishingProxy.m; sourceTree = "<group>"; };
+		59915A44149851C9007722A5 /* EDAMResourceAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMResourceAttributesProxy.h; sourceTree = "<group>"; };
+		59915A45149851C9007722A5 /* EDAMResourceAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMResourceAttributesProxy.m; sourceTree = "<group>"; };
+		59915A46149851C9007722A5 /* EDAMResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMResourceProxy.h; sourceTree = "<group>"; };
+		59915A47149851C9007722A5 /* EDAMResourceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMResourceProxy.m; sourceTree = "<group>"; };
+		59915A48149851C9007722A5 /* EDAMSavedSearchProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSavedSearchProxy.h; sourceTree = "<group>"; };
+		59915A49149851C9007722A5 /* EDAMSavedSearchProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSavedSearchProxy.m; sourceTree = "<group>"; };
+		59915A4A149851C9007722A5 /* EDAMSharedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSharedNotebookProxy.h; sourceTree = "<group>"; };
+		59915A4B149851C9007722A5 /* EDAMSharedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSharedNotebookProxy.m; sourceTree = "<group>"; };
+		59915A4C149851C9007722A5 /* EDAMSyncChunkFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSyncChunkFilterProxy.h; sourceTree = "<group>"; };
+		59915A4D149851C9007722A5 /* EDAMSyncChunkFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSyncChunkFilterProxy.m; sourceTree = "<group>"; };
+		59915A4E149851C9007722A5 /* EDAMSyncChunkProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSyncChunkProxy.h; sourceTree = "<group>"; };
+		59915A4F149851C9007722A5 /* EDAMSyncChunkProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSyncChunkProxy.m; sourceTree = "<group>"; };
+		59915A50149851C9007722A5 /* EDAMSyncStateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSyncStateProxy.h; sourceTree = "<group>"; };
+		59915A51149851C9007722A5 /* EDAMSyncStateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSyncStateProxy.m; sourceTree = "<group>"; };
+		59915A52149851C9007722A5 /* EDAMTagProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMTagProxy.h; sourceTree = "<group>"; };
+		59915A53149851C9007722A5 /* EDAMTagProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMTagProxy.m; sourceTree = "<group>"; };
+		59915A54149851C9007722A5 /* EDAMUserAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserAttributesProxy.h; sourceTree = "<group>"; };
+		59915A55149851C9007722A5 /* EDAMUserAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserAttributesProxy.m; sourceTree = "<group>"; };
+		59915A56149851C9007722A5 /* EDAMUserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserProxy.h; sourceTree = "<group>"; };
+		59915A57149851C9007722A5 /* EDAMUserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserProxy.m; sourceTree = "<group>"; };
+		59915A58149851C9007722A5 /* EDAMUserStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserStoreClientProxy.h; sourceTree = "<group>"; };
+		59915A59149851C9007722A5 /* EDAMUserStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserStoreClientProxy.m; sourceTree = "<group>"; };
+		59915AA214985907007722A5 /* ErrorsConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorsConsts.m; sourceTree = "<group>"; };
+		59915AA314985907007722A5 /* LimitsConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitsConsts.m; sourceTree = "<group>"; };
+		59915AA414985907007722A5 /* NoteStoreConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteStoreConsts.m; sourceTree = "<group>"; };
+		59915AA514985907007722A5 /* TypesConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesConsts.m; sourceTree = "<group>"; };
+		59915AA614985907007722A5 /* UserStoreConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStoreConsts.m; sourceTree = "<group>"; };
 		59A813411498065A0022DD5D /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
 		59A813421498065A0022DD5D /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
 		59A813431498065A0022DD5D /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
@@ -178,70 +252,6 @@
 		59A813631498065A0022DD5D /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
 		59A813641498065A0022DD5D /* TSharedProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSharedProcessorFactory.h; sourceTree = "<group>"; };
 		59A813651498065A0022DD5D /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
-		59A813881498072E0022DD5D /* EDAMAccountingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAccountingProxy.h; sourceTree = "<group>"; };
-		59A813891498072E0022DD5D /* EDAMAccountingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAccountingProxy.m; sourceTree = "<group>"; };
-		59A8138A1498072E0022DD5D /* EDAMAdImpressionsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAdImpressionsProxy.h; sourceTree = "<group>"; };
-		59A8138B1498072E0022DD5D /* EDAMAdImpressionsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAdImpressionsProxy.m; sourceTree = "<group>"; };
-		59A8138C1498072E0022DD5D /* EDAMAdParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAdParametersProxy.h; sourceTree = "<group>"; };
-		59A8138D1498072E0022DD5D /* EDAMAdParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAdParametersProxy.m; sourceTree = "<group>"; };
-		59A8138E1498072E0022DD5D /* EDAMAdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAdProxy.h; sourceTree = "<group>"; };
-		59A8138F1498072E0022DD5D /* EDAMAdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAdProxy.m; sourceTree = "<group>"; };
-		59A813901498072E0022DD5D /* EDAMAuthenticationResultProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMAuthenticationResultProxy.h; sourceTree = "<group>"; };
-		59A813911498072E0022DD5D /* EDAMAuthenticationResultProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMAuthenticationResultProxy.m; sourceTree = "<group>"; };
-		59A813921498072E0022DD5D /* EDAMDataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMDataProxy.h; sourceTree = "<group>"; };
-		59A813931498072E0022DD5D /* EDAMDataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMDataProxy.m; sourceTree = "<group>"; };
-		59A813941498072E0022DD5D /* EDAMLinkedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLinkedNotebookProxy.h; sourceTree = "<group>"; };
-		59A813951498072E0022DD5D /* EDAMLinkedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLinkedNotebookProxy.m; sourceTree = "<group>"; };
-		59A813961498072E0022DD5D /* EDAMNoteAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteAttributesProxy.h; sourceTree = "<group>"; };
-		59A813971498072E0022DD5D /* EDAMNoteAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteAttributesProxy.m; sourceTree = "<group>"; };
-		59A813981498072E0022DD5D /* EDAMNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNotebookProxy.h; sourceTree = "<group>"; };
-		59A813991498072E0022DD5D /* EDAMNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNotebookProxy.m; sourceTree = "<group>"; };
-		59A8139A1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteCollectionCountsProxy.h; sourceTree = "<group>"; };
-		59A8139B1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteCollectionCountsProxy.m; sourceTree = "<group>"; };
-		59A8139C1498072E0022DD5D /* EDAMNoteEmailParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteEmailParametersProxy.h; sourceTree = "<group>"; };
-		59A8139D1498072E0022DD5D /* EDAMNoteEmailParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteEmailParametersProxy.m; sourceTree = "<group>"; };
-		59A8139E1498072E0022DD5D /* EDAMNoteFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteFilterProxy.h; sourceTree = "<group>"; };
-		59A8139F1498072E0022DD5D /* EDAMNoteFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteFilterProxy.m; sourceTree = "<group>"; };
-		59A813A01498072E0022DD5D /* EDAMNoteListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteListProxy.h; sourceTree = "<group>"; };
-		59A813A11498072E0022DD5D /* EDAMNoteListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteListProxy.m; sourceTree = "<group>"; };
-		59A813A21498072E0022DD5D /* EDAMNoteMetadataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteMetadataProxy.h; sourceTree = "<group>"; };
-		59A813A31498072E0022DD5D /* EDAMNoteMetadataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteMetadataProxy.m; sourceTree = "<group>"; };
-		59A813A41498072E0022DD5D /* EDAMNoteProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteProxy.h; sourceTree = "<group>"; };
-		59A813A51498072E0022DD5D /* EDAMNoteProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteProxy.m; sourceTree = "<group>"; };
-		59A813A61498072E0022DD5D /* EDAMNotesMetadataListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNotesMetadataListProxy.h; sourceTree = "<group>"; };
-		59A813A71498072E0022DD5D /* EDAMNotesMetadataListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNotesMetadataListProxy.m; sourceTree = "<group>"; };
-		59A813A81498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNotesMetadataResultSpecProxy.h; sourceTree = "<group>"; };
-		59A813A91498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNotesMetadataResultSpecProxy.m; sourceTree = "<group>"; };
-		59A813AA1498072E0022DD5D /* EDAMNoteStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteStoreClientProxy.h; sourceTree = "<group>"; };
-		59A813AB1498072E0022DD5D /* EDAMNoteStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteStoreClientProxy.m; sourceTree = "<group>"; };
-		59A813AC1498072E0022DD5D /* EDAMNoteVersionIdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteVersionIdProxy.h; sourceTree = "<group>"; };
-		59A813AD1498072E0022DD5D /* EDAMNoteVersionIdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteVersionIdProxy.m; sourceTree = "<group>"; };
-		59A813AE1498072E0022DD5D /* EDAMPublicUserInfoProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMPublicUserInfoProxy.h; sourceTree = "<group>"; };
-		59A813AF1498072E0022DD5D /* EDAMPublicUserInfoProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMPublicUserInfoProxy.m; sourceTree = "<group>"; };
-		59A813B01498072E0022DD5D /* EDAMPublishingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMPublishingProxy.h; sourceTree = "<group>"; };
-		59A813B11498072E0022DD5D /* EDAMPublishingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMPublishingProxy.m; sourceTree = "<group>"; };
-		59A813B21498072E0022DD5D /* EDAMResourceAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMResourceAttributesProxy.h; sourceTree = "<group>"; };
-		59A813B31498072E0022DD5D /* EDAMResourceAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMResourceAttributesProxy.m; sourceTree = "<group>"; };
-		59A813B41498072E0022DD5D /* EDAMResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMResourceProxy.h; sourceTree = "<group>"; };
-		59A813B51498072E0022DD5D /* EDAMResourceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMResourceProxy.m; sourceTree = "<group>"; };
-		59A813B61498072E0022DD5D /* EDAMSavedSearchProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSavedSearchProxy.h; sourceTree = "<group>"; };
-		59A813B71498072E0022DD5D /* EDAMSavedSearchProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSavedSearchProxy.m; sourceTree = "<group>"; };
-		59A813B81498072E0022DD5D /* EDAMSharedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSharedNotebookProxy.h; sourceTree = "<group>"; };
-		59A813B91498072E0022DD5D /* EDAMSharedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSharedNotebookProxy.m; sourceTree = "<group>"; };
-		59A813BA1498072E0022DD5D /* EDAMSyncChunkFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSyncChunkFilterProxy.h; sourceTree = "<group>"; };
-		59A813BB1498072E0022DD5D /* EDAMSyncChunkFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSyncChunkFilterProxy.m; sourceTree = "<group>"; };
-		59A813BC1498072E0022DD5D /* EDAMSyncChunkProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSyncChunkProxy.h; sourceTree = "<group>"; };
-		59A813BD1498072E0022DD5D /* EDAMSyncChunkProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSyncChunkProxy.m; sourceTree = "<group>"; };
-		59A813BE1498072E0022DD5D /* EDAMSyncStateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMSyncStateProxy.h; sourceTree = "<group>"; };
-		59A813BF1498072E0022DD5D /* EDAMSyncStateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMSyncStateProxy.m; sourceTree = "<group>"; };
-		59A813C01498072E0022DD5D /* EDAMTagProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMTagProxy.h; sourceTree = "<group>"; };
-		59A813C11498072E0022DD5D /* EDAMTagProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMTagProxy.m; sourceTree = "<group>"; };
-		59A813C21498072E0022DD5D /* EDAMUserAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserAttributesProxy.h; sourceTree = "<group>"; };
-		59A813C31498072E0022DD5D /* EDAMUserAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserAttributesProxy.m; sourceTree = "<group>"; };
-		59A813C41498072E0022DD5D /* EDAMUserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserProxy.h; sourceTree = "<group>"; };
-		59A813C51498072E0022DD5D /* EDAMUserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserProxy.m; sourceTree = "<group>"; };
-		59A813C61498072E0022DD5D /* EDAMUserStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserStoreClientProxy.h; sourceTree = "<group>"; };
-		59A813C71498072E0022DD5D /* EDAMUserStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserStoreClientProxy.m; sourceTree = "<group>"; };
 		59A814081498073B0022DD5D /* TiThriftUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiThriftUtils.h; path = Classes/TiThriftUtils.h; sourceTree = "<group>"; };
 		59A814091498073B0022DD5D /* TiThriftUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiThriftUtils.m; path = Classes/TiThriftUtils.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* JpMasuidriveTiEvernoteapi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapi_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -397,70 +407,75 @@
 		59A813871498072E0022DD5D /* EvernoteAPIProxy */ = {
 			isa = PBXGroup;
 			children = (
-				59A813881498072E0022DD5D /* EDAMAccountingProxy.h */,
-				59A813891498072E0022DD5D /* EDAMAccountingProxy.m */,
-				59A8138A1498072E0022DD5D /* EDAMAdImpressionsProxy.h */,
-				59A8138B1498072E0022DD5D /* EDAMAdImpressionsProxy.m */,
-				59A8138C1498072E0022DD5D /* EDAMAdParametersProxy.h */,
-				59A8138D1498072E0022DD5D /* EDAMAdParametersProxy.m */,
-				59A8138E1498072E0022DD5D /* EDAMAdProxy.h */,
-				59A8138F1498072E0022DD5D /* EDAMAdProxy.m */,
-				59A813901498072E0022DD5D /* EDAMAuthenticationResultProxy.h */,
-				59A813911498072E0022DD5D /* EDAMAuthenticationResultProxy.m */,
-				59A813921498072E0022DD5D /* EDAMDataProxy.h */,
-				59A813931498072E0022DD5D /* EDAMDataProxy.m */,
-				59A813941498072E0022DD5D /* EDAMLinkedNotebookProxy.h */,
-				59A813951498072E0022DD5D /* EDAMLinkedNotebookProxy.m */,
-				59A813961498072E0022DD5D /* EDAMNoteAttributesProxy.h */,
-				59A813971498072E0022DD5D /* EDAMNoteAttributesProxy.m */,
-				59A813981498072E0022DD5D /* EDAMNotebookProxy.h */,
-				59A813991498072E0022DD5D /* EDAMNotebookProxy.m */,
-				59A8139A1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.h */,
-				59A8139B1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.m */,
-				59A8139C1498072E0022DD5D /* EDAMNoteEmailParametersProxy.h */,
-				59A8139D1498072E0022DD5D /* EDAMNoteEmailParametersProxy.m */,
-				59A8139E1498072E0022DD5D /* EDAMNoteFilterProxy.h */,
-				59A8139F1498072E0022DD5D /* EDAMNoteFilterProxy.m */,
-				59A813A01498072E0022DD5D /* EDAMNoteListProxy.h */,
-				59A813A11498072E0022DD5D /* EDAMNoteListProxy.m */,
-				59A813A21498072E0022DD5D /* EDAMNoteMetadataProxy.h */,
-				59A813A31498072E0022DD5D /* EDAMNoteMetadataProxy.m */,
-				59A813A41498072E0022DD5D /* EDAMNoteProxy.h */,
-				59A813A51498072E0022DD5D /* EDAMNoteProxy.m */,
-				59A813A61498072E0022DD5D /* EDAMNotesMetadataListProxy.h */,
-				59A813A71498072E0022DD5D /* EDAMNotesMetadataListProxy.m */,
-				59A813A81498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.h */,
-				59A813A91498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.m */,
-				59A813AA1498072E0022DD5D /* EDAMNoteStoreClientProxy.h */,
-				59A813AB1498072E0022DD5D /* EDAMNoteStoreClientProxy.m */,
-				59A813AC1498072E0022DD5D /* EDAMNoteVersionIdProxy.h */,
-				59A813AD1498072E0022DD5D /* EDAMNoteVersionIdProxy.m */,
-				59A813AE1498072E0022DD5D /* EDAMPublicUserInfoProxy.h */,
-				59A813AF1498072E0022DD5D /* EDAMPublicUserInfoProxy.m */,
-				59A813B01498072E0022DD5D /* EDAMPublishingProxy.h */,
-				59A813B11498072E0022DD5D /* EDAMPublishingProxy.m */,
-				59A813B21498072E0022DD5D /* EDAMResourceAttributesProxy.h */,
-				59A813B31498072E0022DD5D /* EDAMResourceAttributesProxy.m */,
-				59A813B41498072E0022DD5D /* EDAMResourceProxy.h */,
-				59A813B51498072E0022DD5D /* EDAMResourceProxy.m */,
-				59A813B61498072E0022DD5D /* EDAMSavedSearchProxy.h */,
-				59A813B71498072E0022DD5D /* EDAMSavedSearchProxy.m */,
-				59A813B81498072E0022DD5D /* EDAMSharedNotebookProxy.h */,
-				59A813B91498072E0022DD5D /* EDAMSharedNotebookProxy.m */,
-				59A813BA1498072E0022DD5D /* EDAMSyncChunkFilterProxy.h */,
-				59A813BB1498072E0022DD5D /* EDAMSyncChunkFilterProxy.m */,
-				59A813BC1498072E0022DD5D /* EDAMSyncChunkProxy.h */,
-				59A813BD1498072E0022DD5D /* EDAMSyncChunkProxy.m */,
-				59A813BE1498072E0022DD5D /* EDAMSyncStateProxy.h */,
-				59A813BF1498072E0022DD5D /* EDAMSyncStateProxy.m */,
-				59A813C01498072E0022DD5D /* EDAMTagProxy.h */,
-				59A813C11498072E0022DD5D /* EDAMTagProxy.m */,
-				59A813C21498072E0022DD5D /* EDAMUserAttributesProxy.h */,
-				59A813C31498072E0022DD5D /* EDAMUserAttributesProxy.m */,
-				59A813C41498072E0022DD5D /* EDAMUserProxy.h */,
-				59A813C51498072E0022DD5D /* EDAMUserProxy.m */,
-				59A813C61498072E0022DD5D /* EDAMUserStoreClientProxy.h */,
-				59A813C71498072E0022DD5D /* EDAMUserStoreClientProxy.m */,
+				59915AA214985907007722A5 /* ErrorsConsts.m */,
+				59915AA314985907007722A5 /* LimitsConsts.m */,
+				59915AA414985907007722A5 /* NoteStoreConsts.m */,
+				59915AA514985907007722A5 /* TypesConsts.m */,
+				59915AA614985907007722A5 /* UserStoreConsts.m */,
+				59915A1A149851C9007722A5 /* EDAMAccountingProxy.h */,
+				59915A1B149851C9007722A5 /* EDAMAccountingProxy.m */,
+				59915A1C149851C9007722A5 /* EDAMAdImpressionsProxy.h */,
+				59915A1D149851C9007722A5 /* EDAMAdImpressionsProxy.m */,
+				59915A1E149851C9007722A5 /* EDAMAdParametersProxy.h */,
+				59915A1F149851C9007722A5 /* EDAMAdParametersProxy.m */,
+				59915A20149851C9007722A5 /* EDAMAdProxy.h */,
+				59915A21149851C9007722A5 /* EDAMAdProxy.m */,
+				59915A22149851C9007722A5 /* EDAMAuthenticationResultProxy.h */,
+				59915A23149851C9007722A5 /* EDAMAuthenticationResultProxy.m */,
+				59915A24149851C9007722A5 /* EDAMDataProxy.h */,
+				59915A25149851C9007722A5 /* EDAMDataProxy.m */,
+				59915A26149851C9007722A5 /* EDAMLinkedNotebookProxy.h */,
+				59915A27149851C9007722A5 /* EDAMLinkedNotebookProxy.m */,
+				59915A28149851C9007722A5 /* EDAMNoteAttributesProxy.h */,
+				59915A29149851C9007722A5 /* EDAMNoteAttributesProxy.m */,
+				59915A2A149851C9007722A5 /* EDAMNotebookProxy.h */,
+				59915A2B149851C9007722A5 /* EDAMNotebookProxy.m */,
+				59915A2C149851C9007722A5 /* EDAMNoteCollectionCountsProxy.h */,
+				59915A2D149851C9007722A5 /* EDAMNoteCollectionCountsProxy.m */,
+				59915A2E149851C9007722A5 /* EDAMNoteEmailParametersProxy.h */,
+				59915A2F149851C9007722A5 /* EDAMNoteEmailParametersProxy.m */,
+				59915A30149851C9007722A5 /* EDAMNoteFilterProxy.h */,
+				59915A31149851C9007722A5 /* EDAMNoteFilterProxy.m */,
+				59915A32149851C9007722A5 /* EDAMNoteListProxy.h */,
+				59915A33149851C9007722A5 /* EDAMNoteListProxy.m */,
+				59915A34149851C9007722A5 /* EDAMNoteMetadataProxy.h */,
+				59915A35149851C9007722A5 /* EDAMNoteMetadataProxy.m */,
+				59915A36149851C9007722A5 /* EDAMNoteProxy.h */,
+				59915A37149851C9007722A5 /* EDAMNoteProxy.m */,
+				59915A38149851C9007722A5 /* EDAMNotesMetadataListProxy.h */,
+				59915A39149851C9007722A5 /* EDAMNotesMetadataListProxy.m */,
+				59915A3A149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.h */,
+				59915A3B149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.m */,
+				59915A3C149851C9007722A5 /* EDAMNoteStoreClientProxy.h */,
+				59915A3D149851C9007722A5 /* EDAMNoteStoreClientProxy.m */,
+				59915A3E149851C9007722A5 /* EDAMNoteVersionIdProxy.h */,
+				59915A3F149851C9007722A5 /* EDAMNoteVersionIdProxy.m */,
+				59915A40149851C9007722A5 /* EDAMPublicUserInfoProxy.h */,
+				59915A41149851C9007722A5 /* EDAMPublicUserInfoProxy.m */,
+				59915A42149851C9007722A5 /* EDAMPublishingProxy.h */,
+				59915A43149851C9007722A5 /* EDAMPublishingProxy.m */,
+				59915A44149851C9007722A5 /* EDAMResourceAttributesProxy.h */,
+				59915A45149851C9007722A5 /* EDAMResourceAttributesProxy.m */,
+				59915A46149851C9007722A5 /* EDAMResourceProxy.h */,
+				59915A47149851C9007722A5 /* EDAMResourceProxy.m */,
+				59915A48149851C9007722A5 /* EDAMSavedSearchProxy.h */,
+				59915A49149851C9007722A5 /* EDAMSavedSearchProxy.m */,
+				59915A4A149851C9007722A5 /* EDAMSharedNotebookProxy.h */,
+				59915A4B149851C9007722A5 /* EDAMSharedNotebookProxy.m */,
+				59915A4C149851C9007722A5 /* EDAMSyncChunkFilterProxy.h */,
+				59915A4D149851C9007722A5 /* EDAMSyncChunkFilterProxy.m */,
+				59915A4E149851C9007722A5 /* EDAMSyncChunkProxy.h */,
+				59915A4F149851C9007722A5 /* EDAMSyncChunkProxy.m */,
+				59915A50149851C9007722A5 /* EDAMSyncStateProxy.h */,
+				59915A51149851C9007722A5 /* EDAMSyncStateProxy.m */,
+				59915A52149851C9007722A5 /* EDAMTagProxy.h */,
+				59915A53149851C9007722A5 /* EDAMTagProxy.m */,
+				59915A54149851C9007722A5 /* EDAMUserAttributesProxy.h */,
+				59915A55149851C9007722A5 /* EDAMUserAttributesProxy.m */,
+				59915A56149851C9007722A5 /* EDAMUserProxy.h */,
+				59915A57149851C9007722A5 /* EDAMUserProxy.m */,
+				59915A58149851C9007722A5 /* EDAMUserStoreClientProxy.h */,
+				59915A59149851C9007722A5 /* EDAMUserStoreClientProxy.m */,
 			);
 			path = EvernoteAPIProxy;
 			sourceTree = "<group>";
@@ -494,39 +509,39 @@
 				59A813821498065A0022DD5D /* TTransport.h in Headers */,
 				59A813831498065A0022DD5D /* TTransportException.h in Headers */,
 				59A813851498065A0022DD5D /* TSharedProcessorFactory.h in Headers */,
-				59A813C81498072E0022DD5D /* EDAMAccountingProxy.h in Headers */,
-				59A813CA1498072E0022DD5D /* EDAMAdImpressionsProxy.h in Headers */,
-				59A813CC1498072E0022DD5D /* EDAMAdParametersProxy.h in Headers */,
-				59A813CE1498072E0022DD5D /* EDAMAdProxy.h in Headers */,
-				59A813D01498072E0022DD5D /* EDAMAuthenticationResultProxy.h in Headers */,
-				59A813D21498072E0022DD5D /* EDAMDataProxy.h in Headers */,
-				59A813D41498072E0022DD5D /* EDAMLinkedNotebookProxy.h in Headers */,
-				59A813D61498072E0022DD5D /* EDAMNoteAttributesProxy.h in Headers */,
-				59A813D81498072E0022DD5D /* EDAMNotebookProxy.h in Headers */,
-				59A813DA1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.h in Headers */,
-				59A813DC1498072E0022DD5D /* EDAMNoteEmailParametersProxy.h in Headers */,
-				59A813DE1498072E0022DD5D /* EDAMNoteFilterProxy.h in Headers */,
-				59A813E01498072E0022DD5D /* EDAMNoteListProxy.h in Headers */,
-				59A813E21498072E0022DD5D /* EDAMNoteMetadataProxy.h in Headers */,
-				59A813E41498072E0022DD5D /* EDAMNoteProxy.h in Headers */,
-				59A813E61498072E0022DD5D /* EDAMNotesMetadataListProxy.h in Headers */,
-				59A813E81498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.h in Headers */,
-				59A813EA1498072E0022DD5D /* EDAMNoteStoreClientProxy.h in Headers */,
-				59A813EC1498072E0022DD5D /* EDAMNoteVersionIdProxy.h in Headers */,
-				59A813EE1498072E0022DD5D /* EDAMPublicUserInfoProxy.h in Headers */,
-				59A813F01498072E0022DD5D /* EDAMPublishingProxy.h in Headers */,
-				59A813F21498072E0022DD5D /* EDAMResourceAttributesProxy.h in Headers */,
-				59A813F41498072E0022DD5D /* EDAMResourceProxy.h in Headers */,
-				59A813F61498072E0022DD5D /* EDAMSavedSearchProxy.h in Headers */,
-				59A813F81498072E0022DD5D /* EDAMSharedNotebookProxy.h in Headers */,
-				59A813FA1498072E0022DD5D /* EDAMSyncChunkFilterProxy.h in Headers */,
-				59A813FC1498072E0022DD5D /* EDAMSyncChunkProxy.h in Headers */,
-				59A813FE1498072E0022DD5D /* EDAMSyncStateProxy.h in Headers */,
-				59A814001498072E0022DD5D /* EDAMTagProxy.h in Headers */,
-				59A814021498072E0022DD5D /* EDAMUserAttributesProxy.h in Headers */,
-				59A814041498072E0022DD5D /* EDAMUserProxy.h in Headers */,
-				59A814061498072E0022DD5D /* EDAMUserStoreClientProxy.h in Headers */,
 				59A8140A1498073B0022DD5D /* TiThriftUtils.h in Headers */,
+				59915A5A149851C9007722A5 /* EDAMAccountingProxy.h in Headers */,
+				59915A5C149851C9007722A5 /* EDAMAdImpressionsProxy.h in Headers */,
+				59915A5E149851C9007722A5 /* EDAMAdParametersProxy.h in Headers */,
+				59915A60149851C9007722A5 /* EDAMAdProxy.h in Headers */,
+				59915A62149851C9007722A5 /* EDAMAuthenticationResultProxy.h in Headers */,
+				59915A64149851C9007722A5 /* EDAMDataProxy.h in Headers */,
+				59915A66149851C9007722A5 /* EDAMLinkedNotebookProxy.h in Headers */,
+				59915A68149851C9007722A5 /* EDAMNoteAttributesProxy.h in Headers */,
+				59915A6A149851C9007722A5 /* EDAMNotebookProxy.h in Headers */,
+				59915A6C149851C9007722A5 /* EDAMNoteCollectionCountsProxy.h in Headers */,
+				59915A6E149851C9007722A5 /* EDAMNoteEmailParametersProxy.h in Headers */,
+				59915A70149851C9007722A5 /* EDAMNoteFilterProxy.h in Headers */,
+				59915A72149851C9007722A5 /* EDAMNoteListProxy.h in Headers */,
+				59915A74149851C9007722A5 /* EDAMNoteMetadataProxy.h in Headers */,
+				59915A76149851C9007722A5 /* EDAMNoteProxy.h in Headers */,
+				59915A78149851C9007722A5 /* EDAMNotesMetadataListProxy.h in Headers */,
+				59915A7A149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.h in Headers */,
+				59915A7C149851C9007722A5 /* EDAMNoteStoreClientProxy.h in Headers */,
+				59915A7E149851C9007722A5 /* EDAMNoteVersionIdProxy.h in Headers */,
+				59915A80149851C9007722A5 /* EDAMPublicUserInfoProxy.h in Headers */,
+				59915A82149851C9007722A5 /* EDAMPublishingProxy.h in Headers */,
+				59915A84149851C9007722A5 /* EDAMResourceAttributesProxy.h in Headers */,
+				59915A86149851C9007722A5 /* EDAMResourceProxy.h in Headers */,
+				59915A88149851C9007722A5 /* EDAMSavedSearchProxy.h in Headers */,
+				59915A8A149851C9007722A5 /* EDAMSharedNotebookProxy.h in Headers */,
+				59915A8C149851C9007722A5 /* EDAMSyncChunkFilterProxy.h in Headers */,
+				59915A8E149851C9007722A5 /* EDAMSyncChunkProxy.h in Headers */,
+				59915A90149851C9007722A5 /* EDAMSyncStateProxy.h in Headers */,
+				59915A92149851C9007722A5 /* EDAMTagProxy.h in Headers */,
+				59915A94149851C9007722A5 /* EDAMUserAttributesProxy.h in Headers */,
+				59915A96149851C9007722A5 /* EDAMUserProxy.h in Headers */,
+				59915A98149851C9007722A5 /* EDAMUserStoreClientProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,39 +628,44 @@
 				59A813811498065A0022DD5D /* TMemoryBuffer.m in Sources */,
 				59A813841498065A0022DD5D /* TTransportException.m in Sources */,
 				59A813861498065A0022DD5D /* TSharedProcessorFactory.m in Sources */,
-				59A813C91498072E0022DD5D /* EDAMAccountingProxy.m in Sources */,
-				59A813CB1498072E0022DD5D /* EDAMAdImpressionsProxy.m in Sources */,
-				59A813CD1498072E0022DD5D /* EDAMAdParametersProxy.m in Sources */,
-				59A813CF1498072E0022DD5D /* EDAMAdProxy.m in Sources */,
-				59A813D11498072E0022DD5D /* EDAMAuthenticationResultProxy.m in Sources */,
-				59A813D31498072E0022DD5D /* EDAMDataProxy.m in Sources */,
-				59A813D51498072E0022DD5D /* EDAMLinkedNotebookProxy.m in Sources */,
-				59A813D71498072E0022DD5D /* EDAMNoteAttributesProxy.m in Sources */,
-				59A813D91498072E0022DD5D /* EDAMNotebookProxy.m in Sources */,
-				59A813DB1498072E0022DD5D /* EDAMNoteCollectionCountsProxy.m in Sources */,
-				59A813DD1498072E0022DD5D /* EDAMNoteEmailParametersProxy.m in Sources */,
-				59A813DF1498072E0022DD5D /* EDAMNoteFilterProxy.m in Sources */,
-				59A813E11498072E0022DD5D /* EDAMNoteListProxy.m in Sources */,
-				59A813E31498072E0022DD5D /* EDAMNoteMetadataProxy.m in Sources */,
-				59A813E51498072E0022DD5D /* EDAMNoteProxy.m in Sources */,
-				59A813E71498072E0022DD5D /* EDAMNotesMetadataListProxy.m in Sources */,
-				59A813E91498072E0022DD5D /* EDAMNotesMetadataResultSpecProxy.m in Sources */,
-				59A813EB1498072E0022DD5D /* EDAMNoteStoreClientProxy.m in Sources */,
-				59A813ED1498072E0022DD5D /* EDAMNoteVersionIdProxy.m in Sources */,
-				59A813EF1498072E0022DD5D /* EDAMPublicUserInfoProxy.m in Sources */,
-				59A813F11498072E0022DD5D /* EDAMPublishingProxy.m in Sources */,
-				59A813F31498072E0022DD5D /* EDAMResourceAttributesProxy.m in Sources */,
-				59A813F51498072E0022DD5D /* EDAMResourceProxy.m in Sources */,
-				59A813F71498072E0022DD5D /* EDAMSavedSearchProxy.m in Sources */,
-				59A813F91498072E0022DD5D /* EDAMSharedNotebookProxy.m in Sources */,
-				59A813FB1498072E0022DD5D /* EDAMSyncChunkFilterProxy.m in Sources */,
-				59A813FD1498072E0022DD5D /* EDAMSyncChunkProxy.m in Sources */,
-				59A813FF1498072E0022DD5D /* EDAMSyncStateProxy.m in Sources */,
-				59A814011498072E0022DD5D /* EDAMTagProxy.m in Sources */,
-				59A814031498072E0022DD5D /* EDAMUserAttributesProxy.m in Sources */,
-				59A814051498072E0022DD5D /* EDAMUserProxy.m in Sources */,
-				59A814071498072E0022DD5D /* EDAMUserStoreClientProxy.m in Sources */,
 				59A8140B1498073B0022DD5D /* TiThriftUtils.m in Sources */,
+				59915A5B149851C9007722A5 /* EDAMAccountingProxy.m in Sources */,
+				59915A5D149851C9007722A5 /* EDAMAdImpressionsProxy.m in Sources */,
+				59915A5F149851C9007722A5 /* EDAMAdParametersProxy.m in Sources */,
+				59915A61149851C9007722A5 /* EDAMAdProxy.m in Sources */,
+				59915A63149851C9007722A5 /* EDAMAuthenticationResultProxy.m in Sources */,
+				59915A65149851C9007722A5 /* EDAMDataProxy.m in Sources */,
+				59915A67149851C9007722A5 /* EDAMLinkedNotebookProxy.m in Sources */,
+				59915A69149851C9007722A5 /* EDAMNoteAttributesProxy.m in Sources */,
+				59915A6B149851C9007722A5 /* EDAMNotebookProxy.m in Sources */,
+				59915A6D149851C9007722A5 /* EDAMNoteCollectionCountsProxy.m in Sources */,
+				59915A6F149851C9007722A5 /* EDAMNoteEmailParametersProxy.m in Sources */,
+				59915A71149851C9007722A5 /* EDAMNoteFilterProxy.m in Sources */,
+				59915A73149851C9007722A5 /* EDAMNoteListProxy.m in Sources */,
+				59915A75149851C9007722A5 /* EDAMNoteMetadataProxy.m in Sources */,
+				59915A77149851C9007722A5 /* EDAMNoteProxy.m in Sources */,
+				59915A79149851C9007722A5 /* EDAMNotesMetadataListProxy.m in Sources */,
+				59915A7B149851C9007722A5 /* EDAMNotesMetadataResultSpecProxy.m in Sources */,
+				59915A7D149851C9007722A5 /* EDAMNoteStoreClientProxy.m in Sources */,
+				59915A7F149851C9007722A5 /* EDAMNoteVersionIdProxy.m in Sources */,
+				59915A81149851C9007722A5 /* EDAMPublicUserInfoProxy.m in Sources */,
+				59915A83149851C9007722A5 /* EDAMPublishingProxy.m in Sources */,
+				59915A85149851C9007722A5 /* EDAMResourceAttributesProxy.m in Sources */,
+				59915A87149851C9007722A5 /* EDAMResourceProxy.m in Sources */,
+				59915A89149851C9007722A5 /* EDAMSavedSearchProxy.m in Sources */,
+				59915A8B149851C9007722A5 /* EDAMSharedNotebookProxy.m in Sources */,
+				59915A8D149851C9007722A5 /* EDAMSyncChunkFilterProxy.m in Sources */,
+				59915A8F149851C9007722A5 /* EDAMSyncChunkProxy.m in Sources */,
+				59915A91149851C9007722A5 /* EDAMSyncStateProxy.m in Sources */,
+				59915A93149851C9007722A5 /* EDAMTagProxy.m in Sources */,
+				59915A95149851C9007722A5 /* EDAMUserAttributesProxy.m in Sources */,
+				59915A97149851C9007722A5 /* EDAMUserProxy.m in Sources */,
+				59915A99149851C9007722A5 /* EDAMUserStoreClientProxy.m in Sources */,
+				59915AA714985907007722A5 /* ErrorsConsts.m in Sources */,
+				59915AA814985907007722A5 /* LimitsConsts.m in Sources */,
+				59915AA914985907007722A5 /* NoteStoreConsts.m in Sources */,
+				59915AAA14985907007722A5 /* TypesConsts.m in Sources */,
+				59915AAB14985907007722A5 /* UserStoreConsts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

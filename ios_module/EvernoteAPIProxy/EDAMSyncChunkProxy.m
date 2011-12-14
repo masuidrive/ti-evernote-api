@@ -2,21 +2,16 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMNoteProxy.h"
-
 #import "EDAMNotebookProxy.h"
-
 #import "EDAMTagProxy.h"
-
 #import "EDAMSavedSearchProxy.h"
-
 #import "EDAMResourceProxy.h"
-
 #import "EDAMLinkedNotebookProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMSyncChunk)
 -(id)createSyncChunk:(id)args;
 @end
@@ -43,6 +38,7 @@
     object.currentTime = [value longValue];
 }
 
+
 -(id)chunkHighUSN
 {
     return NUMINT(object.chunkHighUSN);
@@ -52,6 +48,7 @@
 {
     object.chunkHighUSN = [value integerValue];
 }
+
 
 -(id)updateCount
 {
@@ -63,6 +60,7 @@
     object.updateCount = [value integerValue];
 }
 
+
 -(id)notes
 {
     return arrayMap(object.notes, ^(id item) { return [[[EDAMNoteProxy alloc] initWithObject: item] autorelease]; });
@@ -72,6 +70,7 @@
 {
     object.notes = arrayMap(value, ^(id item) { return ((EDAMNoteProxy*)item).object; });
 }
+
 
 -(id)notebooks
 {
@@ -83,6 +82,7 @@
     object.notebooks = arrayMap(value, ^(id item) { return ((EDAMNotebookProxy*)item).object; });
 }
 
+
 -(id)tags
 {
     return arrayMap(object.tags, ^(id item) { return [[[EDAMTagProxy alloc] initWithObject: item] autorelease]; });
@@ -92,6 +92,7 @@
 {
     object.tags = arrayMap(value, ^(id item) { return ((EDAMTagProxy*)item).object; });
 }
+
 
 -(id)searches
 {
@@ -103,6 +104,7 @@
     object.searches = arrayMap(value, ^(id item) { return ((EDAMSavedSearchProxy*)item).object; });
 }
 
+
 -(id)resources
 {
     return arrayMap(object.resources, ^(id item) { return [[[EDAMResourceProxy alloc] initWithObject: item] autorelease]; });
@@ -112,6 +114,7 @@
 {
     object.resources = arrayMap(value, ^(id item) { return ((EDAMResourceProxy*)item).object; });
 }
+
 
 -(id)expungedNotes
 {
@@ -123,6 +126,7 @@
     object.expungedNotes = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)expungedNotebooks
 {
     return arrayMap(object.expungedNotebooks, ^(id item) { return item; });
@@ -132,6 +136,7 @@
 {
     object.expungedNotebooks = arrayMap(value, ^(id item) { return item; });
 }
+
 
 -(id)expungedTags
 {
@@ -143,6 +148,7 @@
     object.expungedTags = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)expungedSearches
 {
     return arrayMap(object.expungedSearches, ^(id item) { return item; });
@@ -152,6 +158,7 @@
 {
     object.expungedSearches = arrayMap(value, ^(id item) { return item; });
 }
+
 
 -(id)linkedNotebooks
 {
@@ -163,6 +170,7 @@
     object.linkedNotebooks = arrayMap(value, ^(id item) { return ((EDAMLinkedNotebookProxy*)item).object; });
 }
 
+
 -(id)expungedLinkedNotebooks
 {
     return arrayMap(object.expungedLinkedNotebooks, ^(id item) { return item; });
@@ -172,6 +180,7 @@
 {
     object.expungedLinkedNotebooks = arrayMap(value, ^(id item) { return item; });
 }
+
 
 
 - (id)initWithObject:(EDAMSyncChunk*)object_

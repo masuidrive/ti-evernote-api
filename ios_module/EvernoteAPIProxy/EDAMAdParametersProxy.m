@@ -2,11 +2,11 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMAdImpressionsProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMAdParameters)
 -(id)createAdParameters:(id)args;
 @end
@@ -33,6 +33,7 @@
     object.clientLanguage = [TiUtils stringValue:value];
 }
 
+
 -(id)impressions
 {
     return arrayMap(object.impressions, ^(id item) { return [[[EDAMAdImpressionsProxy alloc] initWithObject: item] autorelease]; });
@@ -43,6 +44,7 @@
     object.impressions = arrayMap(value, ^(id item) { return ((EDAMAdImpressionsProxy*)item).object; });
 }
 
+
 -(id)supportHtml
 {
     return NUMBOOL(object.supportHtml);
@@ -52,6 +54,7 @@
 {
     object.supportHtml = [value boolValue];
 }
+
 
 -(id)clientProperties
 {
@@ -74,6 +77,7 @@
 				})
 ;
 }
+
 
 
 - (id)initWithObject:(EDAMAdParameters*)object_

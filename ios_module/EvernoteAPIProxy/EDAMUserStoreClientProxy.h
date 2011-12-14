@@ -3,9 +3,9 @@
 
 @interface EDAMUserStoreClientProxy : TiProxy {
 @private
-    EDAMUserStoreClient* object;
+    EDAMUserStoreClient* client;
 }
-@property (nonatomic, retain) EDAMUserStoreClientProxy* client;
+@property (nonatomic, retain) EDAMUserStoreClient* client;
 
 - (id)initWithUri: (NSString*)uri;
 

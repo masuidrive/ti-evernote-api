@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNoteFilter)
 -(id)createNoteFilter:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.order = [value integerValue];
 }
 
+
 -(id)ascending
 {
     return NUMBOOL(object.ascending);
@@ -40,6 +42,7 @@
 {
     object.ascending = [value boolValue];
 }
+
 
 -(id)words
 {
@@ -51,6 +54,7 @@
     object.words = [TiUtils stringValue:value];
 }
 
+
 -(id)notebookGuid
 {
     return object.notebookGuid;
@@ -60,6 +64,7 @@
 {
     object.notebookGuid = [TiUtils stringValue:value];
 }
+
 
 -(id)tagGuids
 {
@@ -71,6 +76,7 @@
     object.tagGuids = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)timeZone
 {
     return object.timeZone;
@@ -81,6 +87,7 @@
     object.timeZone = [TiUtils stringValue:value];
 }
 
+
 -(id)inactive
 {
     return NUMBOOL(object.inactive);
@@ -90,6 +97,7 @@
 {
     object.inactive = [value boolValue];
 }
+
 
 
 - (id)initWithObject:(EDAMNoteFilter*)object_

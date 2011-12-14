@@ -2,13 +2,12 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMResourceProxy.h"
-
 #import "EDAMNoteAttributesProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNote)
 -(id)createNote:(id)args;
 @end
@@ -35,6 +34,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)title
 {
     return object.title;
@@ -44,6 +44,7 @@
 {
     object.title = [TiUtils stringValue:value];
 }
+
 
 -(id)content
 {
@@ -55,6 +56,7 @@
     object.content = [TiUtils stringValue:value];
 }
 
+
 -(id)contentHash
 {
     return [[[TiBlob alloc] initWithData:object.contentHash mimetype:@"application/octet-stream"] autorelease];
@@ -64,6 +66,7 @@
 {
     object.contentHash = [value data];
 }
+
 
 -(id)contentLength
 {
@@ -75,6 +78,7 @@
     object.contentLength = [value integerValue];
 }
 
+
 -(id)created
 {
     return NUMLONG(object.created);
@@ -84,6 +88,7 @@
 {
     object.created = [value longValue];
 }
+
 
 -(id)updated
 {
@@ -95,6 +100,7 @@
     object.updated = [value longValue];
 }
 
+
 -(id)deleted
 {
     return NUMLONG(object.deleted);
@@ -104,6 +110,7 @@
 {
     object.deleted = [value longValue];
 }
+
 
 -(id)active
 {
@@ -115,6 +122,7 @@
     object.active = [value boolValue];
 }
 
+
 -(id)updateSequenceNum
 {
     return NUMINT(object.updateSequenceNum);
@@ -124,6 +132,7 @@
 {
     object.updateSequenceNum = [value integerValue];
 }
+
 
 -(id)notebookGuid
 {
@@ -135,6 +144,7 @@
     object.notebookGuid = [TiUtils stringValue:value];
 }
 
+
 -(id)tagGuids
 {
     return arrayMap(object.tagGuids, ^(id item) { return item; });
@@ -144,6 +154,7 @@
 {
     object.tagGuids = arrayMap(value, ^(id item) { return item; });
 }
+
 
 -(id)resources
 {
@@ -155,6 +166,7 @@
     object.resources = arrayMap(value, ^(id item) { return ((EDAMResourceProxy*)item).object; });
 }
 
+
 -(id)attributes
 {
     return [[[EDAMNoteAttributesProxy alloc] initWithObject: object.attributes] autorelease];
@@ -165,6 +177,7 @@
     object.attributes = ((EDAMNoteAttributesProxy*)value).object;
 }
 
+
 -(id)tagNames
 {
     return arrayMap(object.tagNames, ^(id item) { return item; });
@@ -174,6 +187,7 @@
 {
     object.tagNames = arrayMap(value, ^(id item) { return item; });
 }
+
 
 
 - (id)initWithObject:(EDAMNote*)object_

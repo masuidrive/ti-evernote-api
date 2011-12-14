@@ -17,6 +17,8 @@ window.open();
 // TODO: write your module tests here
 var evernote = require('jp.masuidrive.ti.evernoteapi');
 Ti.API.info("module is => " + evernote);
+Ti.API.info(" => " + evernote.exampleProp);
+Ti.API.info(evernote.EDAM_VERSION_MAJOR);
 
 var userstore = evernote.createUserStoreClient(config.url+"user");
 var session = userstore.authenticate(config.demo.email, config.demo.password, config.consumerKey, config.consumerSecret);
@@ -33,6 +35,7 @@ table.data = notes.map(function(note){ return({title: note.name}); })
 Ti.API.info(notes.length);
 Ti.API.info(notes[0]);
 Ti.API.info(notes[0].name);
+
 
 
 /*

@@ -2,11 +2,11 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMNoteProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNoteEmailParameters)
 -(id)createNoteEmailParameters:(id)args;
 @end
@@ -33,6 +33,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)note
 {
     return [[[EDAMNoteProxy alloc] initWithObject: object.note] autorelease];
@@ -42,6 +43,7 @@
 {
     object.note = ((EDAMNoteProxy*)value).object;
 }
+
 
 -(id)toAddresses
 {
@@ -53,6 +55,7 @@
     object.toAddresses = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)ccAddresses
 {
     return arrayMap(object.ccAddresses, ^(id item) { return item; });
@@ -62,6 +65,7 @@
 {
     object.ccAddresses = arrayMap(value, ^(id item) { return item; });
 }
+
 
 -(id)subject
 {
@@ -73,6 +77,7 @@
     object.subject = [TiUtils stringValue:value];
 }
 
+
 -(id)message
 {
     return object.message;
@@ -82,6 +87,7 @@
 {
     object.message = [TiUtils stringValue:value];
 }
+
 
 
 - (id)initWithObject:(EDAMNoteEmailParameters*)object_

@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMLinkedNotebook)
 -(id)createLinkedNotebook:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.shareName = [TiUtils stringValue:value];
 }
 
+
 -(id)username
 {
     return object.username;
@@ -40,6 +42,7 @@
 {
     object.username = [TiUtils stringValue:value];
 }
+
 
 -(id)shardId
 {
@@ -51,6 +54,7 @@
     object.shardId = [TiUtils stringValue:value];
 }
 
+
 -(id)shareKey
 {
     return object.shareKey;
@@ -60,6 +64,7 @@
 {
     object.shareKey = [TiUtils stringValue:value];
 }
+
 
 -(id)uri
 {
@@ -71,6 +76,7 @@
     object.uri = [TiUtils stringValue:value];
 }
 
+
 -(id)guid
 {
     return object.guid;
@@ -81,6 +87,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)updateSequenceNum
 {
     return NUMINT(object.updateSequenceNum);
@@ -90,6 +97,7 @@
 {
     object.updateSequenceNum = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMLinkedNotebook*)object_

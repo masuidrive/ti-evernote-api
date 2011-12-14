@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMAdImpressions)
 -(id)createAdImpressions:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.adId = [value integerValue];
 }
 
+
 -(id)impressionCount
 {
     return NUMINT(object.impressionCount);
@@ -41,6 +43,7 @@
     object.impressionCount = [value integerValue];
 }
 
+
 -(id)impressionTime
 {
     return NUMINT(object.impressionTime);
@@ -50,6 +53,7 @@
 {
     object.impressionTime = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMAdImpressions*)object_

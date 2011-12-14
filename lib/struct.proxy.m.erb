@@ -2,11 +2,12 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-<% structs.each do |struct| %>
+<%- structs.each do |struct| -%>
 #import "<%= struct.proxy_class_name %>.h"
 <% end %>
 
 #import "<%= @module_name %>.h"
+
 @interface <%= @module_name %>(<%= s.class_name %>)
 -(id)create<%= s.name %>:(id)args;
 @end
@@ -32,6 +33,7 @@
 {
     object.<%= field.name %> = <%= field.type.objc(@space, 'value') %>;
 }
+
 <% end %>
 
 - (id)initWithObject:(<%= s.class_name %>*)object_

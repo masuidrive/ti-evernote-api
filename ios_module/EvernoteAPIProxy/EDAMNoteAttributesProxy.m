@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNoteAttributes)
 -(id)createNoteAttributes:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.subjectDate = [value longValue];
 }
 
+
 -(id)latitude
 {
     return NUMDOUBLE(object.latitude);
@@ -40,6 +42,7 @@
 {
     object.latitude = [value doubleValue];
 }
+
 
 -(id)longitude
 {
@@ -51,6 +54,7 @@
     object.longitude = [value doubleValue];
 }
 
+
 -(id)altitude
 {
     return NUMDOUBLE(object.altitude);
@@ -60,6 +64,7 @@
 {
     object.altitude = [value doubleValue];
 }
+
 
 -(id)author
 {
@@ -71,6 +76,7 @@
     object.author = [TiUtils stringValue:value];
 }
 
+
 -(id)source
 {
     return object.source;
@@ -80,6 +86,7 @@
 {
     object.source = [TiUtils stringValue:value];
 }
+
 
 -(id)sourceURL
 {
@@ -91,6 +98,7 @@
     object.sourceURL = [TiUtils stringValue:value];
 }
 
+
 -(id)sourceApplication
 {
     return object.sourceApplication;
@@ -101,6 +109,7 @@
     object.sourceApplication = [TiUtils stringValue:value];
 }
 
+
 -(id)shareDate
 {
     return NUMLONG(object.shareDate);
@@ -110,6 +119,7 @@
 {
     object.shareDate = [value longValue];
 }
+
 
 
 - (id)initWithObject:(EDAMNoteAttributes*)object_

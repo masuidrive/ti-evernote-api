@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMAd)
 -(id)createAd:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.id = [value integerValue];
 }
 
+
 -(id)width
 {
     return NUMINT(object.width);
@@ -40,6 +42,7 @@
 {
     object.width = [value integerValue];
 }
+
 
 -(id)height
 {
@@ -51,6 +54,7 @@
     object.height = [value integerValue];
 }
 
+
 -(id)advertiserName
 {
     return object.advertiserName;
@@ -60,6 +64,7 @@
 {
     object.advertiserName = [TiUtils stringValue:value];
 }
+
 
 -(id)imageUrl
 {
@@ -71,6 +76,7 @@
     object.imageUrl = [TiUtils stringValue:value];
 }
 
+
 -(id)destinationUrl
 {
     return object.destinationUrl;
@@ -80,6 +86,7 @@
 {
     object.destinationUrl = [TiUtils stringValue:value];
 }
+
 
 -(id)displaySeconds
 {
@@ -91,6 +98,7 @@
     object.displaySeconds = [value integerValue];
 }
 
+
 -(id)score
 {
     return NUMDOUBLE(object.score);
@@ -100,6 +108,7 @@
 {
     object.score = [value doubleValue];
 }
+
 
 -(id)image
 {
@@ -111,6 +120,7 @@
     object.image = [value data];
 }
 
+
 -(id)imageMime
 {
     return object.imageMime;
@@ -120,6 +130,7 @@
 {
     object.imageMime = [TiUtils stringValue:value];
 }
+
 
 -(id)html
 {
@@ -131,6 +142,7 @@
     object.html = [TiUtils stringValue:value];
 }
 
+
 -(id)displayFrequency
 {
     return NUMDOUBLE(object.displayFrequency);
@@ -141,6 +153,7 @@
     object.displayFrequency = [value doubleValue];
 }
 
+
 -(id)openInTrunk
 {
     return NUMBOOL(object.openInTrunk);
@@ -150,6 +163,7 @@
 {
     object.openInTrunk = [value boolValue];
 }
+
 
 
 - (id)initWithObject:(EDAMAd*)object_

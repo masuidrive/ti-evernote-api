@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMSavedSearch)
 -(id)createSavedSearch:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)name
 {
     return object.name;
@@ -40,6 +42,7 @@
 {
     object.name = [TiUtils stringValue:value];
 }
+
 
 -(id)query
 {
@@ -51,6 +54,7 @@
     object.query = [TiUtils stringValue:value];
 }
 
+
 -(id)format
 {
     return NUMINT(object.format);
@@ -61,6 +65,7 @@
     object.format = [value integerValue];
 }
 
+
 -(id)updateSequenceNum
 {
     return NUMINT(object.updateSequenceNum);
@@ -70,6 +75,7 @@
 {
     object.updateSequenceNum = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMSavedSearch*)object_

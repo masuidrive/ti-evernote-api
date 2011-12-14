@@ -3,9 +3,9 @@
 
 @interface EDAMNoteStoreClientProxy : TiProxy {
 @private
-    EDAMNoteStoreClient* object;
+    EDAMNoteStoreClient* client;
 }
-@property (nonatomic, retain) EDAMNoteStoreClientProxy* client;
+@property (nonatomic, retain) EDAMNoteStoreClient* client;
 
 - (id)initWithUri: (NSString*)uri;
 

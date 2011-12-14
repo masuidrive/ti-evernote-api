@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMData)
 -(id)createData:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.bodyHash = [value data];
 }
 
+
 -(id)size
 {
     return NUMINT(object.size);
@@ -41,6 +43,7 @@
     object.size = [value integerValue];
 }
 
+
 -(id)body
 {
     return [[[TiBlob alloc] initWithData:object.body mimetype:@"application/octet-stream"] autorelease];
@@ -50,6 +53,7 @@
 {
     object.body = [value data];
 }
+
 
 
 - (id)initWithObject:(EDAMData*)object_

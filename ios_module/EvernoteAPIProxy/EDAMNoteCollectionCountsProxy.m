@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNoteCollectionCounts)
 -(id)createNoteCollectionCounts:(id)args;
 @end
@@ -43,6 +44,7 @@
 ;
 }
 
+
 -(id)tagCounts
 {
     return 				dictionaryMap(object.tagCounts, ^(id key, id obj) {
@@ -65,6 +67,7 @@
 ;
 }
 
+
 -(id)trashCount
 {
     return NUMINT(object.trashCount);
@@ -74,6 +77,7 @@
 {
     object.trashCount = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMNoteCollectionCounts*)object_

@@ -2,11 +2,11 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMNoteAttributesProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNoteMetadata)
 -(id)createNoteMetadata:(id)args;
 @end
@@ -33,6 +33,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)title
 {
     return object.title;
@@ -42,6 +43,7 @@
 {
     object.title = [TiUtils stringValue:value];
 }
+
 
 -(id)contentLength
 {
@@ -53,6 +55,7 @@
     object.contentLength = [value integerValue];
 }
 
+
 -(id)created
 {
     return NUMLONG(object.created);
@@ -62,6 +65,7 @@
 {
     object.created = [value longValue];
 }
+
 
 -(id)updated
 {
@@ -73,6 +77,7 @@
     object.updated = [value longValue];
 }
 
+
 -(id)updateSequenceNum
 {
     return NUMINT(object.updateSequenceNum);
@@ -82,6 +87,7 @@
 {
     object.updateSequenceNum = [value integerValue];
 }
+
 
 -(id)notebookGuid
 {
@@ -93,6 +99,7 @@
     object.notebookGuid = [TiUtils stringValue:value];
 }
 
+
 -(id)tagGuids
 {
     return arrayMap(object.tagGuids, ^(id item) { return item; });
@@ -102,6 +109,7 @@
 {
     object.tagGuids = arrayMap(value, ^(id item) { return item; });
 }
+
 
 -(id)attributes
 {
@@ -113,6 +121,7 @@
     object.attributes = ((EDAMNoteAttributesProxy*)value).object;
 }
 
+
 -(id)largestResourceMime
 {
     return object.largestResourceMime;
@@ -123,6 +132,7 @@
     object.largestResourceMime = [TiUtils stringValue:value];
 }
 
+
 -(id)largestResourceSize
 {
     return NUMINT(object.largestResourceSize);
@@ -132,6 +142,7 @@
 {
     object.largestResourceSize = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMNoteMetadata*)object_

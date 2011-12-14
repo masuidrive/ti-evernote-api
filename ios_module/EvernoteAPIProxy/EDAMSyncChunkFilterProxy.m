@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMSyncChunkFilter)
 -(id)createSyncChunkFilter:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.includeNotes = [value boolValue];
 }
 
+
 -(id)includeNoteResources
 {
     return NUMBOOL(object.includeNoteResources);
@@ -40,6 +42,7 @@
 {
     object.includeNoteResources = [value boolValue];
 }
+
 
 -(id)includeNoteAttributes
 {
@@ -51,6 +54,7 @@
     object.includeNoteAttributes = [value boolValue];
 }
 
+
 -(id)includeNotebooks
 {
     return NUMBOOL(object.includeNotebooks);
@@ -60,6 +64,7 @@
 {
     object.includeNotebooks = [value boolValue];
 }
+
 
 -(id)includeTags
 {
@@ -71,6 +76,7 @@
     object.includeTags = [value boolValue];
 }
 
+
 -(id)includeSearches
 {
     return NUMBOOL(object.includeSearches);
@@ -80,6 +86,7 @@
 {
     object.includeSearches = [value boolValue];
 }
+
 
 -(id)includeResources
 {
@@ -91,6 +98,7 @@
     object.includeResources = [value boolValue];
 }
 
+
 -(id)includeLinkedNotebooks
 {
     return NUMBOOL(object.includeLinkedNotebooks);
@@ -101,6 +109,7 @@
     object.includeLinkedNotebooks = [value boolValue];
 }
 
+
 -(id)includeExpunged
 {
     return NUMBOOL(object.includeExpunged);
@@ -110,6 +119,7 @@
 {
     object.includeExpunged = [value boolValue];
 }
+
 
 
 - (id)initWithObject:(EDAMSyncChunkFilter*)object_

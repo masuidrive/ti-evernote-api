@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMResourceAttributes)
 -(id)createResourceAttributes:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.sourceURL = [TiUtils stringValue:value];
 }
 
+
 -(id)timestamp
 {
     return NUMLONG(object.timestamp);
@@ -40,6 +42,7 @@
 {
     object.timestamp = [value longValue];
 }
+
 
 -(id)latitude
 {
@@ -51,6 +54,7 @@
     object.latitude = [value doubleValue];
 }
 
+
 -(id)longitude
 {
     return NUMDOUBLE(object.longitude);
@@ -60,6 +64,7 @@
 {
     object.longitude = [value doubleValue];
 }
+
 
 -(id)altitude
 {
@@ -71,6 +76,7 @@
     object.altitude = [value doubleValue];
 }
 
+
 -(id)cameraMake
 {
     return object.cameraMake;
@@ -80,6 +86,7 @@
 {
     object.cameraMake = [TiUtils stringValue:value];
 }
+
 
 -(id)cameraModel
 {
@@ -91,6 +98,7 @@
     object.cameraModel = [TiUtils stringValue:value];
 }
 
+
 -(id)clientWillIndex
 {
     return NUMBOOL(object.clientWillIndex);
@@ -100,6 +108,7 @@
 {
     object.clientWillIndex = [value boolValue];
 }
+
 
 -(id)recoType
 {
@@ -111,6 +120,7 @@
     object.recoType = [TiUtils stringValue:value];
 }
 
+
 -(id)fileName
 {
     return object.fileName;
@@ -121,6 +131,7 @@
     object.fileName = [TiUtils stringValue:value];
 }
 
+
 -(id)attachment
 {
     return NUMBOOL(object.attachment);
@@ -130,6 +141,7 @@
 {
     object.attachment = [value boolValue];
 }
+
 
 
 - (id)initWithObject:(EDAMResourceAttributes*)object_

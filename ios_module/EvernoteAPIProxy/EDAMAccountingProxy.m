@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMAccounting)
 -(id)createAccounting:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.uploadLimit = [value longValue];
 }
 
+
 -(id)uploadLimitEnd
 {
     return NUMLONG(object.uploadLimitEnd);
@@ -40,6 +42,7 @@
 {
     object.uploadLimitEnd = [value longValue];
 }
+
 
 -(id)uploadLimitNextMonth
 {
@@ -51,6 +54,7 @@
     object.uploadLimitNextMonth = [value longValue];
 }
 
+
 -(id)premiumServiceStatus
 {
     return NUMINT(object.premiumServiceStatus);
@@ -60,6 +64,7 @@
 {
     object.premiumServiceStatus = [value integerValue];
 }
+
 
 -(id)premiumOrderNumber
 {
@@ -71,6 +76,7 @@
     object.premiumOrderNumber = [TiUtils stringValue:value];
 }
 
+
 -(id)premiumCommerceService
 {
     return object.premiumCommerceService;
@@ -80,6 +86,7 @@
 {
     object.premiumCommerceService = [TiUtils stringValue:value];
 }
+
 
 -(id)premiumServiceStart
 {
@@ -91,6 +98,7 @@
     object.premiumServiceStart = [value longValue];
 }
 
+
 -(id)premiumServiceSKU
 {
     return object.premiumServiceSKU;
@@ -100,6 +108,7 @@
 {
     object.premiumServiceSKU = [TiUtils stringValue:value];
 }
+
 
 -(id)lastSuccessfulCharge
 {
@@ -111,6 +120,7 @@
     object.lastSuccessfulCharge = [value longValue];
 }
 
+
 -(id)lastFailedCharge
 {
     return NUMLONG(object.lastFailedCharge);
@@ -120,6 +130,7 @@
 {
     object.lastFailedCharge = [value longValue];
 }
+
 
 -(id)lastFailedChargeReason
 {
@@ -131,6 +142,7 @@
     object.lastFailedChargeReason = [TiUtils stringValue:value];
 }
 
+
 -(id)nextPaymentDue
 {
     return NUMLONG(object.nextPaymentDue);
@@ -140,6 +152,7 @@
 {
     object.nextPaymentDue = [value longValue];
 }
+
 
 -(id)premiumLockUntil
 {
@@ -151,6 +164,7 @@
     object.premiumLockUntil = [value longValue];
 }
 
+
 -(id)updated
 {
     return NUMLONG(object.updated);
@@ -160,6 +174,7 @@
 {
     object.updated = [value longValue];
 }
+
 
 -(id)premiumSubscriptionNumber
 {
@@ -171,6 +186,7 @@
     object.premiumSubscriptionNumber = [TiUtils stringValue:value];
 }
 
+
 -(id)lastRequestedCharge
 {
     return NUMLONG(object.lastRequestedCharge);
@@ -180,6 +196,7 @@
 {
     object.lastRequestedCharge = [value longValue];
 }
+
 
 -(id)currency
 {
@@ -191,6 +208,7 @@
     object.currency = [TiUtils stringValue:value];
 }
 
+
 -(id)unitPrice
 {
     return NUMINT(object.unitPrice);
@@ -200,6 +218,7 @@
 {
     object.unitPrice = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMAccounting*)object_

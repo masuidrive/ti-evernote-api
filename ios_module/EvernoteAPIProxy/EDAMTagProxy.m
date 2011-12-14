@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMTag)
 -(id)createTag:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)name
 {
     return object.name;
@@ -40,6 +42,7 @@
 {
     object.name = [TiUtils stringValue:value];
 }
+
 
 -(id)parentGuid
 {
@@ -51,6 +54,7 @@
     object.parentGuid = [TiUtils stringValue:value];
 }
 
+
 -(id)updateSequenceNum
 {
     return NUMINT(object.updateSequenceNum);
@@ -60,6 +64,7 @@
 {
     object.updateSequenceNum = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMTag*)object_

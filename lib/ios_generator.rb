@@ -23,7 +23,7 @@ class ServiceOp
 	attr_accessor :ns
 
 	def class_name
-		"#{@ns}#{name.sub(/^[a-z]/,&:upcase)}"
+		"#{@ns}#{name.sub(/^[a-z]/,&:upcase)}Client"
 	end
 
 	def proxy_class_name
@@ -205,8 +205,8 @@ class IOSGenerator
 		
 		tree = ThriftIDL.new.parse(open(file).read)
 		ns = tree.namespaces['cocoa']
-		tree.structs.each{|k, s| s.ns = ns }
-		tree.services.each{|k, s| s.ns = ns }
+		tree.structs.each{ |k, s| s.ns = ns }
+		tree.services.each{ |k, s| s.ns = ns }
 
 		@space.name[basename] = tree
 		tree.includes.each do |f|
@@ -229,24 +229,31 @@ class IOSGenerator
 	def run(dir)
 		@space.root.structs.each do |name, s|
 			structs = extract_structs(s.fields.map{|f| f.type.types(@space)})
-			open(File.join(dir, "#{s.class_name}Proxy.m"), 'w') do |f|
-				f.write ERB.new(open("#{ERB_PATH}/struct.proxy.m.erb").read).result(binding)
+			open(File.join(dir, "#{s.proxy_class_name}.m"), 'w') do |f|
+				f.write ERB.new(open("#{ERB_PATH}/struct.proxy.m.erb").read, nil, '-').result(binding)
 			end
-			open(File.join(dir, "#{s.class_name}Proxy.h"), 'w') do |f|
-				f.write ERB.new(open("#{ERB_PATH}/struct.proxy.h.erb").read).result(binding)
+			open(File.join(dir, "#{s.proxy_class_name}.h"), 'w') do |f|
+				f.write ERB.new(open("#{ERB_PATH}/struct.proxy.h.erb").read, nil, '-').result(binding)
 			end
 		end
+
 		@space.root.services.each do |name, s|
 			arg_types = s.functions.map(&:arguments).flatten.map{|f| f.type.types(@space)}
 			result_type = s.functions.map{|f| f.result=='void' ? nil : f.result.types(@space)}
 			structs = extract_structs(arg_types+[result_type])
-			open(File.join(dir, "#{s.class_name}ClientProxy.m"), 'w') do |f|
-				f.write ERB.new(open("#{ERB_PATH}/service.proxy.m.erb").read).result(binding)
+			open(File.join(dir, "#{s.proxy_class_name}.m"), 'w') do |f|
+				f.write ERB.new(open("#{ERB_PATH}/service.proxy.m.erb").read, nil, '-').result(binding)
 			end
-			open(File.join(dir, "#{s.class_name}ClientProxy.h"), 'w') do |f|
-				f.write ERB.new(open("#{ERB_PATH}/service.proxy.h.erb").read).result(binding)
+			open(File.join(dir, "#{s.proxy_class_name}.h"), 'w') do |f|
+				f.write ERB.new(open("#{ERB_PATH}/service.proxy.h.erb").read, nil, '-').result(binding)
 			end
 		end
+
+		consts = @space.root.consts.values
+		open(File.join(dir, "#{@basename}Consts.m"), 'w') do |f|
+			f.write ERB.new(open("#{ERB_PATH}/consts.m.erb").read, nil, '-').result(binding)
+		end
+
 	end
 end
 

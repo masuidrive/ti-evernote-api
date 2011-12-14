@@ -2,13 +2,12 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMDataProxy.h"
-
 #import "EDAMResourceAttributesProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMResource)
 -(id)createResource:(id)args;
 @end
@@ -35,6 +34,7 @@
     object.guid = [TiUtils stringValue:value];
 }
 
+
 -(id)noteGuid
 {
     return object.noteGuid;
@@ -44,6 +44,7 @@
 {
     object.noteGuid = [TiUtils stringValue:value];
 }
+
 
 -(id)data
 {
@@ -55,6 +56,7 @@
     object.data = ((EDAMDataProxy*)value).object;
 }
 
+
 -(id)mime
 {
     return object.mime;
@@ -64,6 +66,7 @@
 {
     object.mime = [TiUtils stringValue:value];
 }
+
 
 -(id)width
 {
@@ -75,6 +78,7 @@
     object.width = [value integerValue];
 }
 
+
 -(id)height
 {
     return NUMINT(object.height);
@@ -84,6 +88,7 @@
 {
     object.height = [value integerValue];
 }
+
 
 -(id)duration
 {
@@ -95,6 +100,7 @@
     object.duration = [value integerValue];
 }
 
+
 -(id)active
 {
     return NUMBOOL(object.active);
@@ -104,6 +110,7 @@
 {
     object.active = [value boolValue];
 }
+
 
 -(id)recognition
 {
@@ -115,6 +122,7 @@
     object.recognition = ((EDAMDataProxy*)value).object;
 }
 
+
 -(id)attributes
 {
     return [[[EDAMResourceAttributesProxy alloc] initWithObject: object.attributes] autorelease];
@@ -124,6 +132,7 @@
 {
     object.attributes = ((EDAMResourceAttributesProxy*)value).object;
 }
+
 
 -(id)updateSequenceNum
 {
@@ -135,6 +144,7 @@
     object.updateSequenceNum = [value integerValue];
 }
 
+
 -(id)alternateData
 {
     return [[[EDAMDataProxy alloc] initWithObject: object.alternateData] autorelease];
@@ -144,6 +154,7 @@
 {
     object.alternateData = ((EDAMDataProxy*)value).object;
 }
+
 
 
 - (id)initWithObject:(EDAMResource*)object_

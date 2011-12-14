@@ -2,11 +2,11 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMNoteMetadataProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNotesMetadataList)
 -(id)createNotesMetadataList:(id)args;
 @end
@@ -33,6 +33,7 @@
     object.startIndex = [value integerValue];
 }
 
+
 -(id)totalNotes
 {
     return NUMINT(object.totalNotes);
@@ -42,6 +43,7 @@
 {
     object.totalNotes = [value integerValue];
 }
+
 
 -(id)notes
 {
@@ -53,6 +55,7 @@
     object.notes = arrayMap(value, ^(id item) { return ((EDAMNoteMetadataProxy*)item).object; });
 }
 
+
 -(id)stoppedWords
 {
     return arrayMap(object.stoppedWords, ^(id item) { return item; });
@@ -62,6 +65,7 @@
 {
     object.stoppedWords = arrayMap(value, ^(id item) { return item; });
 }
+
 
 -(id)searchedWords
 {
@@ -73,6 +77,7 @@
     object.searchedWords = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)updateCount
 {
     return NUMINT(object.updateCount);
@@ -82,6 +87,7 @@
 {
     object.updateCount = [value integerValue];
 }
+
 
 
 - (id)initWithObject:(EDAMNotesMetadataList*)object_

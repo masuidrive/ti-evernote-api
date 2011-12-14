@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNotesMetadataResultSpec)
 -(id)createNotesMetadataResultSpec:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.includeTitle = [value boolValue];
 }
 
+
 -(id)includeContentLength
 {
     return NUMBOOL(object.includeContentLength);
@@ -40,6 +42,7 @@
 {
     object.includeContentLength = [value boolValue];
 }
+
 
 -(id)includeCreated
 {
@@ -51,6 +54,7 @@
     object.includeCreated = [value boolValue];
 }
 
+
 -(id)includeUpdated
 {
     return NUMBOOL(object.includeUpdated);
@@ -60,6 +64,7 @@
 {
     object.includeUpdated = [value boolValue];
 }
+
 
 -(id)includeUpdateSequenceNum
 {
@@ -71,6 +76,7 @@
     object.includeUpdateSequenceNum = [value boolValue];
 }
 
+
 -(id)includeNotebookGuid
 {
     return NUMBOOL(object.includeNotebookGuid);
@@ -80,6 +86,7 @@
 {
     object.includeNotebookGuid = [value boolValue];
 }
+
 
 -(id)includeTagGuids
 {
@@ -91,6 +98,7 @@
     object.includeTagGuids = [value boolValue];
 }
 
+
 -(id)includeAttributes
 {
     return NUMBOOL(object.includeAttributes);
@@ -100,6 +108,7 @@
 {
     object.includeAttributes = [value boolValue];
 }
+
 
 -(id)includeLargestResourceMime
 {
@@ -111,6 +120,7 @@
     object.includeLargestResourceMime = [value boolValue];
 }
 
+
 -(id)includeLargestResourceSize
 {
     return NUMBOOL(object.includeLargestResourceSize);
@@ -120,6 +130,7 @@
 {
     object.includeLargestResourceSize = [value boolValue];
 }
+
 
 
 - (id)initWithObject:(EDAMNotesMetadataResultSpec*)object_

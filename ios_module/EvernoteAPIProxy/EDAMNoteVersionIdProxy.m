@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMNoteVersionId)
 -(id)createNoteVersionId:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.updateSequenceNum = [value integerValue];
 }
 
+
 -(id)updated
 {
     return NUMLONG(object.updated);
@@ -40,6 +42,7 @@
 {
     object.updated = [value longValue];
 }
+
 
 -(id)saved
 {
@@ -51,6 +54,7 @@
     object.saved = [value longValue];
 }
 
+
 -(id)title
 {
     return object.title;
@@ -60,6 +64,7 @@
 {
     object.title = [TiUtils stringValue:value];
 }
+
 
 
 - (id)initWithObject:(EDAMNoteVersionId*)object_

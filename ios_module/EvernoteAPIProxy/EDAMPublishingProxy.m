@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMPublishing)
 -(id)createPublishing:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.uri = [TiUtils stringValue:value];
 }
 
+
 -(id)order
 {
     return NUMINT(object.order);
@@ -40,6 +42,7 @@
 {
     object.order = [value integerValue];
 }
+
 
 -(id)ascending
 {
@@ -51,6 +54,7 @@
     object.ascending = [value boolValue];
 }
 
+
 -(id)publicDescription
 {
     return object.publicDescription;
@@ -60,6 +64,7 @@
 {
     object.publicDescription = [TiUtils stringValue:value];
 }
+
 
 
 - (id)initWithObject:(EDAMPublishing*)object_

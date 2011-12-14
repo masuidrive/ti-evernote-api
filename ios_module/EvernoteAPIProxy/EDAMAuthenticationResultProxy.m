@@ -2,13 +2,12 @@
 #import "TiUtils.h"
 #import "TiThriftUtils.h"
 
-
 #import "EDAMUserProxy.h"
-
 #import "EDAMPublicUserInfoProxy.h"
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMAuthenticationResult)
 -(id)createAuthenticationResult:(id)args;
 @end
@@ -35,6 +34,7 @@
     object.currentTime = [value longValue];
 }
 
+
 -(id)authenticationToken
 {
     return object.authenticationToken;
@@ -44,6 +44,7 @@
 {
     object.authenticationToken = [TiUtils stringValue:value];
 }
+
 
 -(id)expiration
 {
@@ -55,6 +56,7 @@
     object.expiration = [value longValue];
 }
 
+
 -(id)user
 {
     return [[[EDAMUserProxy alloc] initWithObject: object.user] autorelease];
@@ -65,6 +67,7 @@
     object.user = ((EDAMUserProxy*)value).object;
 }
 
+
 -(id)publicUserInfo
 {
     return [[[EDAMPublicUserInfoProxy alloc] initWithObject: object.publicUserInfo] autorelease];
@@ -74,6 +77,7 @@
 {
     object.publicUserInfo = ((EDAMPublicUserInfoProxy*)value).object;
 }
+
 
 
 - (id)initWithObject:(EDAMAuthenticationResult*)object_

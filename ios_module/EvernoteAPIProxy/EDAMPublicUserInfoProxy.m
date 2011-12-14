@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMPublicUserInfo)
 -(id)createPublicUserInfo:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.userId = [value integerValue];
 }
 
+
 -(id)shardId
 {
     return object.shardId;
@@ -40,6 +42,7 @@
 {
     object.shardId = [TiUtils stringValue:value];
 }
+
 
 -(id)privilege
 {
@@ -51,6 +54,7 @@
     object.privilege = [value integerValue];
 }
 
+
 -(id)username
 {
     return object.username;
@@ -60,6 +64,7 @@
 {
     object.username = [TiUtils stringValue:value];
 }
+
 
 
 - (id)initWithObject:(EDAMPublicUserInfo*)object_

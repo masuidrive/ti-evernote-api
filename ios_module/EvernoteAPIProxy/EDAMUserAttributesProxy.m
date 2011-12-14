@@ -5,6 +5,7 @@
 
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
+
 @interface JpMasuidriveTiEvernoteapiModule(EDAMUserAttributes)
 -(id)createUserAttributes:(id)args;
 @end
@@ -31,6 +32,7 @@
     object.defaultLocationName = [TiUtils stringValue:value];
 }
 
+
 -(id)defaultLatitude
 {
     return NUMDOUBLE(object.defaultLatitude);
@@ -40,6 +42,7 @@
 {
     object.defaultLatitude = [value doubleValue];
 }
+
 
 -(id)defaultLongitude
 {
@@ -51,6 +54,7 @@
     object.defaultLongitude = [value doubleValue];
 }
 
+
 -(id)preactivation
 {
     return NUMBOOL(object.preactivation);
@@ -60,6 +64,7 @@
 {
     object.preactivation = [value boolValue];
 }
+
 
 -(id)viewedPromotions
 {
@@ -71,6 +76,7 @@
     object.viewedPromotions = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)incomingEmailAddress
 {
     return object.incomingEmailAddress;
@@ -80,6 +86,7 @@
 {
     object.incomingEmailAddress = [TiUtils stringValue:value];
 }
+
 
 -(id)recentMailedAddresses
 {
@@ -91,6 +98,7 @@
     object.recentMailedAddresses = arrayMap(value, ^(id item) { return item; });
 }
 
+
 -(id)comments
 {
     return object.comments;
@@ -100,6 +108,7 @@
 {
     object.comments = [TiUtils stringValue:value];
 }
+
 
 -(id)dateAgreedToTermsOfService
 {
@@ -111,6 +120,7 @@
     object.dateAgreedToTermsOfService = [value longValue];
 }
 
+
 -(id)maxReferrals
 {
     return NUMINT(object.maxReferrals);
@@ -120,6 +130,7 @@
 {
     object.maxReferrals = [value integerValue];
 }
+
 
 -(id)referralCount
 {
@@ -131,6 +142,7 @@
     object.referralCount = [value integerValue];
 }
 
+
 -(id)refererCode
 {
     return object.refererCode;
@@ -140,6 +152,7 @@
 {
     object.refererCode = [TiUtils stringValue:value];
 }
+
 
 -(id)sentEmailDate
 {
@@ -151,6 +164,7 @@
     object.sentEmailDate = [value longValue];
 }
 
+
 -(id)sentEmailCount
 {
     return NUMINT(object.sentEmailCount);
@@ -160,6 +174,7 @@
 {
     object.sentEmailCount = [value integerValue];
 }
+
 
 -(id)dailyEmailLimit
 {
@@ -171,6 +186,7 @@
     object.dailyEmailLimit = [value integerValue];
 }
 
+
 -(id)emailOptOutDate
 {
     return NUMLONG(object.emailOptOutDate);
@@ -180,6 +196,7 @@
 {
     object.emailOptOutDate = [value longValue];
 }
+
 
 -(id)partnerEmailOptInDate
 {
@@ -191,6 +208,7 @@
     object.partnerEmailOptInDate = [value longValue];
 }
 
+
 -(id)preferredLanguage
 {
     return object.preferredLanguage;
@@ -200,6 +218,7 @@
 {
     object.preferredLanguage = [TiUtils stringValue:value];
 }
+
 
 -(id)preferredCountry
 {
@@ -211,6 +230,7 @@
     object.preferredCountry = [TiUtils stringValue:value];
 }
 
+
 -(id)clipFullPage
 {
     return NUMBOOL(object.clipFullPage);
@@ -220,6 +240,7 @@
 {
     object.clipFullPage = [value boolValue];
 }
+
 
 -(id)twitterUserName
 {
@@ -231,6 +252,7 @@
     object.twitterUserName = [TiUtils stringValue:value];
 }
 
+
 -(id)twitterId
 {
     return object.twitterId;
@@ -240,6 +262,7 @@
 {
     object.twitterId = [TiUtils stringValue:value];
 }
+
 
 -(id)groupName
 {
@@ -251,6 +274,7 @@
     object.groupName = [TiUtils stringValue:value];
 }
 
+
 -(id)recognitionLanguage
 {
     return object.recognitionLanguage;
@@ -260,6 +284,7 @@
 {
     object.recognitionLanguage = [TiUtils stringValue:value];
 }
+
 
 -(id)customerProfileId
 {
@@ -271,6 +296,7 @@
     object.customerProfileId = [value longValue];
 }
 
+
 -(id)referralProof
 {
     return object.referralProof;
@@ -280,6 +306,7 @@
 {
     object.referralProof = [TiUtils stringValue:value];
 }
+
 
 -(id)educationalDiscount
 {
@@ -291,6 +318,7 @@
     object.educationalDiscount = [value boolValue];
 }
 
+
 -(id)businessAddress
 {
     return object.businessAddress;
@@ -301,6 +329,7 @@
     object.businessAddress = [TiUtils stringValue:value];
 }
 
+
 -(id)hideSponsorBilling
 {
     return NUMBOOL(object.hideSponsorBilling);
@@ -310,6 +339,7 @@
 {
     object.hideSponsorBilling = [value boolValue];
 }
+
 
 
 - (id)initWithObject:(EDAMUserAttributes*)object_
