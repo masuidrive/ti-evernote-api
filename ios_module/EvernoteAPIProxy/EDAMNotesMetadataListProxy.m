@@ -7,10 +7,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMNotesMetadataList)
--(id)createNotesMetadataList:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMNotesMetadataList)
 -(id)createNotesMetadataList:(id)args
 {

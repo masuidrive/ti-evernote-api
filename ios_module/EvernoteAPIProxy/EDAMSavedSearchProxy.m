@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMSavedSearch)
--(id)createSavedSearch:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMSavedSearch)
 -(id)createSavedSearch:(id)args
 {

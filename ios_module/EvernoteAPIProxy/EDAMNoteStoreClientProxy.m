@@ -29,10 +29,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMNoteStoreClient)
--(id)createNoteStoreClient:(id)arg;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMNoteStoreClient)
 -(id)createNoteStoreClient:(id)arg
 {

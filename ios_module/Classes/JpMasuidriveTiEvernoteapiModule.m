@@ -35,6 +35,8 @@
 	[super startup];
 	
 	NSLog(@"[INFO] %@ loaded",self);
+
+	consts = [[NSDictionary alloc] init];
 }
 
 -(void)shutdown:(id)sender
@@ -52,6 +54,8 @@
 -(void)dealloc
 {
 	// release any resources that have been retained by the module
+	[consts release];
+
 	[super dealloc];
 }
 
@@ -86,22 +90,5 @@
 }
 
 #pragma Public APIs
-
--(id)example:(id)args
-{
-	// example method
-	return @"hello world";
-}
-
--(id)exampleProp
-{
-	// example property getter
-	return @"hello world";
-}
-
--(void)exampleProp:(id)value
-{
-	// example property setter
-}
 
 @end

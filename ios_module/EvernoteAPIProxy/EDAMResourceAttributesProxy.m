@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMResourceAttributes)
--(id)createResourceAttributes:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMResourceAttributes)
 -(id)createResourceAttributes:(id)args
 {

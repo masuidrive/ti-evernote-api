@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMPublicUserInfo)
--(id)createPublicUserInfo:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMPublicUserInfo)
 -(id)createPublicUserInfo:(id)args
 {

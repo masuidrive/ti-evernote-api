@@ -8,10 +8,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMResource)
--(id)createResource:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMResource)
 -(id)createResource:(id)args
 {

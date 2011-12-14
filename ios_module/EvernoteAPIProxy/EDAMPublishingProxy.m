@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMPublishing)
--(id)createPublishing:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMPublishing)
 -(id)createPublishing:(id)args
 {

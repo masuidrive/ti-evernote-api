@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMNoteCollectionCounts)
--(id)createNoteCollectionCounts:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMNoteCollectionCounts)
 -(id)createNoteCollectionCounts:(id)args
 {

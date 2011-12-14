@@ -7,10 +7,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMNotebook)
--(id)createNotebook:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMNotebook)
 -(id)createNotebook:(id)args
 {

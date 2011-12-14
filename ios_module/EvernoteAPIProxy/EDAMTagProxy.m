@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMTag)
--(id)createTag:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMTag)
 -(id)createTag:(id)args
 {

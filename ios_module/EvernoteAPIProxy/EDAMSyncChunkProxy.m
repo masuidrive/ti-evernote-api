@@ -12,10 +12,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMSyncChunk)
--(id)createSyncChunk:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMSyncChunk)
 -(id)createSyncChunk:(id)args
 {

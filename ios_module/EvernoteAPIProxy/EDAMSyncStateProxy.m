@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMSyncState)
--(id)createSyncState:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMSyncState)
 -(id)createSyncState:(id)args
 {

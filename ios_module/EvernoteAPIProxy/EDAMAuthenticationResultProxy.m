@@ -8,10 +8,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMAuthenticationResult)
--(id)createAuthenticationResult:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMAuthenticationResult)
 -(id)createAuthenticationResult:(id)args
 {

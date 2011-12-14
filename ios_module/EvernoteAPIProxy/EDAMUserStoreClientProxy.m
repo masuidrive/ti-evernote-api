@@ -11,10 +11,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMUserStoreClient)
--(id)createUserStoreClient:(id)arg;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMUserStoreClient)
 -(id)createUserStoreClient:(id)arg
 {

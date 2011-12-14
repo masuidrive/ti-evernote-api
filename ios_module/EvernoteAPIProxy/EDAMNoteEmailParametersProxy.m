@@ -7,10 +7,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMNoteEmailParameters)
--(id)createNoteEmailParameters:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMNoteEmailParameters)
 -(id)createNoteEmailParameters:(id)args
 {

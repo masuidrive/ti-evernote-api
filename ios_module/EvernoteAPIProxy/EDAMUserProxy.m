@@ -8,10 +8,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMUser)
--(id)createUser:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMUser)
 -(id)createUser:(id)args
 {

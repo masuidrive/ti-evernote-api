@@ -6,10 +6,6 @@
 
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@interface JpMasuidriveTiEvernoteapiModule(EDAMAccounting)
--(id)createAccounting:(id)args;
-@end
-
 @implementation JpMasuidriveTiEvernoteapiModule(EDAMAccounting)
 -(id)createAccounting:(id)args
 {
