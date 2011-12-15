@@ -4,8 +4,8 @@
 
 ### iOS
 
-* Implemented all services and structurs
-* Working for to define Enum and Const values
+* Implemented all services, structurs and const values
+* Working for to define Enum
 * Currently, all API call is sync/blocked method. I'll code async feature.
 
 ### Android
