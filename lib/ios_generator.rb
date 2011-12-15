@@ -7,6 +7,28 @@ require 'erb'
 
 ERB_PATH = File.dirname(__FILE__)
 
+class ConstValueOp
+	def titanium(space)
+		case type
+		when :number
+			"NUMDOUBLE(%s)" % value
+		
+		when :string
+			'@"%s"' % value.gsub('"', '\\"')
+		
+		when :list, :set
+			"[NSArray arrayWithObjects: #{value.map{|v| v.titanium(space)}.join(', ')}, nil]"
+		
+		when :ident
+			space.root.consts[value].object.titanium(space)
+		
+		else
+			raise "Unknown #{type}"
+
+		end
+	end
+end
+
 class StructOp
 	attr_accessor :ns
 
@@ -84,11 +106,7 @@ class TypeOp
 			return "arrayMap(#{label}, ^(id item) { return #{self.type.titanium(space, 'item', true)}; })"
 		
 		when :set
-			if TI_PRIMITIVE.include?(name)
-				return "[#{label} allObjects]"
-			else
-				return "[arrayMap(#{label}, ^(id item) { return #{self.type.titanium(space, 'item')}; }) allObjects]"
-			end
+			return "[arrayMap(#{label}, ^(id item) { return #{self.type.titanium(space, 'item')}; }) allObjects]"
 		
 		when :map
 			return <<-__OBJC__
@@ -128,11 +146,7 @@ class TypeOp
 			return "arrayMap(#{label}, ^(id item) { return #{type.objc(space, 'item', true)}; })"
 		
 		when :set
-			if TI_PRIMITIVE.include?(name)
-				return "[#{label} allObjects]"
-			else
-				return "[arrayMap(#{label}, ^(id item) { return #{type.objc(space, 'item')}; }) allObjects]"
-			end
+			return "[arrayMap(#{label}, ^(id item) { return #{type.objc(space, 'item')}; }) allObjects]"
 		
 		when :map
 			return <<-__OBJC__
@@ -249,7 +263,7 @@ class IOSGenerator
 			end
 		end
 
-		consts = @space.root.consts.values
+		consts = @space.root.consts
 		open(File.join(dir, "#{@basename}Consts.m"), 'w') do |f|
 			f.write ERB.new(open("#{ERB_PATH}/consts.m.erb").read, nil, '-').result(binding)
 		end

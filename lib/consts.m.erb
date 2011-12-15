@@ -4,10 +4,22 @@
 
 @implementation <%= @module_name %>(<%= @basename %>ConstValues)
 
-<% consts.each do |const| %>
--(id)<%= const.name %>
+-(id)<%= @basename %>
 {
-	return @"<%= const.name %>";
+<%- if consts.length == 0 -%>
+	return nil;
+<%- else -%>
+	id result = [consts objectForKey:@"<%= @basename %>"];
+	if(!result) {
+		result = [NSDictionary dictionaryWithObjectsAndKeys:
+<%=
+			consts.map { |name, op|
+				"			"+[op.object.titanium(@space), '@"%s"' % name].join(', ')
+			}.join(",\n")
+%>,
+			nil];
+	}
+	return result;
+<%- end -%>
 }
-<% end %>
 @end

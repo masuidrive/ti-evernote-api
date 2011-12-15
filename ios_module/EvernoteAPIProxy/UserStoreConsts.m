@@ -4,15 +4,15 @@
 
 @implementation JpMasuidriveTiEvernoteapiModule(UserStoreConstValues)
 
-
--(id)EDAM_VERSION_MAJOR
+-(id)UserStore
 {
-	return @"EDAM_VERSION_MAJOR";
+	id result = [consts objectForKey:@"UserStore"];
+	if(!result) {
+		result = [NSDictionary dictionaryWithObjectsAndKeys:
+			NUMDOUBLE(1.0), @"EDAM_VERSION_MAJOR",
+			NUMDOUBLE(19.0), @"EDAM_VERSION_MINOR",
+			nil];
+	}
+	return result;
 }
-
--(id)EDAM_VERSION_MINOR
-{
-	return @"EDAM_VERSION_MINOR";
-}
-
 @end

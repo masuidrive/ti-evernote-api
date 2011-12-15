@@ -213,21 +213,21 @@ class SetOp < TypeOp
   attr_accessor :type
   def initialize(type=nil)
     @type = type
-    super(:set, nil)
+    super(:set, 'set')
   end
 end
 class ListOp < TypeOp
   attr_accessor :type
   def initialize(type=nil)
     @type = type
-    super(:list, nil)
+    super(:list, 'list')
   end
 end
 class MapOp < TypeOp
   attr_accessor :key, :object
   def initialize(key=nil, object=nil)
     @key, @object = key, object
-    super(:map, nil)
+    super(:map, 'map')
   end
 end
 

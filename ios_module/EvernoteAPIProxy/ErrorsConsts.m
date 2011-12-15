@@ -4,5 +4,8 @@
 
 @implementation JpMasuidriveTiEvernoteapiModule(ErrorsConstValues)
 
-
+-(id)Errors
+{
+	return nil;
+}
 @end

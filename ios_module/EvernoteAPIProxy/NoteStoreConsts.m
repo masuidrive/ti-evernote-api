@@ -4,5 +4,8 @@
 
 @implementation JpMasuidriveTiEvernoteapiModule(NoteStoreConstValues)
 
-
+-(id)NoteStore
+{
+	return nil;
+}
 @end

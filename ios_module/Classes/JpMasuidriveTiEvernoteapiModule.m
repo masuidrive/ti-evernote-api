@@ -36,7 +36,7 @@
 	
 	NSLog(@"[INFO] %@ loaded",self);
 
-	consts = [[NSDictionary alloc] init];
+	consts = [[NSMutableDictionary alloc] init];
 }
 
 -(void)shutdown:(id)sender

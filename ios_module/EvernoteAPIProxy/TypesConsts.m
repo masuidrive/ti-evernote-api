@@ -4,20 +4,16 @@
 
 @implementation JpMasuidriveTiEvernoteapiModule(TypesConstValues)
 
-
--(id)EDAM_NOTE_SOURCE_WEB_CLIP
+-(id)Types
 {
-	return @"EDAM_NOTE_SOURCE_WEB_CLIP";
+	id result = [consts objectForKey:@"Types"];
+	if(!result) {
+		result = [NSDictionary dictionaryWithObjectsAndKeys:
+			@"web.clip", @"EDAM_NOTE_SOURCE_WEB_CLIP",
+			@"mail.clip", @"EDAM_NOTE_SOURCE_MAIL_CLIP",
+			@"mail.smtp", @"EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY",
+			nil];
+	}
+	return result;
 }
-
--(id)EDAM_NOTE_SOURCE_MAIL_CLIP
-{
-	return @"EDAM_NOTE_SOURCE_MAIL_CLIP";
-}
-
--(id)EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY
-{
-	return @"EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY";
-}
-
 @end

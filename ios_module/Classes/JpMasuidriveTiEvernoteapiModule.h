@@ -9,7 +9,7 @@
 
 @interface JpMasuidriveTiEvernoteapiModule : TiModule 
 {
-	NSDictionary* consts;
+	NSMutableDictionary* consts;
 }
 
 @end
