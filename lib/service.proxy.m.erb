@@ -8,9 +8,9 @@
 #import "<%= struct.struct.proxy_class_name %>.h"
 <% end %>
 
-#import "<%= @module_name %>.h"
+#import "<%= @module_name %>Module.h"
 
-@implementation <%= @module_name %>(<%= s.class_name %>)
+@implementation <%= @module_name %>Module (<%= s.class_name %>)
 -(id)create<%= s.name %>Client:(id)arg
 {
     ENSURE_SINGLE_ARG(arg, NSString);
@@ -41,7 +41,6 @@
     self.client = nil;
     [super dealloc];
 }
-
 
 <% s.functions.each do |function| %>
 - (id)<%= function.name %>: (id)args

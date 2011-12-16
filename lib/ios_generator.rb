@@ -30,26 +30,26 @@ class ConstValueOp
 end
 
 class StructOp
-	attr_accessor :ns
+	attr_accessor :ns, :module_name
 
 	def class_name
 		"#{@ns}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}"
 	end
 
 	def proxy_class_name
-		"#{@ns}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}Proxy"
+		"#{@module_name}#{@ns}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}Proxy"
 	end
 end
 
 class ServiceOp
-	attr_accessor :ns
+	attr_accessor :ns, :module_name
 
 	def class_name
 		"#{@ns}#{name.sub(/^[a-z]/,&:upcase)}Client"
 	end
 
 	def proxy_class_name
-		"#{@ns}#{name.sub(/^[a-z]/,&:upcase)}ClientProxy"
+		"#{@module_name}#{@ns}#{name.sub(/^[a-z]/,&:upcase)}ClientProxy"
 	end
 end
 
@@ -219,8 +219,10 @@ class IOSGenerator
 		
 		tree = ThriftIDL.new.parse(open(file).read)
 		ns = tree.namespaces['cocoa']
-		tree.structs.each{ |k, s| s.ns = ns }
-		tree.services.each{ |k, s| s.ns = ns }
+		(tree.structs.values+tree.services.values).each do |s|
+			s.ns = ns
+			s.module_name = @module_name
+		end
 
 		@space.name[basename] = tree
 		tree.includes.each do |f|
@@ -277,7 +279,7 @@ if $0 == __FILE__
 	(1...ARGV.count).each do |i|
 		puts "Load: #{ARGV[i]}"
 		generator = IOSGenerator.new
-		generator.module_name = "JpMasuidriveTiEvernoteModule"
+		generator.module_name = "JpMasuidriveTiEvernote"
 		generator.load(ARGV[i])
 		generator.run(ARGV[0])
 	end

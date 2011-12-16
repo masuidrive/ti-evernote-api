@@ -6,9 +6,9 @@
 #import "<%= struct.proxy_class_name %>.h"
 <% end %>
 
-#import "<%= @module_name %>.h"
+#import "<%= @module_name %>Module.h"
 
-@implementation <%= @module_name %>(<%= s.class_name %>)
+@implementation <%= @module_name %>Module (<%= s.class_name %>)
 -(id)create<%= s.name %>:(id)args
 {
     return [[[<%= s.proxy_class_name %> alloc] initWithObject: [[[<%= s.class_name %> alloc] init] autorelease]] autorelease];

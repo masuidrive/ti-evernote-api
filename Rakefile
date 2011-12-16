@@ -13,7 +13,7 @@ task :generate_ios_module do
 	Dir::glob(File.join("#{THRIFT_PATH}", "*.thrift")).each do |filename|
 		puts "Load: #{filename}"
 		generator = IOSGenerator.new
-		generator.module_name = MODULE_ID.sub(/^[a-z]/, &:upcase).gsub(/\.[a-z]/, &:upcase).gsub('.', '')+"Module"
+		generator.module_name = MODULE_ID.sub(/^[a-z]/, &:upcase).gsub(/\.[a-z]/, &:upcase).gsub('.', '')
 		generator.load(filename)
 		generator.run('ios_module/EvernoteAPIProxy/')
 	end

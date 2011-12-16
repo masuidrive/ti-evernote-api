@@ -2,7 +2,7 @@
 #import "TiThriftUtils.h"
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@implementation JpMasuidriveTiEvernoteapiModule(LimitsConstValues)
+@implementation JpMasuidriveTiEvernoteapiModule (LimitsConstValues)
 
 -(id)Limits
 {

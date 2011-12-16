@@ -2,7 +2,7 @@
 #import "TiThriftUtils.h"
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@implementation JpMasuidriveTiEvernoteapiModule(UserStoreConstValues)
+@implementation JpMasuidriveTiEvernoteapiModule (UserStoreConstValues)
 
 -(id)UserStore
 {

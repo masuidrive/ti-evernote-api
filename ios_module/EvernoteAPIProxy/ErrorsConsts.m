@@ -2,7 +2,7 @@
 #import "TiThriftUtils.h"
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
-@implementation JpMasuidriveTiEvernoteapiModule(ErrorsConstValues)
+@implementation JpMasuidriveTiEvernoteapiModule (ErrorsConstValues)
 
 -(id)Errors
 {
