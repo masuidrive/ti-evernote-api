@@ -264,6 +264,7 @@ class IOSGenerator
 		end
 
 		consts = @space.root.consts
+		enums = @space.root.enums
 		open(File.join(dir, "#{@basename}Consts.m"), 'w') do |f|
 			f.write ERB.new(open("#{ERB_PATH}/consts.m.erb").read, nil, '-').result(binding)
 		end

@@ -17,8 +17,9 @@ window.open();
 // TODO: write your module tests here
 var evernote = require('jp.masuidrive.ti.evernoteapi');
 Ti.API.info("module is => " + evernote);
-Ti.API.info(evernote.Types);
 Ti.API.info(evernote.Types.EDAM_NOTE_SOURCE_MAIL_CLIP);
+Ti.API.info(evernote.Types.PrivilegeLevel);
+Ti.API.info(evernote.Types.PrivilegeLevel.SUPPORT);
 
 var userstore = evernote.createUserStoreClient(config.url+"user");
 var session = userstore.authenticate(config.demo.email, config.demo.password, config.consumerKey, config.consumerSecret);

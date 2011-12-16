@@ -14,9 +14,14 @@
 		result = [NSDictionary dictionaryWithObjectsAndKeys:
 <%=
 			consts.map { |name, op|
-				"			"+[op.object.titanium(@space), '@"%s"' % name].join(', ')
-			}.join(",\n")
-%>,
+				"			" + op.object.titanium(@space) + (', @"%s"' % name)+",\n"
+			}.join
+%>
+<%=
+			enums.map { |name, op|
+				"			" + ("[NSDictionary dictionaryWithObjectsAndKeys:\n%s				nil]" % op.items.map{|k, v| "				NUMDOUBLE(%s), @\"%s\",\n" % [v, k]}.join) + (", @\"%s\",\n" % name)
+			}.join
+%>
 			nil];
 	}
 	return result;

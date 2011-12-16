@@ -4,13 +4,19 @@
 
 ### iOS
 
-* Implemented all services, structurs and const values
-* Working for to define Enum
+* Implemented all services, structurs, enums, const values
 * Currently, all API call is sync/blocked method. I'll code async feature.
 
 ### Android
 
 Not yet
+
+
+### Documents
+
+Sorry, This module's documentation is nothing now. My English skill is horrible. :-(
+
+Please see 'examples/app.js' and 'doc/html/index.html'
 
 
 ## License

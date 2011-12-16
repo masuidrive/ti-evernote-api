@@ -11,6 +11,8 @@
 		result = [NSDictionary dictionaryWithObjectsAndKeys:
 			NUMDOUBLE(1.0), @"EDAM_VERSION_MAJOR",
 			NUMDOUBLE(19.0), @"EDAM_VERSION_MINOR",
+
+
 			nil];
 	}
 	return result;
