@@ -5,7 +5,7 @@
 ### iOS
 
 * Implemented all services, structurs, enums, const values
-* Currently, all API call is sync/blocked method. I'll code async feature.
+* Currently, creating ErrorProxy class. it's final task.
 
 ### Android
 
