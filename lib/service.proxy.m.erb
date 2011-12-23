@@ -26,13 +26,10 @@
 
 - (id)initWithUri: (NSString*)uri
 {
-    NSURL* nsurl = [[[NSURL alloc] initWithString: uri] autorelease];
-    
-    THTTPClient* httpClient = [[[THTTPClient alloc] initWithURL: nsurl] autorelease];
-    TBinaryProtocol* protocol = [[[TBinaryProtocol alloc] initWithTransport:httpClient] autorelease];
-    
-    self.client = [[[<%= s.class_name %> alloc] initWithProtocol:protocol] autorelease];
-    
+    self = [super initWithUri:uri];
+    if (self != nil) {
+        self.client = [[[<%= s.class_name %> alloc] initWithProtocol:protocol] autorelease];
+    }
     return self;
 }
 
@@ -42,18 +39,37 @@
     [super dealloc];
 }
 
-<% s.functions.each do |function| %>
-- (id)<%= function.name %>: (id)args
-{
-    ENSURE_ARG_COUNT(args, <%= function.arguments.length %>);
-<%-
+<% s.functions.each do |function|
     idx = 0
     func_args = function.args.map do |arg|
         idx += 1
         " : " + arg.type.objc(@space, "[args objectAtIndex:#{idx-1}]")
     end
--%>
-    return <%= function.result=='void' ? '@""' : function.result.titanium(@space, "[client #{function.name}#{func_args.join('')}]") %>;
+%>
+- (id)<%= function.name %>: (id)args
+{
+    ENSURE_ARG_COUNT(args, <%= function.arguments.length + 1 %>);
+
+    dispatch_async(queue, ^{
+        KrollCallback* callback = [args objectAtIndex:<%= function.arguments.length %>];
+        @try {
+            <%=
+                if function.result == 'void'
+                    code = "[client #{function.name}#{func_args.join('')}]"
+                    "%s;\n                    NSDictionary *event = [NSDictionary dictionary];" % code
+                else
+                    code = function.result.titanium(@space, "[client #{function.name}#{func_args.join('')}]")
+                    'NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: %s, @"result", nil];' % code
+                end
+            %>
+            [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
+        }
+        @catch (NSException *exception) {
+            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
+        }
+    });
+    return self;
 }
 <% end %>
 @end

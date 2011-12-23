@@ -1,7 +1,8 @@
 #import "TiProxy.h"
 #import "<%= @basename %>.h"
+#import "JpMasuidriveTiEvernoteapiClientProxy.h"
 
-@interface <%= s.proxy_class_name %> : TiProxy {
+@interface <%= s.proxy_class_name %> : JpMasuidriveTiEvernoteapiClientProxy {
 @private
     <%= s.class_name %>* client;
 }

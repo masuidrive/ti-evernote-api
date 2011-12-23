@@ -15,7 +15,7 @@ task :generate_ios_module do
 		generator = IOSGenerator.new
 		generator.module_name = MODULE_ID.sub(/^[a-z]/, &:upcase).gsub(/\.[a-z]/, &:upcase).gsub('.', '')
 		generator.load(filename)
-		generator.run('ios_module/EvernoteAPIProxy/')
+		generator.run('ios_module/Classes/EvernoteProxy/')
 	end
 end
 

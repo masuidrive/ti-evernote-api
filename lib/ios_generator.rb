@@ -37,7 +37,7 @@ class StructOp
 	end
 
 	def proxy_class_name
-		"#{@module_name}#{@ns}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}Proxy"
+		"#{@module_name}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}Proxy"
 	end
 end
 
@@ -49,7 +49,7 @@ class ServiceOp
 	end
 
 	def proxy_class_name
-		"#{@module_name}#{@ns}#{name.sub(/^[a-z]/,&:upcase)}ClientProxy"
+		"#{@module_name}#{name.sub(/^[a-z]/,&:upcase)}ClientProxy"
 	end
 end
 
@@ -267,7 +267,7 @@ class IOSGenerator
 
 		consts = @space.root.consts
 		enums = @space.root.enums
-		open(File.join(dir, "#{@basename}Consts.m"), 'w') do |f|
+		open(File.join(dir, "#{@module_name}#{@basename}Consts.m"), 'w') do |f|
 			f.write ERB.new(open("#{ERB_PATH}/consts.m.erb").read, nil, '-').result(binding)
 		end
 

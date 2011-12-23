@@ -26,75 +26,77 @@
 		24DD6CFA1134B3F500162E58 /* JpMasuidriveTiEvernoteapiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* JpMasuidriveTiEvernoteapiModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m */; };
-		59915AA714985907007722A5 /* ErrorsConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA214985907007722A5 /* ErrorsConsts.m */; };
-		59915AA814985907007722A5 /* LimitsConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA314985907007722A5 /* LimitsConsts.m */; };
-		59915AA914985907007722A5 /* NoteStoreConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA414985907007722A5 /* NoteStoreConsts.m */; };
-		59915AAA14985907007722A5 /* TypesConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA514985907007722A5 /* TypesConsts.m */; };
-		59915AAB14985907007722A5 /* UserStoreConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 59915AA614985907007722A5 /* UserStoreConsts.m */; };
-		599634BF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963443149B301C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.h */; };
-		599634C0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963444149B301E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.m */; };
-		599634C1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963445149B301F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.h */; };
-		599634C2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963446149B3021005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.m */; };
-		599634C3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963447149B3023005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.h */; };
-		599634C4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963448149B3024005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.m */; };
-		599634C5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963449149B3026005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.h */; };
-		599634C6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996344A149B3028005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.m */; };
-		599634C7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996344B149B302A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.h */; };
-		599634C8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996344C149B302B005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.m */; };
-		599634C9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996344D149B302D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.h */; };
-		599634CA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996344E149B302F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.m */; };
-		599634CB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996344F149B3031005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.h */; };
-		599634CC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963450149B3033005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.m */; };
-		599634CD149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963451149B3035005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.h */; };
-		599634CE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963452149B3038005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.m */; };
-		599634CF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963453149B303A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.h */; };
-		599634D0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963454149B303D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.m */; };
-		599634D1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963455149B303F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.h */; };
-		599634D2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963456149B3041005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.m */; };
-		599634D3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963457149B3044005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.h */; };
-		599634D4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963458149B3047005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.m */; };
-		599634D5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963459149B304A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.h */; };
-		599634D6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996345A149B304C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.m */; };
-		599634D7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996345B149B304E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.h */; };
-		599634D8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996345C149B3051005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.m */; };
-		599634D9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996345D149B3053005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.h */; };
-		599634DA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996345E149B3055005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.m */; };
-		599634DB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996345F149B3057005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.h */; };
-		599634DC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963460149B305A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.m */; };
-		599634DD149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963461149B305D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.h */; };
-		599634DE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963462149B305F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.m */; };
-		599634DF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963463149B3062005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.h */; };
-		599634E0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963464149B3065005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.m */; };
-		599634E1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963465149B3068005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.h */; };
-		599634E2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963466149B306C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.m */; };
-		599634E3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963467149B306F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.h */; };
-		599634E4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963468149B3072005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.m */; };
-		599634E5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963469149B3075005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.h */; };
-		599634E6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996346A149B3078005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.m */; };
-		599634E7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996346B149B307B005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.h */; };
-		599634E8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996346C149B307E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.m */; };
-		599634E9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996346D149B3082005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.h */; };
-		599634EA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996346E149B3085005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.m */; };
-		599634EB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996346F149B3088005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.h */; };
-		599634EC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963470149B308C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.m */; };
-		599634ED149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963471149B308F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.h */; };
-		599634EE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963472149B3093005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.m */; };
-		599634EF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963473149B3096005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.h */; };
-		599634F0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963474149B3099005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.m */; };
-		599634F1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963475149B309D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.h */; };
-		599634F2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963476149B30A0005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.m */; };
-		599634F3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963477149B30A4005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.h */; };
-		599634F4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963478149B30A8005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.m */; };
-		599634F5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963479149B30AB005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.h */; };
-		599634F6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996347A149B30AF005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.m */; };
-		599634F7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996347B149B30B3005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.h */; };
-		599634F8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996347C149B30B7005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.m */; };
-		599634F9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996347D149B30BA005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.h */; };
-		599634FA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996347E149B30BE005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.m */; };
-		599634FB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996347F149B30C2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.h */; };
-		599634FC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963480149B30C6005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.m */; };
-		599634FD149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 59963481149B30CA005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.h */; };
-		599634FE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59963482149B30CE005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.m */; };
+		5939DE2214A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE2014A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.h */; };
+		5939DE2314A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE2114A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.m */; };
+		5939DE6B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE2614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.h */; };
+		5939DE6C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE2714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.m */; };
+		5939DE6D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE2814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.h */; };
+		5939DE6E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE2914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.m */; };
+		5939DE6F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE2A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.h */; };
+		5939DE7014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE2B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.m */; };
+		5939DE7114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE2C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.h */; };
+		5939DE7214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE2D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.m */; };
+		5939DE7314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE2E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.h */; };
+		5939DE7414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE2F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.m */; };
+		5939DE7514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.h */; };
+		5939DE7614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.m */; };
+		5939DE7714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiErrorsConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiErrorsConsts.m */; };
+		5939DE7814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLimitsConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLimitsConsts.m */; };
+		5939DE7914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.h */; };
+		5939DE7A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.m */; };
+		5939DE7B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.h */; };
+		5939DE7C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.m */; };
+		5939DE7D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.h */; };
+		5939DE7E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.m */; };
+		5939DE7F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.h */; };
+		5939DE8014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.m */; };
+		5939DE8114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.h */; };
+		5939DE8214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.m */; };
+		5939DE8314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE3E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.h */; };
+		5939DE8414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE3F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.m */; };
+		5939DE8514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.h */; };
+		5939DE8614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.m */; };
+		5939DE8714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.h */; };
+		5939DE8814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.m */; };
+		5939DE8914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.h */; };
+		5939DE8A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.m */; };
+		5939DE8B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.h */; };
+		5939DE8C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.m */; };
+		5939DE8D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.h */; };
+		5939DE8E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.m */; };
+		5939DE8F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.h */; };
+		5939DE9014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.m */; };
+		5939DE9114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreConsts.m */; };
+		5939DE9214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.h */; };
+		5939DE9314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE4E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.m */; };
+		5939DE9414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE4F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.h */; };
+		5939DE9514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.m */; };
+		5939DE9614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.h */; };
+		5939DE9714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.m */; };
+		5939DE9814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.h */; };
+		5939DE9914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.m */; };
+		5939DE9A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.h */; };
+		5939DE9B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.m */; };
+		5939DE9C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.h */; };
+		5939DE9D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.m */; };
+		5939DE9E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.h */; };
+		5939DE9F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.m */; };
+		5939DEA014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.h */; };
+		5939DEA114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.m */; };
+		5939DEA214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.h */; };
+		5939DEA314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE5E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.m */; };
+		5939DEA414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE5F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.h */; };
+		5939DEA514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.m */; };
+		5939DEA614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE6114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.h */; };
+		5939DEA714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.m */; };
+		5939DEA814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTypesConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTypesConsts.m */; };
+		5939DEA914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE6414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.h */; };
+		5939DEAA14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.m */; };
+		5939DEAB14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE6614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.h */; };
+		5939DEAC14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.m */; };
+		5939DEAD14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939DE6814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.h */; };
+		5939DEAE14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.m */; };
+		5939DEAF14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DE6A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreConsts.m */; };
 		59A813661498065A0022DD5D /* EDAMLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813411498065A0022DD5D /* EDAMLimits.h */; };
 		59A813671498065A0022DD5D /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A813421498065A0022DD5D /* EDAMLimits.m */; };
 		59A813681498065A0022DD5D /* Errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A813431498065A0022DD5D /* Errors.h */; };
@@ -150,75 +152,77 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMasuidriveTiEvernoteapiModuleAssets.h; path = Classes/JpMasuidriveTiEvernoteapiModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMasuidriveTiEvernoteapiModuleAssets.m; path = Classes/JpMasuidriveTiEvernoteapiModuleAssets.m; sourceTree = "<group>"; };
-		59915AA214985907007722A5 /* ErrorsConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorsConsts.m; sourceTree = "<group>"; };
-		59915AA314985907007722A5 /* LimitsConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimitsConsts.m; sourceTree = "<group>"; };
-		59915AA414985907007722A5 /* NoteStoreConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteStoreConsts.m; sourceTree = "<group>"; };
-		59915AA514985907007722A5 /* TypesConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesConsts.m; sourceTree = "<group>"; };
-		59915AA614985907007722A5 /* UserStoreConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStoreConsts.m; sourceTree = "<group>"; };
-		59963443149B301C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMAccountingProxy.h; sourceTree = "<group>"; };
-		59963444149B301E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMAccountingProxy.m; sourceTree = "<group>"; };
-		59963445149B301F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.h; sourceTree = "<group>"; };
-		59963446149B3021005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.m; sourceTree = "<group>"; };
-		59963447149B3023005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.h; sourceTree = "<group>"; };
-		59963448149B3024005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.m; sourceTree = "<group>"; };
-		59963449149B3026005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMAdProxy.h; sourceTree = "<group>"; };
-		5996344A149B3028005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMAdProxy.m; sourceTree = "<group>"; };
-		5996344B149B302A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.h; sourceTree = "<group>"; };
-		5996344C149B302B005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.m; sourceTree = "<group>"; };
-		5996344D149B302D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMDataProxy.h; sourceTree = "<group>"; };
-		5996344E149B302F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMDataProxy.m; sourceTree = "<group>"; };
-		5996344F149B3031005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.h; sourceTree = "<group>"; };
-		59963450149B3033005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.m; sourceTree = "<group>"; };
-		59963451149B3035005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.h; sourceTree = "<group>"; };
-		59963452149B3038005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.m; sourceTree = "<group>"; };
-		59963453149B303A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNotebookProxy.h; sourceTree = "<group>"; };
-		59963454149B303D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNotebookProxy.m; sourceTree = "<group>"; };
-		59963455149B303F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.h; sourceTree = "<group>"; };
-		59963456149B3041005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.m; sourceTree = "<group>"; };
-		59963457149B3044005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.h; sourceTree = "<group>"; };
-		59963458149B3047005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.m; sourceTree = "<group>"; };
-		59963459149B304A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.h; sourceTree = "<group>"; };
-		5996345A149B304C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.m; sourceTree = "<group>"; };
-		5996345B149B304E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteListProxy.h; sourceTree = "<group>"; };
-		5996345C149B3051005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteListProxy.m; sourceTree = "<group>"; };
-		5996345D149B3053005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.h; sourceTree = "<group>"; };
-		5996345E149B3055005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.m; sourceTree = "<group>"; };
-		5996345F149B3057005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteProxy.h; sourceTree = "<group>"; };
-		59963460149B305A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteProxy.m; sourceTree = "<group>"; };
-		59963461149B305D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.h; sourceTree = "<group>"; };
-		59963462149B305F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.m; sourceTree = "<group>"; };
-		59963463149B3062005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.h; sourceTree = "<group>"; };
-		59963464149B3065005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.m; sourceTree = "<group>"; };
-		59963465149B3068005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.h; sourceTree = "<group>"; };
-		59963466149B306C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.m; sourceTree = "<group>"; };
-		59963467149B306F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.h; sourceTree = "<group>"; };
-		59963468149B3072005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.m; sourceTree = "<group>"; };
-		59963469149B3075005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.h; sourceTree = "<group>"; };
-		5996346A149B3078005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.m; sourceTree = "<group>"; };
-		5996346B149B307B005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMPublishingProxy.h; sourceTree = "<group>"; };
-		5996346C149B307E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMPublishingProxy.m; sourceTree = "<group>"; };
-		5996346D149B3082005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.h; sourceTree = "<group>"; };
-		5996346E149B3085005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.m; sourceTree = "<group>"; };
-		5996346F149B3088005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMResourceProxy.h; sourceTree = "<group>"; };
-		59963470149B308C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMResourceProxy.m; sourceTree = "<group>"; };
-		59963471149B308F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.h; sourceTree = "<group>"; };
-		59963472149B3093005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.m; sourceTree = "<group>"; };
-		59963473149B3096005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.h; sourceTree = "<group>"; };
-		59963474149B3099005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.m; sourceTree = "<group>"; };
-		59963475149B309D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.h; sourceTree = "<group>"; };
-		59963476149B30A0005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.m; sourceTree = "<group>"; };
-		59963477149B30A4005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.h; sourceTree = "<group>"; };
-		59963478149B30A8005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.m; sourceTree = "<group>"; };
-		59963479149B30AB005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.h; sourceTree = "<group>"; };
-		5996347A149B30AF005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.m; sourceTree = "<group>"; };
-		5996347B149B30B3005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMTagProxy.h; sourceTree = "<group>"; };
-		5996347C149B30B7005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMTagProxy.m; sourceTree = "<group>"; };
-		5996347D149B30BA005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.h; sourceTree = "<group>"; };
-		5996347E149B30BE005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.m; sourceTree = "<group>"; };
-		5996347F149B30C2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMUserProxy.h; sourceTree = "<group>"; };
-		59963480149B30C6005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMUserProxy.m; sourceTree = "<group>"; };
-		59963481149B30CA005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.h; sourceTree = "<group>"; };
-		59963482149B30CE005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.m; sourceTree = "<group>"; };
+		5939DE2014A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMasuidriveTiEvernoteapiClientProxy.h; path = Classes/JpMasuidriveTiEvernoteapiClientProxy.h; sourceTree = "<group>"; };
+		5939DE2114A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMasuidriveTiEvernoteapiClientProxy.m; path = Classes/JpMasuidriveTiEvernoteapiClientProxy.m; sourceTree = "<group>"; };
+		5939DE2614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiAccountingProxy.h; sourceTree = "<group>"; };
+		5939DE2714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiAccountingProxy.m; sourceTree = "<group>"; };
+		5939DE2814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiAdImpressionsProxy.h; sourceTree = "<group>"; };
+		5939DE2914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiAdImpressionsProxy.m; sourceTree = "<group>"; };
+		5939DE2A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiAdParametersProxy.h; sourceTree = "<group>"; };
+		5939DE2B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiAdParametersProxy.m; sourceTree = "<group>"; };
+		5939DE2C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiAdProxy.h; sourceTree = "<group>"; };
+		5939DE2D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiAdProxy.m; sourceTree = "<group>"; };
+		5939DE2E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiAuthenticationResultProxy.h; sourceTree = "<group>"; };
+		5939DE2F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiAuthenticationResultProxy.m; sourceTree = "<group>"; };
+		5939DE3014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiDataProxy.h; sourceTree = "<group>"; };
+		5939DE3114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiDataProxy.m; sourceTree = "<group>"; };
+		5939DE3214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiErrorsConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiErrorsConsts.m; sourceTree = "<group>"; };
+		5939DE3314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLimitsConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiLimitsConsts.m; sourceTree = "<group>"; };
+		5939DE3414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiLinkedNotebookProxy.h; sourceTree = "<group>"; };
+		5939DE3514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiLinkedNotebookProxy.m; sourceTree = "<group>"; };
+		5939DE3614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteAttributesProxy.h; sourceTree = "<group>"; };
+		5939DE3714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteAttributesProxy.m; sourceTree = "<group>"; };
+		5939DE3814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNotebookProxy.h; sourceTree = "<group>"; };
+		5939DE3914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNotebookProxy.m; sourceTree = "<group>"; };
+		5939DE3A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.h; sourceTree = "<group>"; };
+		5939DE3B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.m; sourceTree = "<group>"; };
+		5939DE3C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.h; sourceTree = "<group>"; };
+		5939DE3D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.m; sourceTree = "<group>"; };
+		5939DE3E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteFilterProxy.h; sourceTree = "<group>"; };
+		5939DE3F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteFilterProxy.m; sourceTree = "<group>"; };
+		5939DE4014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteListProxy.h; sourceTree = "<group>"; };
+		5939DE4114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteListProxy.m; sourceTree = "<group>"; };
+		5939DE4214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteMetadataProxy.h; sourceTree = "<group>"; };
+		5939DE4314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteMetadataProxy.m; sourceTree = "<group>"; };
+		5939DE4414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteProxy.h; sourceTree = "<group>"; };
+		5939DE4514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteProxy.m; sourceTree = "<group>"; };
+		5939DE4614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNotesMetadataListProxy.h; sourceTree = "<group>"; };
+		5939DE4714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNotesMetadataListProxy.m; sourceTree = "<group>"; };
+		5939DE4814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.h; sourceTree = "<group>"; };
+		5939DE4914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.m; sourceTree = "<group>"; };
+		5939DE4A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteStoreClientProxy.h; sourceTree = "<group>"; };
+		5939DE4B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteStoreClientProxy.m; sourceTree = "<group>"; };
+		5939DE4C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteStoreConsts.m; sourceTree = "<group>"; };
+		5939DE4D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiNoteVersionIdProxy.h; sourceTree = "<group>"; };
+		5939DE4E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiNoteVersionIdProxy.m; sourceTree = "<group>"; };
+		5939DE4F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiPublicUserInfoProxy.h; sourceTree = "<group>"; };
+		5939DE5014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiPublicUserInfoProxy.m; sourceTree = "<group>"; };
+		5939DE5114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiPublishingProxy.h; sourceTree = "<group>"; };
+		5939DE5214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiPublishingProxy.m; sourceTree = "<group>"; };
+		5939DE5314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiResourceAttributesProxy.h; sourceTree = "<group>"; };
+		5939DE5414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiResourceAttributesProxy.m; sourceTree = "<group>"; };
+		5939DE5514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiResourceProxy.h; sourceTree = "<group>"; };
+		5939DE5614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiResourceProxy.m; sourceTree = "<group>"; };
+		5939DE5714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiSavedSearchProxy.h; sourceTree = "<group>"; };
+		5939DE5814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiSavedSearchProxy.m; sourceTree = "<group>"; };
+		5939DE5914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiSharedNotebookProxy.h; sourceTree = "<group>"; };
+		5939DE5A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiSharedNotebookProxy.m; sourceTree = "<group>"; };
+		5939DE5B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.h; sourceTree = "<group>"; };
+		5939DE5C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.m; sourceTree = "<group>"; };
+		5939DE5D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiSyncChunkProxy.h; sourceTree = "<group>"; };
+		5939DE5E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiSyncChunkProxy.m; sourceTree = "<group>"; };
+		5939DE5F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiSyncStateProxy.h; sourceTree = "<group>"; };
+		5939DE6014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiSyncStateProxy.m; sourceTree = "<group>"; };
+		5939DE6114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiTagProxy.h; sourceTree = "<group>"; };
+		5939DE6214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiTagProxy.m; sourceTree = "<group>"; };
+		5939DE6314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTypesConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiTypesConsts.m; sourceTree = "<group>"; };
+		5939DE6414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiUserAttributesProxy.h; sourceTree = "<group>"; };
+		5939DE6514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiUserAttributesProxy.m; sourceTree = "<group>"; };
+		5939DE6614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiUserProxy.h; sourceTree = "<group>"; };
+		5939DE6714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiUserProxy.m; sourceTree = "<group>"; };
+		5939DE6814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMasuidriveTiEvernoteapiUserStoreClientProxy.h; sourceTree = "<group>"; };
+		5939DE6914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiUserStoreClientProxy.m; sourceTree = "<group>"; };
+		5939DE6A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpMasuidriveTiEvernoteapiUserStoreConsts.m; sourceTree = "<group>"; };
 		59A813411498065A0022DD5D /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
 		59A813421498065A0022DD5D /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
 		59A813431498065A0022DD5D /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
@@ -301,11 +305,13 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				59A813871498072E0022DD5D /* EvernoteAPIProxy */,
+				5939DE2514A4321E00F01FF2 /* EvernoteProxy */,
 				24DE9E0F11C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* JpMasuidriveTiEvernoteapiModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* JpMasuidriveTiEvernoteapiModule.h */,
 				24DD6CF81134B3F500162E58 /* JpMasuidriveTiEvernoteapiModule.m */,
+				5939DE2014A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.h */,
+				5939DE2114A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.m */,
 				59A814081498073B0022DD5D /* TiThriftUtils.h */,
 				59A814091498073B0022DD5D /* TiThriftUtils.m */,
 			);
@@ -320,6 +326,83 @@
 				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		5939DE2514A4321E00F01FF2 /* EvernoteProxy */ = {
+			isa = PBXGroup;
+			children = (
+				5939DE2614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.h */,
+				5939DE2714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.m */,
+				5939DE2814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.h */,
+				5939DE2914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.m */,
+				5939DE2A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.h */,
+				5939DE2B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.m */,
+				5939DE2C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.h */,
+				5939DE2D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.m */,
+				5939DE2E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.h */,
+				5939DE2F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.m */,
+				5939DE3014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.h */,
+				5939DE3114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.m */,
+				5939DE3214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiErrorsConsts.m */,
+				5939DE3314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLimitsConsts.m */,
+				5939DE3414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.h */,
+				5939DE3514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.m */,
+				5939DE3614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.h */,
+				5939DE3714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.m */,
+				5939DE3814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.h */,
+				5939DE3914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.m */,
+				5939DE3A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.h */,
+				5939DE3B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.m */,
+				5939DE3C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.h */,
+				5939DE3D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.m */,
+				5939DE3E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.h */,
+				5939DE3F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.m */,
+				5939DE4014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.h */,
+				5939DE4114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.m */,
+				5939DE4214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.h */,
+				5939DE4314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.m */,
+				5939DE4414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.h */,
+				5939DE4514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.m */,
+				5939DE4614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.h */,
+				5939DE4714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.m */,
+				5939DE4814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.h */,
+				5939DE4914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.m */,
+				5939DE4A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.h */,
+				5939DE4B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.m */,
+				5939DE4C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreConsts.m */,
+				5939DE4D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.h */,
+				5939DE4E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.m */,
+				5939DE4F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.h */,
+				5939DE5014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.m */,
+				5939DE5114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.h */,
+				5939DE5214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.m */,
+				5939DE5314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.h */,
+				5939DE5414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.m */,
+				5939DE5514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.h */,
+				5939DE5614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.m */,
+				5939DE5714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.h */,
+				5939DE5814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.m */,
+				5939DE5914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.h */,
+				5939DE5A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.m */,
+				5939DE5B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.h */,
+				5939DE5C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.m */,
+				5939DE5D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.h */,
+				5939DE5E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.m */,
+				5939DE5F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.h */,
+				5939DE6014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.m */,
+				5939DE6114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.h */,
+				5939DE6214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.m */,
+				5939DE6314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTypesConsts.m */,
+				5939DE6414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.h */,
+				5939DE6514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.m */,
+				5939DE6614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.h */,
+				5939DE6714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.m */,
+				5939DE6814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.h */,
+				5939DE6914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.m */,
+				5939DE6A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreConsts.m */,
+			);
+			name = EvernoteProxy;
+			path = Classes/EvernoteProxy;
 			sourceTree = "<group>";
 		};
 		59A8133F149806350022DD5D /* EvernoteAPI */ = {
@@ -404,82 +487,6 @@
 			path = transport;
 			sourceTree = "<group>";
 		};
-		59A813871498072E0022DD5D /* EvernoteAPIProxy */ = {
-			isa = PBXGroup;
-			children = (
-				59963443149B301C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.h */,
-				59963444149B301E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.m */,
-				59963445149B301F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.h */,
-				59963446149B3021005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.m */,
-				59963447149B3023005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.h */,
-				59963448149B3024005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.m */,
-				59963449149B3026005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.h */,
-				5996344A149B3028005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.m */,
-				5996344B149B302A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.h */,
-				5996344C149B302B005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.m */,
-				5996344D149B302D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.h */,
-				5996344E149B302F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.m */,
-				5996344F149B3031005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.h */,
-				59963450149B3033005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.m */,
-				59963451149B3035005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.h */,
-				59963452149B3038005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.m */,
-				59963453149B303A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.h */,
-				59963454149B303D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.m */,
-				59963455149B303F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.h */,
-				59963456149B3041005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.m */,
-				59963457149B3044005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.h */,
-				59963458149B3047005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.m */,
-				59963459149B304A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.h */,
-				5996345A149B304C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.m */,
-				5996345B149B304E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.h */,
-				5996345C149B3051005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.m */,
-				5996345D149B3053005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.h */,
-				5996345E149B3055005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.m */,
-				5996345F149B3057005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.h */,
-				59963460149B305A005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.m */,
-				59963461149B305D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.h */,
-				59963462149B305F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.m */,
-				59963463149B3062005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.h */,
-				59963464149B3065005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.m */,
-				59963465149B3068005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.h */,
-				59963466149B306C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.m */,
-				59963467149B306F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.h */,
-				59963468149B3072005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.m */,
-				59963469149B3075005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.h */,
-				5996346A149B3078005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.m */,
-				5996346B149B307B005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.h */,
-				5996346C149B307E005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.m */,
-				5996346D149B3082005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.h */,
-				5996346E149B3085005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.m */,
-				5996346F149B3088005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.h */,
-				59963470149B308C005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.m */,
-				59963471149B308F005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.h */,
-				59963472149B3093005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.m */,
-				59963473149B3096005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.h */,
-				59963474149B3099005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.m */,
-				59963475149B309D005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.h */,
-				59963476149B30A0005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.m */,
-				59963477149B30A4005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.h */,
-				59963478149B30A8005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.m */,
-				59963479149B30AB005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.h */,
-				5996347A149B30AF005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.m */,
-				5996347B149B30B3005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.h */,
-				5996347C149B30B7005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.m */,
-				5996347D149B30BA005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.h */,
-				5996347E149B30BE005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.m */,
-				5996347F149B30C2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.h */,
-				59963480149B30C6005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.m */,
-				59963481149B30CA005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.h */,
-				59963482149B30CE005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.m */,
-				59915AA214985907007722A5 /* ErrorsConsts.m */,
-				59915AA314985907007722A5 /* LimitsConsts.m */,
-				59915AA414985907007722A5 /* NoteStoreConsts.m */,
-				59915AA514985907007722A5 /* TypesConsts.m */,
-				59915AA614985907007722A5 /* UserStoreConsts.m */,
-			);
-			path = EvernoteAPIProxy;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -510,38 +517,39 @@
 				59A813831498065A0022DD5D /* TTransportException.h in Headers */,
 				59A813851498065A0022DD5D /* TSharedProcessorFactory.h in Headers */,
 				59A8140A1498073B0022DD5D /* TiThriftUtils.h in Headers */,
-				599634BF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.h in Headers */,
-				599634C1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.h in Headers */,
-				599634C3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.h in Headers */,
-				599634C5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.h in Headers */,
-				599634C7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.h in Headers */,
-				599634C9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.h in Headers */,
-				599634CB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.h in Headers */,
-				599634CD149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.h in Headers */,
-				599634CF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.h in Headers */,
-				599634D1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.h in Headers */,
-				599634D3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.h in Headers */,
-				599634D5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.h in Headers */,
-				599634D7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.h in Headers */,
-				599634D9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.h in Headers */,
-				599634DB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.h in Headers */,
-				599634DD149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.h in Headers */,
-				599634DF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.h in Headers */,
-				599634E1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.h in Headers */,
-				599634E3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.h in Headers */,
-				599634E5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.h in Headers */,
-				599634E7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.h in Headers */,
-				599634E9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.h in Headers */,
-				599634EB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.h in Headers */,
-				599634ED149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.h in Headers */,
-				599634EF149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.h in Headers */,
-				599634F1149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.h in Headers */,
-				599634F3149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.h in Headers */,
-				599634F5149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.h in Headers */,
-				599634F7149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.h in Headers */,
-				599634F9149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.h in Headers */,
-				599634FB149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.h in Headers */,
-				599634FD149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.h in Headers */,
+				5939DE2214A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.h in Headers */,
+				5939DE6B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.h in Headers */,
+				5939DE6D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.h in Headers */,
+				5939DE6F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.h in Headers */,
+				5939DE7114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.h in Headers */,
+				5939DE7314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.h in Headers */,
+				5939DE7514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.h in Headers */,
+				5939DE7914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.h in Headers */,
+				5939DE7B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.h in Headers */,
+				5939DE7D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.h in Headers */,
+				5939DE7F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.h in Headers */,
+				5939DE8114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.h in Headers */,
+				5939DE8314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.h in Headers */,
+				5939DE8514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.h in Headers */,
+				5939DE8714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.h in Headers */,
+				5939DE8914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.h in Headers */,
+				5939DE8B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.h in Headers */,
+				5939DE8D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.h in Headers */,
+				5939DE8F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.h in Headers */,
+				5939DE9214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.h in Headers */,
+				5939DE9414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.h in Headers */,
+				5939DE9614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.h in Headers */,
+				5939DE9814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.h in Headers */,
+				5939DE9A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.h in Headers */,
+				5939DE9C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.h in Headers */,
+				5939DE9E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.h in Headers */,
+				5939DEA014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.h in Headers */,
+				5939DEA214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.h in Headers */,
+				5939DEA414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.h in Headers */,
+				5939DEA614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.h in Headers */,
+				5939DEA914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.h in Headers */,
+				5939DEAB14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.h in Headers */,
+				5939DEAD14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,43 +637,44 @@
 				59A813841498065A0022DD5D /* TTransportException.m in Sources */,
 				59A813861498065A0022DD5D /* TSharedProcessorFactory.m in Sources */,
 				59A8140B1498073B0022DD5D /* TiThriftUtils.m in Sources */,
-				59915AA714985907007722A5 /* ErrorsConsts.m in Sources */,
-				59915AA814985907007722A5 /* LimitsConsts.m in Sources */,
-				59915AA914985907007722A5 /* NoteStoreConsts.m in Sources */,
-				59915AAA14985907007722A5 /* TypesConsts.m in Sources */,
-				59915AAB14985907007722A5 /* UserStoreConsts.m in Sources */,
-				599634C0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAccountingProxy.m in Sources */,
-				599634C2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdImpressionsProxy.m in Sources */,
-				599634C4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdParametersProxy.m in Sources */,
-				599634C6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAdProxy.m in Sources */,
-				599634C8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMAuthenticationResultProxy.m in Sources */,
-				599634CA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMDataProxy.m in Sources */,
-				599634CC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMLinkedNotebookProxy.m in Sources */,
-				599634CE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteAttributesProxy.m in Sources */,
-				599634D0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotebookProxy.m in Sources */,
-				599634D2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteCollectionCountsProxy.m in Sources */,
-				599634D4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteEmailParametersProxy.m in Sources */,
-				599634D6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteFilterProxy.m in Sources */,
-				599634D8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteListProxy.m in Sources */,
-				599634DA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteMetadataProxy.m in Sources */,
-				599634DC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteProxy.m in Sources */,
-				599634DE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataListProxy.m in Sources */,
-				599634E0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNotesMetadataResultSpecProxy.m in Sources */,
-				599634E2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteStoreClientProxy.m in Sources */,
-				599634E4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMNoteVersionIdProxy.m in Sources */,
-				599634E6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublicUserInfoProxy.m in Sources */,
-				599634E8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMPublishingProxy.m in Sources */,
-				599634EA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceAttributesProxy.m in Sources */,
-				599634EC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMResourceProxy.m in Sources */,
-				599634EE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSavedSearchProxy.m in Sources */,
-				599634F0149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSharedNotebookProxy.m in Sources */,
-				599634F2149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkFilterProxy.m in Sources */,
-				599634F4149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncChunkProxy.m in Sources */,
-				599634F6149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMSyncStateProxy.m in Sources */,
-				599634F8149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMTagProxy.m in Sources */,
-				599634FA149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserAttributesProxy.m in Sources */,
-				599634FC149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserProxy.m in Sources */,
-				599634FE149B30D2005AC1A3 /* JpMasuidriveTiEvernoteapiEDAMUserStoreClientProxy.m in Sources */,
+				5939DE2314A42D8400F01FF2 /* JpMasuidriveTiEvernoteapiClientProxy.m in Sources */,
+				5939DE6C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAccountingProxy.m in Sources */,
+				5939DE6E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdImpressionsProxy.m in Sources */,
+				5939DE7014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdParametersProxy.m in Sources */,
+				5939DE7214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAdProxy.m in Sources */,
+				5939DE7414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiAuthenticationResultProxy.m in Sources */,
+				5939DE7614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiDataProxy.m in Sources */,
+				5939DE7714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiErrorsConsts.m in Sources */,
+				5939DE7814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLimitsConsts.m in Sources */,
+				5939DE7A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiLinkedNotebookProxy.m in Sources */,
+				5939DE7C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteAttributesProxy.m in Sources */,
+				5939DE7E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotebookProxy.m in Sources */,
+				5939DE8014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy.m in Sources */,
+				5939DE8214A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteEmailParametersProxy.m in Sources */,
+				5939DE8414A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteFilterProxy.m in Sources */,
+				5939DE8614A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteListProxy.m in Sources */,
+				5939DE8814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteMetadataProxy.m in Sources */,
+				5939DE8A14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteProxy.m in Sources */,
+				5939DE8C14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataListProxy.m in Sources */,
+				5939DE8E14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy.m in Sources */,
+				5939DE9014A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreClientProxy.m in Sources */,
+				5939DE9114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteStoreConsts.m in Sources */,
+				5939DE9314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiNoteVersionIdProxy.m in Sources */,
+				5939DE9514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublicUserInfoProxy.m in Sources */,
+				5939DE9714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiPublishingProxy.m in Sources */,
+				5939DE9914A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceAttributesProxy.m in Sources */,
+				5939DE9B14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiResourceProxy.m in Sources */,
+				5939DE9D14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSavedSearchProxy.m in Sources */,
+				5939DE9F14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSharedNotebookProxy.m in Sources */,
+				5939DEA114A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkFilterProxy.m in Sources */,
+				5939DEA314A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncChunkProxy.m in Sources */,
+				5939DEA514A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiSyncStateProxy.m in Sources */,
+				5939DEA714A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTagProxy.m in Sources */,
+				5939DEA814A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiTypesConsts.m in Sources */,
+				5939DEAA14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserAttributesProxy.m in Sources */,
+				5939DEAC14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserProxy.m in Sources */,
+				5939DEAE14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreClientProxy.m in Sources */,
+				5939DEAF14A4321E00F01FF2 /* JpMasuidriveTiEvernoteapiUserStoreConsts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
