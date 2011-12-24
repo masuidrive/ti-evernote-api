@@ -52,7 +52,13 @@
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
         @catch (NSException *exception) {
-            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            NSDictionary *event;
+            if([exception respondsToSelector:@selector(dictionary)]) {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+            }
+            else {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
     });
@@ -70,7 +76,13 @@
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
         @catch (NSException *exception) {
-            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            NSDictionary *event;
+            if([exception respondsToSelector:@selector(dictionary)]) {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+            }
+            else {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
     });
@@ -88,7 +100,13 @@
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
         @catch (NSException *exception) {
-            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            NSDictionary *event;
+            if([exception respondsToSelector:@selector(dictionary)]) {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+            }
+            else {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
     });
@@ -106,7 +124,13 @@
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
         @catch (NSException *exception) {
-            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            NSDictionary *event;
+            if([exception respondsToSelector:@selector(dictionary)]) {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+            }
+            else {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
     });
@@ -124,7 +148,13 @@
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
         @catch (NSException *exception) {
-            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            NSDictionary *event;
+            if([exception respondsToSelector:@selector(dictionary)]) {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+            }
+            else {
+                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+            }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
     });

@@ -29,6 +29,18 @@ class ConstValueOp
 	end
 end
 
+class ExceptionOp
+	attr_accessor :ns, :module_name
+
+	def class_name
+		"#{@ns}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}"
+	end
+
+	def proxy_class_name
+		"#{@module_name}#{name.split('.').last.sub(/^[a-z]/,&:upcase)}Proxy"
+	end
+end
+
 class StructOp
 	attr_accessor :ns, :module_name
 
@@ -219,7 +231,7 @@ class IOSGenerator
 		
 		tree = ThriftIDL.new.parse(open(file).read)
 		ns = tree.namespaces['cocoa']
-		(tree.structs.values+tree.services.values).each do |s|
+		(tree.structs.values+tree.services.values+tree.exceptions.values).each do |s|
 			s.ns = ns
 			s.module_name = @module_name
 		end
@@ -243,6 +255,13 @@ class IOSGenerator
 	end
 
 	def run(dir)
+		@space.root.exceptions.each do |name, exception|
+			# structs = extract_structs(exception.fields.map{|f| f.type.types(@space)})
+			open(File.join(dir, "#{exception.proxy_class_name}.m"), 'w') do |f|
+				f.write ERB.new(open("#{ERB_PATH}/exception.m.erb").read, nil, '-').result(binding)
+			end
+		end
+
 		@space.root.structs.each do |name, s|
 			structs = extract_structs(s.fields.map{|f| f.type.types(@space)})
 			open(File.join(dir, "#{s.proxy_class_name}.m"), 'w') do |f|

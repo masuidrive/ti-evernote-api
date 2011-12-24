@@ -1,0 +1,15 @@
+#import "<%= @basename %>.h"
+#import "TiUtils.h"
+#import "TiThriftUtils.h"
+
+@implementation <%= exception.class_name %> (Dictionary)
+-(NSDictionary*)dictionary
+{
+	return [NSDictionary dictionaryWithObjectsAndKeys:
+		NSStringFromClass([self class]), @"exceptionType",
+<%- exception.fields.each do |field| -%>
+		<%= field.type.titanium(@space, "self.#{field.name}") %>, @"<%= field.name %>",
+<%- end -%>
+	nil];
+}
+@end

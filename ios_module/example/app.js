@@ -24,24 +24,44 @@ Ti.API.info(evernote.Types.PrivilegeLevel.SUPPORT);
 
 
 var userstore = evernote.createUserStoreClient(config.url+"user");
-Ti.API.info(userstore);
 userstore.authenticate(config.demo.email, config.demo.password, config.consumerKey, config.consumerSecret, function(event) {
-//	Ti.API.info(event.error);
-	Ti.API.info(event);
-//	Ti.API.info(event.result.user.username);
 	if(event.type == 'success') {
 		var notestore = evernote.createNoteStoreClient(config.url+"note/"+event.result.user.shardId);
 		
 		var notes = notestore.listNotebooks(event.result.authenticationToken, function(event2) {
 			table.data = event2.result.map(function(note){ return({title: note.name}); });
-			/*
+			
 			var note = evernote.createNote();
-			note.title = 'Te222st';
-			note.tagNames = ['tag1', 'tag222'];
-			notestore.createNote(event.result.authenticationToken, note, function(e) {
-				Ti.API.info(e);
+			note.title = 'Test';
+			note.tagNames = ['tag1', 'tag2'];
+			
+			var data = evernote.createData();
+			var file  = Ti.Filesystem.getFile(
+				Titanium.Filesystem.resourcesDirectory + '/appcelerator_ja.png'
+			);
+			data.body = file.read();
+			data.size = data.body.length;
+
+			var attrs = evernote.createResourceAttributes();
+			attrs.fileName = "appcelerator_ja.png";
+			
+			var res = evernote.createResource();
+			res.data = data;
+			res.mime = "image/png";
+			res.attributes = attrs;
+			
+			note.resources = [res];
+
+			notestore.createNote(event.result.authenticationToken, note, function(event) {
+				Ti.API.info(event);
+				if(event.type == 'success') {
+					alert("Create new note");
+				}
+				else {
+					alert(event.error);
+				}
 			});
-			*/
+
 		});
 	}
 	else {
