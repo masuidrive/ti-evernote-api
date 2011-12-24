@@ -71,6 +71,6 @@ Please see 'examples/app.js' and 'doc/html/index.html'
 
 ## License
 
-2011 Yuichiro MASUI. &lt;masui@masuidrive.jp&gt; All rights reserved.
+2011 Yuichiro MASUI &lt;masui@masuidrive.jp&gt; All rights reserved.
 
 License: Apache License 2.0
