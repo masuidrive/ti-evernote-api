@@ -45,10 +45,10 @@
 
 - (id)initWithUri: (NSString*)uri
 {
-    [super initWithUri:uri];
-    
-    self.client = [[[EDAMNoteStoreClient alloc] initWithProtocol:protocol] autorelease];
-    
+    self = [super initWithUri:uri];
+    if (self != nil) {
+        self.client = [[[EDAMNoteStoreClient alloc] initWithProtocol:protocol] autorelease];
+    }
     return self;
 }
 

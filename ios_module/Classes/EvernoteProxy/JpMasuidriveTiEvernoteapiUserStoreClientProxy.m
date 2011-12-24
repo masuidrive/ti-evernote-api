@@ -27,10 +27,10 @@
 
 - (id)initWithUri: (NSString*)uri
 {
-    [super initWithUri:uri];
-    
-    self.client = [[[EDAMUserStoreClient alloc] initWithProtocol:protocol] autorelease];
-    
+    self = [super initWithUri:uri];
+    if (self != nil) {
+        self.client = [[[EDAMUserStoreClient alloc] initWithProtocol:protocol] autorelease];
+    }
     return self;
 }
 

@@ -3,8 +3,8 @@
 # during compilation, packaging, distribution, etc.
 #
 version: 0.1
-description: EvernoteAPI
-author: Yuichiro MASUI
+description: Evernote API module
+author: Yuichiro MASUI <masui@masuidrive.jp>
 license: Apache License 2.0
 copyright: Copyright (c) 2011 by Yuichiro MASUI.
 

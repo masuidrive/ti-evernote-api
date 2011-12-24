@@ -25,7 +25,9 @@ Ti.API.info(evernote.Types.PrivilegeLevel.SUPPORT);
 var userstore = evernote.createUserStoreClient(config.url+"user");
 Ti.API.info(userstore);
 userstore.authenticate(config.demo.email, config.demo.password, config.consumerKey, config.consumerSecret, function(event) {
-	Ti.API.info(event.result.user.username);
+//	Ti.API.info(event.error);
+//	Ti.API.info(event);
+//	Ti.API.info(event.result.user.username);
 	var notestore = evernote.createNoteStoreClient(config.url+"note/"+event.result.user.shardId);
 	
 	var notes = notestore.listNotebooks(event.result.authenticationToken, function(event2) {

@@ -5,7 +5,8 @@
 ### iOS
 
 * Implemented all services, structurs, enums, const values
-* Currently, creating ErrorProxy class. it's final task.
+* I'll test file upload
+* It's worked on 1.7.5 and 1.8.0.1
 
 ### Android
 
