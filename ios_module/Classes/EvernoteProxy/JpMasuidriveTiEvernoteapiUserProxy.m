@@ -22,12 +22,12 @@
 
 -(id)id
 {
-    return NUMINT(object.id);
+    return NUMLONG(object.id);
 }
 
 -(void)setId:(id)value
 {
-    object.id = [value integerValue];
+    object.id = [value longValue];
 }
 
 
@@ -77,45 +77,45 @@
 
 -(id)privilege
 {
-    return NUMINT(object.privilege);
+    return NUMLONG(object.privilege);
 }
 
 -(void)setPrivilege:(id)value
 {
-    object.privilege = [value integerValue];
+    object.privilege = [value longValue];
 }
 
 
 -(id)created
 {
-    return NUMLONG(object.created);
+    return NUMLONGLONG(object.created);
 }
 
 -(void)setCreated:(id)value
 {
-    object.created = [value longValue];
+    object.created = [value longLongValue];
 }
 
 
 -(id)updated
 {
-    return NUMLONG(object.updated);
+    return NUMLONGLONG(object.updated);
 }
 
 -(void)setUpdated:(id)value
 {
-    object.updated = [value longValue];
+    object.updated = [value longLongValue];
 }
 
 
 -(id)deleted
 {
-    return NUMLONG(object.deleted);
+    return NUMLONGLONG(object.deleted);
 }
 
 -(void)setDeleted:(id)value
 {
-    object.deleted = [value longValue];
+    object.deleted = [value longLongValue];
 }
 
 

@@ -20,12 +20,12 @@
 
 -(id)order
 {
-    return NUMINT(object.order);
+    return NUMLONG(object.order);
 }
 
 -(void)setOrder:(id)value
 {
-    object.order = [value integerValue];
+    object.order = [value longValue];
 }
 
 

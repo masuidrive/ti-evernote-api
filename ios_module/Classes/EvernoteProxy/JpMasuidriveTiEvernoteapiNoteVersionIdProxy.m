@@ -20,34 +20,34 @@
 
 -(id)updateSequenceNum
 {
-    return NUMINT(object.updateSequenceNum);
+    return NUMLONG(object.updateSequenceNum);
 }
 
 -(void)setUpdateSequenceNum:(id)value
 {
-    object.updateSequenceNum = [value integerValue];
+    object.updateSequenceNum = [value longValue];
 }
 
 
 -(id)updated
 {
-    return NUMLONG(object.updated);
+    return NUMLONGLONG(object.updated);
 }
 
 -(void)setUpdated:(id)value
 {
-    object.updated = [value longValue];
+    object.updated = [value longLongValue];
 }
 
 
 -(id)saved
 {
-    return NUMLONG(object.saved);
+    return NUMLONGLONG(object.saved);
 }
 
 -(void)setSaved:(id)value
 {
-    object.saved = [value longValue];
+    object.saved = [value longLongValue];
 }
 
 

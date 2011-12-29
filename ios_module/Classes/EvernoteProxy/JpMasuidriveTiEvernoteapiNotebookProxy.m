@@ -43,12 +43,12 @@
 
 -(id)updateSequenceNum
 {
-    return NUMINT(object.updateSequenceNum);
+    return NUMLONG(object.updateSequenceNum);
 }
 
 -(void)setUpdateSequenceNum:(id)value
 {
-    object.updateSequenceNum = [value integerValue];
+    object.updateSequenceNum = [value longValue];
 }
 
 
@@ -65,23 +65,23 @@
 
 -(id)serviceCreated
 {
-    return NUMLONG(object.serviceCreated);
+    return NUMLONGLONG(object.serviceCreated);
 }
 
 -(void)setServiceCreated:(id)value
 {
-    object.serviceCreated = [value longValue];
+    object.serviceCreated = [value longLongValue];
 }
 
 
 -(id)serviceUpdated
 {
-    return NUMLONG(object.serviceUpdated);
+    return NUMLONGLONG(object.serviceUpdated);
 }
 
 -(void)setServiceUpdated:(id)value
 {
-    object.serviceUpdated = [value longValue];
+    object.serviceUpdated = [value longLongValue];
 }
 
 

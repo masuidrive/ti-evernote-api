@@ -26,34 +26,34 @@
 
 -(id)currentTime
 {
-    return NUMLONG(object.currentTime);
+    return NUMLONGLONG(object.currentTime);
 }
 
 -(void)setCurrentTime:(id)value
 {
-    object.currentTime = [value longValue];
+    object.currentTime = [value longLongValue];
 }
 
 
 -(id)chunkHighUSN
 {
-    return NUMINT(object.chunkHighUSN);
+    return NUMLONG(object.chunkHighUSN);
 }
 
 -(void)setChunkHighUSN:(id)value
 {
-    object.chunkHighUSN = [value integerValue];
+    object.chunkHighUSN = [value longValue];
 }
 
 
 -(id)updateCount
 {
-    return NUMINT(object.updateCount);
+    return NUMLONG(object.updateCount);
 }
 
 -(void)setUpdateCount:(id)value
 {
-    object.updateCount = [value integerValue];
+    object.updateCount = [value longValue];
 }
 
 

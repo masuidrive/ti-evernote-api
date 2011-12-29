@@ -20,23 +20,23 @@
 
 -(id)id
 {
-    return NUMLONG(object.id);
+    return NUMLONGLONG(object.id);
 }
 
 -(void)setId:(id)value
 {
-    object.id = [value longValue];
+    object.id = [value longLongValue];
 }
 
 
 -(id)userId
 {
-    return NUMINT(object.userId);
+    return NUMLONG(object.userId);
 }
 
 -(void)setUserId:(id)value
 {
-    object.userId = [value integerValue];
+    object.userId = [value longValue];
 }
 
 
@@ -86,12 +86,12 @@
 
 -(id)serviceCreated
 {
-    return NUMLONG(object.serviceCreated);
+    return NUMLONGLONG(object.serviceCreated);
 }
 
 -(void)setServiceCreated:(id)value
 {
-    object.serviceCreated = [value longValue];
+    object.serviceCreated = [value longLongValue];
 }
 
 

@@ -132,12 +132,12 @@
 
 -(id)updateSequenceNum
 {
-    return NUMINT(object.updateSequenceNum);
+    return NUMLONG(object.updateSequenceNum);
 }
 
 -(void)setUpdateSequenceNum:(id)value
 {
-    object.updateSequenceNum = [value integerValue];
+    object.updateSequenceNum = [value longValue];
 }
 
 

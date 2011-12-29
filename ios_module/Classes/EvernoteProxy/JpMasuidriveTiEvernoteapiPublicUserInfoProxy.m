@@ -20,12 +20,12 @@
 
 -(id)userId
 {
-    return NUMINT(object.userId);
+    return NUMLONG(object.userId);
 }
 
 -(void)setUserId:(id)value
 {
-    object.userId = [value integerValue];
+    object.userId = [value longValue];
 }
 
 
@@ -42,12 +42,12 @@
 
 -(id)privilege
 {
-    return NUMINT(object.privilege);
+    return NUMLONG(object.privilege);
 }
 
 -(void)setPrivilege:(id)value
 {
-    object.privilege = [value integerValue];
+    object.privilege = [value longValue];
 }
 
 

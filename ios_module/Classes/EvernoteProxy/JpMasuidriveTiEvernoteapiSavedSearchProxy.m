@@ -53,23 +53,23 @@
 
 -(id)format
 {
-    return NUMINT(object.format);
+    return NUMLONG(object.format);
 }
 
 -(void)setFormat:(id)value
 {
-    object.format = [value integerValue];
+    object.format = [value longValue];
 }
 
 
 -(id)updateSequenceNum
 {
-    return NUMINT(object.updateSequenceNum);
+    return NUMLONG(object.updateSequenceNum);
 }
 
 -(void)setUpdateSequenceNum:(id)value
 {
-    object.updateSequenceNum = [value integerValue];
+    object.updateSequenceNum = [value longValue];
 }
 
 

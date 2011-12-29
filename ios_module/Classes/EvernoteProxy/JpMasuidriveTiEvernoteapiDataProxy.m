@@ -31,12 +31,12 @@
 
 -(id)size
 {
-    return NUMINT(object.size);
+    return NUMLONG(object.size);
 }
 
 -(void)setSize:(id)value
 {
-    object.size = [value integerValue];
+    object.size = [value longValue];
 }
 
 

@@ -5,7 +5,7 @@ require 'rubygems'
 require 'active_support'
 require 'erb'
 
-ERB_PATH = File.dirname(__FILE__)
+ERB_PATH = File.join(File.dirname(__FILE__), 'ios')
 
 class ConstValueOp
 	def titanium(space)
@@ -91,8 +91,8 @@ class TypeOp
 		'void' => ["nil", "nil"],
 		'bool' => ["NUMBOOL(%s)", "[%s boolValue]"],
 		'i16' => ["NUMINT(%s)", "[%s integerValue]"],
-		'i32' => ["NUMINT(%s)", "[%s integerValue]"],
-		'i64' => ["NUMLONG(%s)", "[%s longValue]"],
+		'i32' => ["NUMLONG(%s)", "[%s longValue]"],
+		'i64' => ["NUMLONGLONG(%s)", "[%s longLongValue]"],
 		'double' => ["NUMDOUBLE(%s)", "[%s doubleValue]"],
 		'string' => ["%s", "[TiUtils stringValue:%s]"],
 		'binary' => ["[[[TiBlob alloc] initWithData:%s mimetype:@\"application/octet-stream\"] autorelease]", "[%s data]"],

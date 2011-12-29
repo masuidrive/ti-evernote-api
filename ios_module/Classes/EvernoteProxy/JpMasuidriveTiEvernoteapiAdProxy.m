@@ -20,12 +20,12 @@
 
 -(id)id
 {
-    return NUMINT(object.id);
+    return NUMLONG(object.id);
 }
 
 -(void)setId:(id)value
 {
-    object.id = [value integerValue];
+    object.id = [value longValue];
 }
 
 

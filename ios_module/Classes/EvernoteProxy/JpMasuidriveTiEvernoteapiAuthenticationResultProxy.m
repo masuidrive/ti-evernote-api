@@ -22,12 +22,12 @@
 
 -(id)currentTime
 {
-    return NUMLONG(object.currentTime);
+    return NUMLONGLONG(object.currentTime);
 }
 
 -(void)setCurrentTime:(id)value
 {
-    object.currentTime = [value longValue];
+    object.currentTime = [value longLongValue];
 }
 
 
@@ -44,12 +44,12 @@
 
 -(id)expiration
 {
-    return NUMLONG(object.expiration);
+    return NUMLONGLONG(object.expiration);
 }
 
 -(void)setExpiration:(id)value
 {
-    object.expiration = [value longValue];
+    object.expiration = [value longLongValue];
 }
 
 

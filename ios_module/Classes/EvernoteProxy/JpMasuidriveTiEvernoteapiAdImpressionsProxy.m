@@ -20,34 +20,34 @@
 
 -(id)adId
 {
-    return NUMINT(object.adId);
+    return NUMLONG(object.adId);
 }
 
 -(void)setAdId:(id)value
 {
-    object.adId = [value integerValue];
+    object.adId = [value longValue];
 }
 
 
 -(id)impressionCount
 {
-    return NUMINT(object.impressionCount);
+    return NUMLONG(object.impressionCount);
 }
 
 -(void)setImpressionCount:(id)value
 {
-    object.impressionCount = [value integerValue];
+    object.impressionCount = [value longValue];
 }
 
 
 -(id)impressionTime
 {
-    return NUMINT(object.impressionTime);
+    return NUMLONG(object.impressionTime);
 }
 
 -(void)setImpressionTime:(id)value
 {
-    object.impressionTime = [value integerValue];
+    object.impressionTime = [value longValue];
 }
 
 

@@ -20,45 +20,45 @@
 
 -(id)currentTime
 {
-    return NUMLONG(object.currentTime);
+    return NUMLONGLONG(object.currentTime);
 }
 
 -(void)setCurrentTime:(id)value
 {
-    object.currentTime = [value longValue];
+    object.currentTime = [value longLongValue];
 }
 
 
 -(id)fullSyncBefore
 {
-    return NUMLONG(object.fullSyncBefore);
+    return NUMLONGLONG(object.fullSyncBefore);
 }
 
 -(void)setFullSyncBefore:(id)value
 {
-    object.fullSyncBefore = [value longValue];
+    object.fullSyncBefore = [value longLongValue];
 }
 
 
 -(id)updateCount
 {
-    return NUMINT(object.updateCount);
+    return NUMLONG(object.updateCount);
 }
 
 -(void)setUpdateCount:(id)value
 {
-    object.updateCount = [value integerValue];
+    object.updateCount = [value longValue];
 }
 
 
 -(id)uploaded
 {
-    return NUMLONG(object.uploaded);
+    return NUMLONGLONG(object.uploaded);
 }
 
 -(void)setUploaded:(id)value
 {
-    object.uploaded = [value longValue];
+    object.uploaded = [value longLongValue];
 }
 
 

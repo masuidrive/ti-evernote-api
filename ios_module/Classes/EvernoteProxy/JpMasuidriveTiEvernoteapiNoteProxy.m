@@ -66,45 +66,45 @@
 
 -(id)contentLength
 {
-    return NUMINT(object.contentLength);
+    return NUMLONG(object.contentLength);
 }
 
 -(void)setContentLength:(id)value
 {
-    object.contentLength = [value integerValue];
+    object.contentLength = [value longValue];
 }
 
 
 -(id)created
 {
-    return NUMLONG(object.created);
+    return NUMLONGLONG(object.created);
 }
 
 -(void)setCreated:(id)value
 {
-    object.created = [value longValue];
+    object.created = [value longLongValue];
 }
 
 
 -(id)updated
 {
-    return NUMLONG(object.updated);
+    return NUMLONGLONG(object.updated);
 }
 
 -(void)setUpdated:(id)value
 {
-    object.updated = [value longValue];
+    object.updated = [value longLongValue];
 }
 
 
 -(id)deleted
 {
-    return NUMLONG(object.deleted);
+    return NUMLONGLONG(object.deleted);
 }
 
 -(void)setDeleted:(id)value
 {
-    object.deleted = [value longValue];
+    object.deleted = [value longLongValue];
 }
 
 
@@ -121,12 +121,12 @@
 
 -(id)updateSequenceNum
 {
-    return NUMINT(object.updateSequenceNum);
+    return NUMLONG(object.updateSequenceNum);
 }
 
 -(void)setUpdateSequenceNum:(id)value
 {
-    object.updateSequenceNum = [value integerValue];
+    object.updateSequenceNum = [value longValue];
 }
 
 

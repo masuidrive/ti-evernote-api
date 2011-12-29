@@ -20,45 +20,45 @@
 
 -(id)uploadLimit
 {
-    return NUMLONG(object.uploadLimit);
+    return NUMLONGLONG(object.uploadLimit);
 }
 
 -(void)setUploadLimit:(id)value
 {
-    object.uploadLimit = [value longValue];
+    object.uploadLimit = [value longLongValue];
 }
 
 
 -(id)uploadLimitEnd
 {
-    return NUMLONG(object.uploadLimitEnd);
+    return NUMLONGLONG(object.uploadLimitEnd);
 }
 
 -(void)setUploadLimitEnd:(id)value
 {
-    object.uploadLimitEnd = [value longValue];
+    object.uploadLimitEnd = [value longLongValue];
 }
 
 
 -(id)uploadLimitNextMonth
 {
-    return NUMLONG(object.uploadLimitNextMonth);
+    return NUMLONGLONG(object.uploadLimitNextMonth);
 }
 
 -(void)setUploadLimitNextMonth:(id)value
 {
-    object.uploadLimitNextMonth = [value longValue];
+    object.uploadLimitNextMonth = [value longLongValue];
 }
 
 
 -(id)premiumServiceStatus
 {
-    return NUMINT(object.premiumServiceStatus);
+    return NUMLONG(object.premiumServiceStatus);
 }
 
 -(void)setPremiumServiceStatus:(id)value
 {
-    object.premiumServiceStatus = [value integerValue];
+    object.premiumServiceStatus = [value longValue];
 }
 
 
@@ -86,12 +86,12 @@
 
 -(id)premiumServiceStart
 {
-    return NUMLONG(object.premiumServiceStart);
+    return NUMLONGLONG(object.premiumServiceStart);
 }
 
 -(void)setPremiumServiceStart:(id)value
 {
-    object.premiumServiceStart = [value longValue];
+    object.premiumServiceStart = [value longLongValue];
 }
 
 
@@ -108,23 +108,23 @@
 
 -(id)lastSuccessfulCharge
 {
-    return NUMLONG(object.lastSuccessfulCharge);
+    return NUMLONGLONG(object.lastSuccessfulCharge);
 }
 
 -(void)setLastSuccessfulCharge:(id)value
 {
-    object.lastSuccessfulCharge = [value longValue];
+    object.lastSuccessfulCharge = [value longLongValue];
 }
 
 
 -(id)lastFailedCharge
 {
-    return NUMLONG(object.lastFailedCharge);
+    return NUMLONGLONG(object.lastFailedCharge);
 }
 
 -(void)setLastFailedCharge:(id)value
 {
-    object.lastFailedCharge = [value longValue];
+    object.lastFailedCharge = [value longLongValue];
 }
 
 
@@ -141,34 +141,34 @@
 
 -(id)nextPaymentDue
 {
-    return NUMLONG(object.nextPaymentDue);
+    return NUMLONGLONG(object.nextPaymentDue);
 }
 
 -(void)setNextPaymentDue:(id)value
 {
-    object.nextPaymentDue = [value longValue];
+    object.nextPaymentDue = [value longLongValue];
 }
 
 
 -(id)premiumLockUntil
 {
-    return NUMLONG(object.premiumLockUntil);
+    return NUMLONGLONG(object.premiumLockUntil);
 }
 
 -(void)setPremiumLockUntil:(id)value
 {
-    object.premiumLockUntil = [value longValue];
+    object.premiumLockUntil = [value longLongValue];
 }
 
 
 -(id)updated
 {
-    return NUMLONG(object.updated);
+    return NUMLONGLONG(object.updated);
 }
 
 -(void)setUpdated:(id)value
 {
-    object.updated = [value longValue];
+    object.updated = [value longLongValue];
 }
 
 
@@ -185,12 +185,12 @@
 
 -(id)lastRequestedCharge
 {
-    return NUMLONG(object.lastRequestedCharge);
+    return NUMLONGLONG(object.lastRequestedCharge);
 }
 
 -(void)setLastRequestedCharge:(id)value
 {
-    object.lastRequestedCharge = [value longValue];
+    object.lastRequestedCharge = [value longLongValue];
 }
 
 
@@ -207,12 +207,12 @@
 
 -(id)unitPrice
 {
-    return NUMINT(object.unitPrice);
+    return NUMLONG(object.unitPrice);
 }
 
 -(void)setUnitPrice:(id)value
 {
-    object.unitPrice = [value integerValue];
+    object.unitPrice = [value longValue];
 }
 
 

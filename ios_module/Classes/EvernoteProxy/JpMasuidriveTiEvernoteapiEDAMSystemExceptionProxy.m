@@ -7,7 +7,7 @@
 {
 	return [NSDictionary dictionaryWithObjectsAndKeys:
 		NSStringFromClass([self class]), @"exceptionType",
-		NUMINT(self.errorCode), @"errorCode",
+		NUMLONG(self.errorCode), @"errorCode",
 		self.message, @"message",
 	nil];
 }

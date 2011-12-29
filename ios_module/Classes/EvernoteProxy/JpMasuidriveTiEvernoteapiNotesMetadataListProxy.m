@@ -21,23 +21,23 @@
 
 -(id)startIndex
 {
-    return NUMINT(object.startIndex);
+    return NUMLONG(object.startIndex);
 }
 
 -(void)setStartIndex:(id)value
 {
-    object.startIndex = [value integerValue];
+    object.startIndex = [value longValue];
 }
 
 
 -(id)totalNotes
 {
-    return NUMINT(object.totalNotes);
+    return NUMLONG(object.totalNotes);
 }
 
 -(void)setTotalNotes:(id)value
 {
-    object.totalNotes = [value integerValue];
+    object.totalNotes = [value longValue];
 }
 
 
@@ -76,12 +76,12 @@
 
 -(id)updateCount
 {
-    return NUMINT(object.updateCount);
+    return NUMLONG(object.updateCount);
 }
 
 -(void)setUpdateCount:(id)value
 {
-    object.updateCount = [value integerValue];
+    object.updateCount = [value longValue];
 }
 
 

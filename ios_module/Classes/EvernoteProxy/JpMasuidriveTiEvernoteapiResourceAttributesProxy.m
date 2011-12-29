@@ -31,12 +31,12 @@
 
 -(id)timestamp
 {
-    return NUMLONG(object.timestamp);
+    return NUMLONGLONG(object.timestamp);
 }
 
 -(void)setTimestamp:(id)value
 {
-    object.timestamp = [value longValue];
+    object.timestamp = [value longLongValue];
 }
 
 

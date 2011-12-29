@@ -61,7 +61,6 @@ userstore.authenticate(config.demo.email, config.demo.password, config.consumerK
 					alert(event.error);
 				}
 			});
-
 		});
 	}
 	else {

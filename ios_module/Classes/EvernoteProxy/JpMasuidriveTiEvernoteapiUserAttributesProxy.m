@@ -108,34 +108,34 @@
 
 -(id)dateAgreedToTermsOfService
 {
-    return NUMLONG(object.dateAgreedToTermsOfService);
+    return NUMLONGLONG(object.dateAgreedToTermsOfService);
 }
 
 -(void)setDateAgreedToTermsOfService:(id)value
 {
-    object.dateAgreedToTermsOfService = [value longValue];
+    object.dateAgreedToTermsOfService = [value longLongValue];
 }
 
 
 -(id)maxReferrals
 {
-    return NUMINT(object.maxReferrals);
+    return NUMLONG(object.maxReferrals);
 }
 
 -(void)setMaxReferrals:(id)value
 {
-    object.maxReferrals = [value integerValue];
+    object.maxReferrals = [value longValue];
 }
 
 
 -(id)referralCount
 {
-    return NUMINT(object.referralCount);
+    return NUMLONG(object.referralCount);
 }
 
 -(void)setReferralCount:(id)value
 {
-    object.referralCount = [value integerValue];
+    object.referralCount = [value longValue];
 }
 
 
@@ -152,56 +152,56 @@
 
 -(id)sentEmailDate
 {
-    return NUMLONG(object.sentEmailDate);
+    return NUMLONGLONG(object.sentEmailDate);
 }
 
 -(void)setSentEmailDate:(id)value
 {
-    object.sentEmailDate = [value longValue];
+    object.sentEmailDate = [value longLongValue];
 }
 
 
 -(id)sentEmailCount
 {
-    return NUMINT(object.sentEmailCount);
+    return NUMLONG(object.sentEmailCount);
 }
 
 -(void)setSentEmailCount:(id)value
 {
-    object.sentEmailCount = [value integerValue];
+    object.sentEmailCount = [value longValue];
 }
 
 
 -(id)dailyEmailLimit
 {
-    return NUMINT(object.dailyEmailLimit);
+    return NUMLONG(object.dailyEmailLimit);
 }
 
 -(void)setDailyEmailLimit:(id)value
 {
-    object.dailyEmailLimit = [value integerValue];
+    object.dailyEmailLimit = [value longValue];
 }
 
 
 -(id)emailOptOutDate
 {
-    return NUMLONG(object.emailOptOutDate);
+    return NUMLONGLONG(object.emailOptOutDate);
 }
 
 -(void)setEmailOptOutDate:(id)value
 {
-    object.emailOptOutDate = [value longValue];
+    object.emailOptOutDate = [value longLongValue];
 }
 
 
 -(id)partnerEmailOptInDate
 {
-    return NUMLONG(object.partnerEmailOptInDate);
+    return NUMLONGLONG(object.partnerEmailOptInDate);
 }
 
 -(void)setPartnerEmailOptInDate:(id)value
 {
-    object.partnerEmailOptInDate = [value longValue];
+    object.partnerEmailOptInDate = [value longLongValue];
 }
 
 
@@ -284,12 +284,12 @@
 
 -(id)customerProfileId
 {
-    return NUMLONG(object.customerProfileId);
+    return NUMLONGLONG(object.customerProfileId);
 }
 
 -(void)setCustomerProfileId:(id)value
 {
-    object.customerProfileId = [value longValue];
+    object.customerProfileId = [value longLongValue];
 }
 
 

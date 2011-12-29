@@ -66,12 +66,12 @@
 
 -(id)trashCount
 {
-    return NUMINT(object.trashCount);
+    return NUMLONG(object.trashCount);
 }
 
 -(void)setTrashCount:(id)value
 {
-    object.trashCount = [value integerValue];
+    object.trashCount = [value longValue];
 }
 
 

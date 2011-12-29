@@ -20,12 +20,12 @@
 
 -(id)subjectDate
 {
-    return NUMLONG(object.subjectDate);
+    return NUMLONGLONG(object.subjectDate);
 }
 
 -(void)setSubjectDate:(id)value
 {
-    object.subjectDate = [value longValue];
+    object.subjectDate = [value longLongValue];
 }
 
 
@@ -108,12 +108,12 @@
 
 -(id)shareDate
 {
-    return NUMLONG(object.shareDate);
+    return NUMLONGLONG(object.shareDate);
 }
 
 -(void)setShareDate:(id)value
 {
-    object.shareDate = [value longValue];
+    object.shareDate = [value longLongValue];
 }
 
 
