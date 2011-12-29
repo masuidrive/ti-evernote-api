@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: Evernote API module
+author: Yuichiro MASUI <masui@masuidrive.jp>
+license: Apache License 2.0
+copyright: Copyright (c) 2011 by Yuichiro MASUI.
+
+
+# these should not be edited
+name: evernoteapi
+moduleid: jp.masuidrive.ti.evernoteapi
+guid: 86281c4a-e071-42a0-bff1-76c427a21a5a
+platform: android
+minsdk: 1.8.0.1
