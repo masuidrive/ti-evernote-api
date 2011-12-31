@@ -121,14 +121,11 @@ class TypeOp
 			return "[arrayMap(#{label}, ^(id item) { return #{self.type.titanium(space, 'item')}; }) allObjects]"
 		
 		when :map
-			return <<-__OBJC__
-				dictionaryMap(#{label}, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						#{key.titanium(space, 'key', true)},
-						#{object.titanium(space, 'obj', true)},
-					nil];
-				})
-			__OBJC__
+			return <<-__OBJC__.chomp
+dictionaryMap(#{label}, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: #{key.titanium(space, 'key', true)}, #{object.titanium(space, 'obj', true)}, nil];
+    })
+__OBJC__
 		
 		when :struct
 			return "[[[#{@struct.proxy_class_name} alloc] initWithObject: #{label}] autorelease]"
@@ -161,14 +158,11 @@ class TypeOp
 			return "[arrayMap(#{label}, ^(id item) { return #{type.objc(space, 'item')}; }) allObjects]"
 		
 		when :map
-			return <<-__OBJC__
-				dictionaryMap(#{label}, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						#{key.objc(space, 'key', true)},
-						#{object.objc(space, 'obj', true)},
-					nil];
-				})
-			__OBJC__
+			return <<-__OBJC__.chomp
+dictionaryMap(#{label}, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: #{key.objc(space, 'key', true)}, #{object.objc(space, 'obj', true)}, nil];
+    })
+__OBJC__
 		
 		when :struct
 			return "((#{@struct.proxy_class_name}*)#{label}).object"

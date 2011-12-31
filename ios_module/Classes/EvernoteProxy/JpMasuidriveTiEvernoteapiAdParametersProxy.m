@@ -65,13 +65,9 @@
         object.clientLanguage, @"clientLanguage",
         arrayMap(object.impressions, ^(id item) { return [[[JpMasuidriveTiEvernoteapiAdImpressionsProxy alloc] initWithObject: item] autorelease]; }), @"impressions",
         NUMBOOL(object.supportHtml), @"supportHtml",
-        				dictionaryMap(object.clientProperties, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-, @"clientProperties",
+        dictionaryMap(object.clientProperties, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    }), @"clientProperties",
     nil];
 }
 
@@ -111,24 +107,16 @@
 
 - (id)clientProperties
 {
-    return 				dictionaryMap(object.clientProperties, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-;
+    return dictionaryMap(object.clientProperties, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    });
 }
 
 - (void)setClientProperties:(id)value
 {
-    object.clientProperties = 				dictionaryMap(value, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-;
+    object.clientProperties = dictionaryMap(value, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    });
 }
 
 

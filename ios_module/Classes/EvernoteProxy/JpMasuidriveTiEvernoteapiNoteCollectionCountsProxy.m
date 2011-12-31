@@ -56,20 +56,12 @@
 - (NSDictionary*)toHash:(id)args
 {
     return [NSDictionary dictionaryWithObjectsAndKeys:
-        				dictionaryMap(object.notebookCounts, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-, @"notebookCounts",
-        				dictionaryMap(object.tagCounts, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-, @"tagCounts",
+        dictionaryMap(object.notebookCounts, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    }), @"notebookCounts",
+        dictionaryMap(object.tagCounts, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    }), @"tagCounts",
         NUMLONG(object.trashCount), @"trashCount",
     nil];
 }
@@ -77,47 +69,31 @@
 
 - (id)notebookCounts
 {
-    return 				dictionaryMap(object.notebookCounts, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-;
+    return dictionaryMap(object.notebookCounts, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    });
 }
 
 - (void)setNotebookCounts:(id)value
 {
-    object.notebookCounts = 				dictionaryMap(value, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-;
+    object.notebookCounts = dictionaryMap(value, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    });
 }
 
 
 - (id)tagCounts
 {
-    return 				dictionaryMap(object.tagCounts, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-;
+    return dictionaryMap(object.tagCounts, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    });
 }
 
 - (void)setTagCounts:(id)value
 {
-    object.tagCounts = 				dictionaryMap(value, ^(id key, id obj) {
-					return [NSArray arrayWithObjects:
-						key,
-						obj,
-					nil];
-				})
-;
+    object.tagCounts = dictionaryMap(value, ^(id key, id obj) {
+        return [NSArray arrayWithObjects: key, obj, nil];
+    });
 }
 
 
