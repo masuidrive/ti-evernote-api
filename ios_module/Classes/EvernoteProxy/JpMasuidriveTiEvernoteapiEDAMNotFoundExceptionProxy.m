@@ -5,10 +5,15 @@
 @implementation EDAMNotFoundException (Dictionary)
 -(NSDictionary*)dictionary
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:
-		NSStringFromClass([self class]), @"exceptionType",
-		self.identifier, @"identifier",
-		self.key, @"key",
-	nil];
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+        self.identifier, @"identifier",
+        self.key, @"key",
+        nil];
 }
+
+-(NSString*)exceptionName
+{
+    return @"EDAMNotFoundException";
+}
+
 @end

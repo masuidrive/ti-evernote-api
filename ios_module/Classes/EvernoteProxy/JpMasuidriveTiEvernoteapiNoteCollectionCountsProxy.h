@@ -7,5 +7,17 @@
 }
 @property (nonatomic, retain) EDAMNoteCollectionCounts* object;
 
-- (id)initWithObject:(EDAMNoteCollectionCounts*)object_;
+- (id)initWithObject:(EDAMNoteCollectionCounts*)thrift_object;
+- (NSDictionary*)toHash:(id)args;
+
+
+- (id)notebookCounts;
+- (void)setNotebookCounts:(id)value;
+
+- (id)tagCounts;
+- (void)setTagCounts:(id)value;
+
+- (id)trashCount;
+- (void)setTrashCount:(id)value;
+
 @end

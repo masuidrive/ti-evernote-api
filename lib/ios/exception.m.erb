@@ -5,11 +5,16 @@
 @implementation <%= exception.class_name %> (Dictionary)
 -(NSDictionary*)dictionary
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:
-		NSStringFromClass([self class]), @"exceptionType",
+    return [NSDictionary dictionaryWithObjectsAndKeys:
 <%- exception.fields.each do |field| -%>
-		<%= field.type.titanium(@space, "self.#{field.name}") %>, @"<%= field.name %>",
+        <%= field.type.titanium(@space, "self.#{field.name}") %>, @"<%= field.name %>",
 <%- end -%>
-	nil];
+        nil];
 }
+
+-(NSString*)exceptionName
+{
+    return @"<%= exception.name %>";
+}
+
 @end

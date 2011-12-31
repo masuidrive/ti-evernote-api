@@ -5,10 +5,15 @@
 @implementation EDAMSystemException (Dictionary)
 -(NSDictionary*)dictionary
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:
-		NSStringFromClass([self class]), @"exceptionType",
-		NUMLONG(self.errorCode), @"errorCode",
-		self.message, @"message",
-	nil];
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+        NUMLONG(self.errorCode), @"errorCode",
+        self.message, @"message",
+        nil];
 }
+
+-(NSString*)exceptionName
+{
+    return @"EDAMSystemException";
+}
+
 @end

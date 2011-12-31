@@ -9,9 +9,21 @@
 #import "<%= @module_name %>Module.h"
 
 @implementation <%= @module_name %>Module (<%= s.class_name %>)
--(id)create<%= s.name %>:(id)args
+- (id)create<%= s.name %>:(id)args
 {
-    return [[[<%= s.proxy_class_name %> alloc] initWithObject: [[[<%= s.class_name %> alloc] init] autorelease]] autorelease];
+    ENSURE_SINGLE_ARG_OR_NIL(args, NSDictionary);
+    <%= s.class_name %>* thrift_object = [[[<%= s.class_name %> alloc] init] autorelease];
+    <%= s.proxy_class_name %>* proxy = [[[<%= s.proxy_class_name %> alloc] initWithObject: thrift_object] autorelease];
+    if(args) {
+        id val;
+<% s.fields.each do |field| %>
+        val = [args objectForKey:@"<%= field.name.sub(/^[A-Z]/,&:downcase) %>"];
+        if(val) {
+            [proxy set<%= field.name.sub(/^[a-z]/,&:upcase) %>:val];
+        }
+<% end %>
+    }
+    return proxy;
 }
 @end
 
@@ -19,23 +31,10 @@
 @implementation <%= s.proxy_class_name %>
 @synthesize object;
 
-<% s.fields.each do |field| %>
--(id)<%= field.name.sub(/^[A-Z]/,&:downcase) %>
-{
-    return <%= field.type.titanium(@space, "object.#{field.name}") %>;
-}
-
--(void)set<%= field.name.sub(/^[a-z]/,&:upcase) %>:(id)value
-{
-    object.<%= field.name %> = <%= field.type.objc(@space, 'value') %>;
-}
-
-<% end %>
-
-- (id)initWithObject:(<%= s.class_name %>*)object_
+- (id)initWithObject:(<%= s.class_name %>*)thrift_object
 {
     if(self = [super init]){
-        self.object = object_;
+        self.object = thrift_object;
     }
     return self;
 }
@@ -45,4 +44,27 @@
     self.object = nil;
     [super release];
 }
+
+- (NSDictionary*)toHash:(id)args
+{
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+<%- s.fields.each do |field| -%>
+        <%= field.type.titanium(@space, "object.#{field.name}") %>, @"<%= field.name %>",
+<%- end -%>
+    nil];
+}
+
+<% s.fields.each do |field| %>
+- (id)<%= field.name.sub(/^[A-Z]/,&:downcase) %>
+{
+    return <%= field.type.titanium(@space, "object.#{field.name}") %>;
+}
+
+- (void)set<%= field.name.sub(/^[a-z]/,&:upcase) %>:(id)value
+{
+    object.<%= field.name %> = <%= field.type.objc(@space, 'value') %>;
+}
+
+<% end %>
+
 @end

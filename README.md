@@ -35,13 +35,14 @@ Please see 'examples/app.js' and 'doc/html/index.html'
     var userstore = evernote.createUserStoreClient(config.url+"user");
     userstore.authenticate(config.demo.email, config.demo.password, config.consumerKey, config.consumerSecret, function(event) {
         if(event.type == 'success') {
+            Ti.API.info(event.result.toHash());
+
             var notestore = evernote.createNoteStoreClient(config.url+"note/"+event.result.user.shardId);
             
             var notes = notestore.listNotebooks(event.result.authenticationToken, function(event2) {
                 table.data = event2.result.map(function(note){ return({title: note.name}); });
                 /*
-                var note = evernote.createNote();
-                note.title = 'Test';
+                var note = evernote.createNote({title: 'Test'});
                 note.tagNames = ['tag1', 'tag2'];
                 notestore.createNote(event.result.authenticationToken, note, function(e) {
                     Ti.API.info(e);
@@ -50,6 +51,7 @@ Please see 'examples/app.js' and 'doc/html/index.html'
             });
         }
         else {
+            Ti.API.info(event);
             alert(event.error.message);
         }
     });

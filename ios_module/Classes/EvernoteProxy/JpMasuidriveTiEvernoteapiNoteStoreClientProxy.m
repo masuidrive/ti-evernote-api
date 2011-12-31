@@ -69,13 +69,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSyncStateProxy alloc] initWithObject: [client getSyncState : [TiUtils stringValue:[args objectAtIndex:0]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -93,13 +99,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSyncChunkProxy alloc] initWithObject: [client getSyncChunk : [TiUtils stringValue:[args objectAtIndex:0]] : [[args objectAtIndex:1] longValue] : [[args objectAtIndex:2] longValue] : [[args objectAtIndex:3] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -117,13 +129,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSyncChunkProxy alloc] initWithObject: [client getFilteredSyncChunk : [TiUtils stringValue:[args objectAtIndex:0]] : [[args objectAtIndex:1] longValue] : [[args objectAtIndex:2] longValue] : ((JpMasuidriveTiEvernoteapiSyncChunkFilterProxy*)[args objectAtIndex:3]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -141,13 +159,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSyncStateProxy alloc] initWithObject: [client getLinkedNotebookSyncState : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiLinkedNotebookProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -165,13 +189,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSyncChunkProxy alloc] initWithObject: [client getLinkedNotebookSyncChunk : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiLinkedNotebookProxy*)[args objectAtIndex:1]).object : [[args objectAtIndex:2] longValue] : [[args objectAtIndex:3] longValue] : [[args objectAtIndex:4] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -189,13 +219,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listNotebooks : [TiUtils stringValue:[args objectAtIndex:0]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiNotebookProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -213,13 +249,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNotebookProxy alloc] initWithObject: [client getNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -237,13 +279,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNotebookProxy alloc] initWithObject: [client getDefaultNotebook : [TiUtils stringValue:[args objectAtIndex:0]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -261,13 +309,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNotebookProxy alloc] initWithObject: [client createNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNotebookProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -285,13 +339,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client updateNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNotebookProxy*)[args objectAtIndex:1]).object]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -309,13 +369,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -333,13 +399,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listTags : [TiUtils stringValue:[args objectAtIndex:0]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiTagProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -357,13 +429,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listTagsByNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiTagProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -381,13 +459,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiTagProxy alloc] initWithObject: [client getTag : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -405,13 +489,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiTagProxy alloc] initWithObject: [client createTag : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiTagProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -429,13 +519,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client updateTag : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiTagProxy*)[args objectAtIndex:1]).object]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -454,13 +550,19 @@
                     NSDictionary *event = [NSDictionary dictionary];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -478,13 +580,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeTag : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -502,13 +610,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listSearches : [TiUtils stringValue:[args objectAtIndex:0]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiSavedSearchProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -526,13 +640,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSavedSearchProxy alloc] initWithObject: [client getSearch : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -550,13 +670,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSavedSearchProxy alloc] initWithObject: [client createSearch : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiSavedSearchProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -574,13 +700,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client updateSearch : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiSavedSearchProxy*)[args objectAtIndex:1]).object]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -598,13 +730,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeSearch : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -622,13 +760,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteListProxy alloc] initWithObject: [client findNotes : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNoteFilterProxy*)[args objectAtIndex:1]).object : [[args objectAtIndex:2] longValue] : [[args objectAtIndex:3] longValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -646,13 +790,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client findNoteOffset : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNoteFilterProxy*)[args objectAtIndex:1]).object : [TiUtils stringValue:[args objectAtIndex:2]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -670,13 +820,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNotesMetadataListProxy alloc] initWithObject: [client findNotesMetadata : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNoteFilterProxy*)[args objectAtIndex:1]).object : [[args objectAtIndex:2] longValue] : [[args objectAtIndex:3] longValue] : ((JpMasuidriveTiEvernoteapiNotesMetadataResultSpecProxy*)[args objectAtIndex:4]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -694,13 +850,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteCollectionCountsProxy alloc] initWithObject: [client findNoteCounts : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNoteFilterProxy*)[args objectAtIndex:1]).object : [[args objectAtIndex:2] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -718,13 +880,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteProxy alloc] initWithObject: [client getNote : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]] : [[args objectAtIndex:2] boolValue] : [[args objectAtIndex:3] boolValue] : [[args objectAtIndex:4] boolValue] : [[args objectAtIndex:5] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -742,13 +910,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [client getNoteContent : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -766,13 +940,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [client getNoteSearchText : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]] : [[args objectAtIndex:2] boolValue] : [[args objectAtIndex:3] boolValue]], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -790,13 +970,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [client getResourceSearchText : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -814,13 +1000,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client getNoteTagNames : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]], ^(id item) { return item; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -838,13 +1030,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteProxy alloc] initWithObject: [client createNote : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNoteProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -862,13 +1060,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteProxy alloc] initWithObject: [client updateNote : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiNoteProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -886,13 +1090,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client deleteNote : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -910,13 +1120,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeNote : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -934,13 +1150,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeNotes : [TiUtils stringValue:[args objectAtIndex:0]] : arrayMap([args objectAtIndex:1], ^(id item) { return item; })]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -958,13 +1180,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeInactiveNotes : [TiUtils stringValue:[args objectAtIndex:0]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -982,13 +1210,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteProxy alloc] initWithObject: [client copyNote : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]] : [TiUtils stringValue:[args objectAtIndex:2]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1006,13 +1240,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listNoteVersions : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiNoteVersionIdProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1030,13 +1270,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNoteProxy alloc] initWithObject: [client getNoteVersion : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]] : [[args objectAtIndex:2] longValue] : [[args objectAtIndex:3] boolValue] : [[args objectAtIndex:4] boolValue] : [[args objectAtIndex:5] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1054,13 +1300,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiResourceProxy alloc] initWithObject: [client getResource : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]] : [[args objectAtIndex:2] boolValue] : [[args objectAtIndex:3] boolValue] : [[args objectAtIndex:4] boolValue] : [[args objectAtIndex:5] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1078,13 +1330,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client updateResource : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiResourceProxy*)[args objectAtIndex:1]).object]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1102,13 +1360,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[TiBlob alloc] initWithData:[client getResourceData : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]] mimetype:@"application/octet-stream"] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1126,13 +1390,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiResourceProxy alloc] initWithObject: [client getResourceByHash : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]] : [[args objectAtIndex:2] data] : [[args objectAtIndex:3] boolValue] : [[args objectAtIndex:4] boolValue] : [[args objectAtIndex:5] boolValue]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1150,13 +1420,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[TiBlob alloc] initWithData:[client getResourceRecognition : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]] mimetype:@"application/octet-stream"] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1174,13 +1450,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[TiBlob alloc] initWithData:[client getResourceAlternateData : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]] mimetype:@"application/octet-stream"] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1198,13 +1480,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiResourceAttributesProxy alloc] initWithObject: [client getResourceAttributes : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1222,13 +1510,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONGLONG([client getAccountSize : [TiUtils stringValue:[args objectAtIndex:0]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1246,13 +1540,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client getAds : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiAdParametersProxy*)[args objectAtIndex:1]).object], ^(id item) { return [[[JpMasuidriveTiEvernoteapiAdProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1270,13 +1570,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiAdProxy alloc] initWithObject: [client getRandomAd : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiAdParametersProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1294,13 +1600,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiNotebookProxy alloc] initWithObject: [client getPublicNotebook : [[args objectAtIndex:0] longValue] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1318,13 +1630,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSharedNotebookProxy alloc] initWithObject: [client createSharedNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiSharedNotebookProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1342,13 +1660,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listSharedNotebooks : [TiUtils stringValue:[args objectAtIndex:0]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiSharedNotebookProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1366,13 +1690,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeSharedNotebooks : [TiUtils stringValue:[args objectAtIndex:0]] : arrayMap([args objectAtIndex:1], ^(id item) { return item; })]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1390,13 +1720,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiLinkedNotebookProxy alloc] initWithObject: [client createLinkedNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiLinkedNotebookProxy*)[args objectAtIndex:1]).object]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1414,13 +1750,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client updateLinkedNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : ((JpMasuidriveTiEvernoteapiLinkedNotebookProxy*)[args objectAtIndex:1]).object]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1438,13 +1780,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: arrayMap([client listLinkedNotebooks : [TiUtils stringValue:[args objectAtIndex:0]]], ^(id item) { return [[[JpMasuidriveTiEvernoteapiLinkedNotebookProxy alloc] initWithObject: item] autorelease]; }), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1462,13 +1810,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: NUMLONG([client expungeLinkedNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]), @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1486,13 +1840,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiAuthenticationResultProxy alloc] initWithObject: [client authenticateToSharedNotebook : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1510,13 +1870,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiSharedNotebookProxy alloc] initWithObject: [client getSharedNotebookByAuth : [TiUtils stringValue:[args objectAtIndex:0]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1535,13 +1901,19 @@
                     NSDictionary *event = [NSDictionary dictionary];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1559,13 +1931,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [client shareNote : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1584,13 +1962,19 @@
                     NSDictionary *event = [NSDictionary dictionary];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }
@@ -1608,13 +1992,19 @@
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys: [[[JpMasuidriveTiEvernoteapiAuthenticationResultProxy alloc] initWithObject: [client authenticateToSharedNote : [TiUtils stringValue:[args objectAtIndex:0]] : [TiUtils stringValue:[args objectAtIndex:1]]]] autorelease], @"result", nil];
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"success", event, callback, nil]];
         }
-        @catch (NSException *exception) {
+        @catch (id exception) {
             NSDictionary *event;
             if([exception respondsToSelector:@selector(dictionary)]) {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: [exception dictionary], @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    [exception exceptionName], @"exceptionType",
+                    [exception dictionary], @"error",
+                    nil];
             }
             else {
-                event = [NSDictionary dictionaryWithObjectsAndKeys: exception, @"error", nil];
+                event = [NSDictionary dictionaryWithObjectsAndKeys:
+                    NSStringFromClass([exception class]), @"exceptionType",
+                    exception, @"error",
+                    nil];
             }
             [NSThread detachNewThreadSelector:@selector(dispatchCallback:) toTarget:self withObject:[NSArray arrayWithObjects:@"error", event, callback, nil]];
         }

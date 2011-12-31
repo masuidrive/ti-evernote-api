@@ -7,5 +7,20 @@
 }
 @property (nonatomic, retain) EDAMSyncState* object;
 
-- (id)initWithObject:(EDAMSyncState*)object_;
+- (id)initWithObject:(EDAMSyncState*)thrift_object;
+- (NSDictionary*)toHash:(id)args;
+
+
+- (id)currentTime;
+- (void)setCurrentTime:(id)value;
+
+- (id)fullSyncBefore;
+- (void)setFullSyncBefore:(id)value;
+
+- (id)updateCount;
+- (void)setUpdateCount:(id)value;
+
+- (id)uploaded;
+- (void)setUploaded:(id)value;
+
 @end

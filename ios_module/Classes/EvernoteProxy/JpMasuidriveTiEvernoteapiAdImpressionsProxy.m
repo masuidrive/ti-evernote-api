@@ -7,9 +7,31 @@
 #import "JpMasuidriveTiEvernoteapiModule.h"
 
 @implementation JpMasuidriveTiEvernoteapiModule (EDAMAdImpressions)
--(id)createAdImpressions:(id)args
+- (id)createAdImpressions:(id)args
 {
-    return [[[JpMasuidriveTiEvernoteapiAdImpressionsProxy alloc] initWithObject: [[[EDAMAdImpressions alloc] init] autorelease]] autorelease];
+    ENSURE_SINGLE_ARG_OR_NIL(args, NSDictionary);
+    EDAMAdImpressions* thrift_object = [[[EDAMAdImpressions alloc] init] autorelease];
+    JpMasuidriveTiEvernoteapiAdImpressionsProxy* proxy = [[[JpMasuidriveTiEvernoteapiAdImpressionsProxy alloc] initWithObject: thrift_object] autorelease];
+    if(args) {
+        id val;
+
+        val = [args objectForKey:@"adId"];
+        if(val) {
+            [proxy setAdId:val];
+        }
+
+        val = [args objectForKey:@"impressionCount"];
+        if(val) {
+            [proxy setImpressionCount:val];
+        }
+
+        val = [args objectForKey:@"impressionTime"];
+        if(val) {
+            [proxy setImpressionTime:val];
+        }
+
+    }
+    return proxy;
 }
 @end
 
@@ -17,45 +39,10 @@
 @implementation JpMasuidriveTiEvernoteapiAdImpressionsProxy
 @synthesize object;
 
-
--(id)adId
-{
-    return NUMLONG(object.adId);
-}
-
--(void)setAdId:(id)value
-{
-    object.adId = [value longValue];
-}
-
-
--(id)impressionCount
-{
-    return NUMLONG(object.impressionCount);
-}
-
--(void)setImpressionCount:(id)value
-{
-    object.impressionCount = [value longValue];
-}
-
-
--(id)impressionTime
-{
-    return NUMLONG(object.impressionTime);
-}
-
--(void)setImpressionTime:(id)value
-{
-    object.impressionTime = [value longValue];
-}
-
-
-
-- (id)initWithObject:(EDAMAdImpressions*)object_
+- (id)initWithObject:(EDAMAdImpressions*)thrift_object
 {
     if(self = [super init]){
-        self.object = object_;
+        self.object = thrift_object;
     }
     return self;
 }
@@ -65,4 +52,49 @@
     self.object = nil;
     [super release];
 }
+
+- (NSDictionary*)toHash:(id)args
+{
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+        NUMLONG(object.adId), @"adId",
+        NUMLONG(object.impressionCount), @"impressionCount",
+        NUMLONG(object.impressionTime), @"impressionTime",
+    nil];
+}
+
+
+- (id)adId
+{
+    return NUMLONG(object.adId);
+}
+
+- (void)setAdId:(id)value
+{
+    object.adId = [value longValue];
+}
+
+
+- (id)impressionCount
+{
+    return NUMLONG(object.impressionCount);
+}
+
+- (void)setImpressionCount:(id)value
+{
+    object.impressionCount = [value longValue];
+}
+
+
+- (id)impressionTime
+{
+    return NUMLONG(object.impressionTime);
+}
+
+- (void)setImpressionTime:(id)value
+{
+    object.impressionTime = [value longValue];
+}
+
+
+
 @end

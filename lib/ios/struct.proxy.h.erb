@@ -7,5 +7,11 @@
 }
 @property (nonatomic, retain) <%= s.class_name %>* object;
 
-- (id)initWithObject:(<%= s.class_name %>*)object_;
+- (id)initWithObject:(<%= s.class_name %>*)thrift_object;
+- (NSDictionary*)toHash:(id)args;
+
+<% s.fields.each do |field| %>
+- (id)<%= field.name.sub(/^[A-Z]/,&:downcase) %>;
+- (void)set<%= field.name.sub(/^[a-z]/,&:upcase) %>:(id)value;
+<% end %>
 @end

@@ -5,10 +5,15 @@
 @implementation EDAMUserException (Dictionary)
 -(NSDictionary*)dictionary
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:
-		NSStringFromClass([self class]), @"exceptionType",
-		NUMLONG(self.errorCode), @"errorCode",
-		self.parameter, @"parameter",
-	nil];
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+        NUMLONG(self.errorCode), @"errorCode",
+        self.parameter, @"parameter",
+        nil];
 }
+
+-(NSString*)exceptionName
+{
+    return @"EDAMUserException";
+}
+
 @end

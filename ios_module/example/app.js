@@ -26,17 +26,18 @@ Ti.API.info(evernote.Types.PrivilegeLevel.SUPPORT);
 var userstore = evernote.createUserStoreClient(config.url+"user");
 userstore.authenticate(config.demo.email, config.demo.password, config.consumerKey, config.consumerSecret, function(event) {
 	if(event.type == 'success') {
+		Ti.API.info(event.result.toHash());
+
 		var notestore = evernote.createNoteStoreClient(config.url+"note/"+event.result.user.shardId);
 		
 		var notes = notestore.listNotebooks(event.result.authenticationToken, function(event2) {
 			table.data = event2.result.map(function(note){ return({title: note.name}); });
 			
-			var note = evernote.createNote();
-			note.title = 'Test';
+			var note = evernote.createNote({title: "Test"});
 			note.tagNames = ['tag1', 'tag2'];
 			
 			var data = evernote.createData();
-			var file  = Ti.Filesystem.getFile(
+			var file = Ti.Filesystem.getFile(
 				Titanium.Filesystem.resourcesDirectory + '/appcelerator_ja.png'
 			);
 			data.body = file.read();
@@ -51,7 +52,7 @@ userstore.authenticate(config.demo.email, config.demo.password, config.consumerK
 			res.attributes = attrs;
 			
 			note.resources = [res];
-
+			
 			notestore.createNote(event.result.authenticationToken, note, function(event) {
 				Ti.API.info(event);
 				if(event.type == 'success') {
@@ -64,6 +65,7 @@ userstore.authenticate(config.demo.email, config.demo.password, config.consumerK
 		});
 	}
 	else {
+		Ti.API.info(event);
 		alert(event.error.message);
 	}
 });
