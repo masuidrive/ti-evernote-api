@@ -1,0 +1,47 @@
+package <%= package_name %>;
+
+import org.appcelerator.kroll.*;
+import org.appcelerator.kroll.annotations.*;
+import org.appcelerator.titanium.*;
+import org.appcelerator.titanium.util.*;
+import org.appcelerator.titanium.proxy.*;
+
+import <%= package_name %>.*;
+import com.evernote.edam.type.*;
+import com.evernote.edam.error.*;
+import com.evernote.edam.limits.*;
+import com.evernote.edam.notestore.*;
+import com.evernote.edam.userstore.*;
+
+import java.util.*;
+
+@Kroll.proxy(creatableInModule = <%= module_name %>.class)
+public class <%= s.proxy_class_name %> extends KrollProxy {
+	
+	private static final String LCAT = "<%= module_name %>";
+	private <%= s.class_name %> object;
+
+	public <%= s.proxy_class_name %>(TiContext tiContext) 
+	{
+		object = new <%= s.class_name %>();
+		super(tiContext);
+	}
+
+	public <%= s.proxy_class_name %>(TiContext tiContext, <%= s.class_name %> object_) 
+	{
+		object = object_;
+		super(tiContext);
+	}
+
+<% s.fields.each do |field| %>
+	@Kroll.getProperty @Kroll.method
+	public <%= field.type.java_type(@space) %> get<%= field.name.sub(/^[a-z]/,&:upcase) %>() {
+		return <%= field.type.titanium(@space, "object.get#{field.name.sub(/^[a-z]/,&:upcase)}()") %>;
+	}
+
+	@Kroll.setProperty @Kroll.method
+	public void set<%= field.name.sub(/^[a-z]/,&:upcase) %>(<%= field.type.java_type(@space) %> value) {
+		object.set<%= field.name.sub(/^[a-z]/,&:upcase) %>(<%= field.type.java(@space, 'value') %>);
+	}
+<% end %>
+}
