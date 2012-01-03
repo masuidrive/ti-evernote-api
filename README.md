@@ -4,13 +4,12 @@
 
 ### iOS
 
-* Implemented all services, structs, enums, const values
-* I'll test file upload
+* Completed!
 * It's worked on 1.7.5 and 1.8.0.1
 
 ### Android
 
-Not yet
+* wokring on 'android' branch
 
 
 ## Documents
